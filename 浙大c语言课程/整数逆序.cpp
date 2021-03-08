@@ -9,12 +9,12 @@ int main()
 
 	while ( x> 0 ) {
 		digit = x%10;
-		printf("%d", digit);
+		printf("%d", digit);		
 		ret = ret*10 + digit;
 		// printf("x=%d,digit=%d,ret=%d\n", x, digit, ret);
 		x /= 10;
 	}
-	// printf("%d", ret);
+	printf(" ret = %d", ret);				//输入700,结果为007，ret的值为7
 	
 	return 0;
 }
