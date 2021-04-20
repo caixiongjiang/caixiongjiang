@@ -40,3 +40,75 @@ for (int i = 0; i < len; i++) {
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/remove-element
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+---
+
+## 思路
+有的同学可能说了，多余的元素，删掉不就得了。
+
+<span style="color:pink">*要知道数组的元素在内存地址中是连续的，不能单独删除数组中的某个元素，只能覆盖。*</span>
+
+---
+## 暴力解法
+
+![avatar](https://mmbiz.qpic.cn/mmbiz_gif/ciaqDnJprwv4rN7Lc7cH7s9Xs5Gfgibnf7TXGEicwHiav5ChqT6UqgicWib6XRp7TxJva0A6ibrCA6Jx2jAibibWr811pOA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
+
+```java
+// 时间复杂度：O(n^2)
+// 空间复杂度：O(1)
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int length=nums.length;
+        for(int i=0;i<length;i++){
+            if(nums[i]==val){
+                for(int j=i+1;j<length;j++){
+                    nums[j-1]=nums[j];
+                }
+                i--;// 因为下表i以后的数值都向前移动了一位，所以i也向前移动一位
+                length--;// 此时数组的大小-1
+            } 
+        }
+        return length;
+    }
+}
+```
+
+---
+## 双指针法
+
+双指针法（快慢指针法）：「通过一个快指针和慢指针在一个for循环下完成两个for循环的工作。」
+
+删除过程如下：
+
+![avatar](https://mmbiz.qpic.cn/mmbiz_gif/ciaqDnJprwv4rN7Lc7cH7s9Xs5Gfgibnf7kT8a6hE8xVSviaeZHuIqUAx3HRef0dDvg5roSXCIulV2XcjOnxKwYVA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
+
+<span style="color:green">*双指针法（快慢指针法）在数组和链表的操作中是非常常见的，很多考察数组和链表操作的面试题，都使用双指针法。*</span>
+
+我们来回顾一下，之前已经讲过有四道题目使用了双指针法。
+
+双指针法将时间复杂度O(n^2)的解法优化为 O(n)的解法。也就是降一个数量级，题目如下：
+
+</br>15.三数之和
+</br>18.四数之和
+</br>双指针来记录前后指针实现链表反转：
+
+206.反转链表
+</br>使用双指针来确定有环：
+
+142题.环形链表II
+
+```java
+// 时间复杂度：O(n)
+// 空间复杂度：O(1)
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int slowIndex = 0; //慢指针
+        for (int fastIndex = 0; fastIndex < nums.length; fastIndex++) {   //快指针  
+            if (val != nums[fastIndex]) { //不相等就留下，相等时会被后续覆盖
+                nums[slowIndex++] = nums[fastIndex]; 
+            }
+        }
+        return slowIndex;
+    }
+}
+```
