@@ -53,4 +53,4 @@
 ## &emsp;**我的开源项目：**
 ### &emsp;&nbsp;**学习规划**🌱
 * [algorithms and data structures](https://github.com/caixiongjiang/caixiongjiang/tree/main/leetcode_java)🔥
-* [Java Foundation](https://github.com/caixiongjiang/caixiongjiang/tree/main/java__shangguigu)
+* [Java Foundation](https://github.com/caixiongjiang/caixiongjiang/tree/main/java__shangguigu)🔥
