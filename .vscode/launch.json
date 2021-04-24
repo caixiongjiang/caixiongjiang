@@ -4,6 +4,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StringTest",
+            "request": "launch",
+            "mainClass": "StringTest",
+            "projectName": "caixiongjiang_e17c2f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch VariableTest3",
+            "request": "launch",
+            "mainClass": "VariableTest3",
+            "projectName": "caixiongjiang_e17c2f1"
+        },
+        {
+            "type": "java",
             "name": "Launch VariableTest",
             "request": "launch",
             "mainClass": "VariableTest",

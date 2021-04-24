@@ -1,5 +1,8 @@
 {
     "files.associations": {
         "vector": "cpp"
-    }
+    },
+    "java.project.sourcePaths": [
+        "java__shangguigu"
+    ]
 }
