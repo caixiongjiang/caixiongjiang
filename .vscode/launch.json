@@ -4,6 +4,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LogicTest",
+            "request": "launch",
+            "mainClass": "LogicTest",
+            "projectName": "caixiongjiang_e17c2f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AriExer",
+            "request": "launch",
+            "mainClass": "AriExer",
+            "projectName": "caixiongjiang_e17c2f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AriTest",
+            "request": "launch",
+            "mainClass": "AriTest",
+            "projectName": "caixiongjiang_e17c2f1"
+        },
+        {
+            "type": "java",
             "name": "Launch daily_practise_1",
             "request": "launch",
             "mainClass": "Java_Foundation.daily_practise_1",
