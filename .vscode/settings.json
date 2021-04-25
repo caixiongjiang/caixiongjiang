@@ -3,6 +3,7 @@
         "vector": "cpp"
     },
     "java.project.sourcePaths": [
-        "java__shangguigu"
+        "java__shangguigu",
+        "java-test"
     ]
 }
