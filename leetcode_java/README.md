@@ -11,3 +11,5 @@
 * 🔥[反转链表](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode206.md)
 * 🔥[删除倒数第N个节点(经典双指针法)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode19.md)
 * 🔥[寻找环的入口](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode142.md)
+# 哈希表
+* 🔥[关于哈希表](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E5%93%88%E5%B8%8C%E8%A1%A8.md)
