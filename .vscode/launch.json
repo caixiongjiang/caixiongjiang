@@ -4,6 +4,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PrimeNumberTest",
+            "request": "launch",
+            "mainClass": "PrimeNumberTest",
+            "projectName": "caixiongjiang_e17c2f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch NineNineTable",
+            "request": "launch",
+            "mainClass": "NineNineTable",
+            "projectName": "caixiongjiang_e17c2f1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScannerTest",
+            "request": "launch",
+            "mainClass": "ScannerTest",
+            "projectName": "caixiongjiang_e17c2f1"
+        },
+        {
+            "type": "java",
             "name": "Launch LogicTest",
             "request": "launch",
             "mainClass": "LogicTest",
