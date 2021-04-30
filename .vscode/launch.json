@@ -4,6 +4,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AriTest",
+            "request": "launch",
+            "mainClass": "AriTest",
+            "projectName": "caixiongjiang_47192eab"
+        },
+        {
+            "type": "java",
             "name": "Launch PrimeNumberTest",
             "request": "launch",
             "mainClass": "PrimeNumberTest",
