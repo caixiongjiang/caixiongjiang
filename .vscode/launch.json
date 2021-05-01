@@ -4,6 +4,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FamilyAccount",
+            "request": "launch",
+            "mainClass": "FamilyAccount",
+            "projectName": "caixiongjiang_47192eab"
+        },
+        {
+            "type": "java",
+            "name": "Launch BreakContinueTest",
+            "request": "launch",
+            "mainClass": "BreakContinueTest",
+            "projectName": "caixiongjiang_47192eab"
+        },
+        {
+            "type": "java",
             "name": "Launch AriTest",
             "request": "launch",
             "mainClass": "AriTest",
