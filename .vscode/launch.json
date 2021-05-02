@@ -4,6 +4,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayTest1",
+            "request": "launch",
+            "mainClass": "ArrayTest1",
+            "projectName": "caixiongjiang_47192eab"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayTest",
+            "request": "launch",
+            "mainClass": "ArrayTest",
+            "projectName": "caixiongjiang_47192eab"
+        },
+        {
+            "type": "java",
             "name": "Launch FamilyAccount",
             "request": "launch",
             "mainClass": "FamilyAccount",
