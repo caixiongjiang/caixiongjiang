@@ -5,6 +5,12 @@
 * 🌱[markdown说明文档](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/markdown%E4%BD%BF%E7%94%A8/markdown%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md)
 </br></br>
 
+* 🌱[IDEA配置]()
+</br></br>
+
+* 🌱[Eclipse配置]()
+</br></br>
+
 * 🔥[1.java语言概述](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/1java%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0.md)
 
 * 🔥[2.1java基本语法_变量和运算符](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/2.1java%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95_%E5%8F%98%E9%87%8F%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6.md)
