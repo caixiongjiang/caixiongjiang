@@ -4,6 +4,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayDemo",
+            "request": "launch",
+            "mainClass": "ArrayDemo",
+            "projectName": "caixiongjiang_47192eab"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayTest1",
             "request": "launch",
             "mainClass": "ArrayTest1",
