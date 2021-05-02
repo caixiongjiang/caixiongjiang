@@ -19,18 +19,21 @@ public class ArrayDemo{
         int[] scores=new int[number];
 
         //3.给数组的元素赋值
+        int maxScore=0;
         System.out.println("请输入"+number+"个学生成绩");
         for(int i=0;i<scores.length;i++){
             scores[i]=scanner.nextInt();
-        }
-
-        //4.获取数组中元素的最大值：最高分
-        int maxScore=0;
-        for(int i=0;i<scores.length;i++){
+            //4.获取数组中元素的最大值：最高分
             if(maxScore<scores[i]){
                 maxScore=scores[i];
             }
         }
+        // int maxScore=0;
+        // for(int i=0;i<scores.length;i++){
+        //     if(maxScore<scores[i]){
+        //         maxScore=scores[i];
+        //     }
+        // }
 
         //5.根据每个学生成绩与最高分的差值，得到每个学生的等级，并输出成绩与等级
         char level;
@@ -44,7 +47,7 @@ public class ArrayDemo{
             }else{
                 level='D';
             } 
-            System.out.println("student "+i+" score is"+scores[i]+",grade is "+level);
+            System.out.println("student "+i+" score is "+scores[i]+",grade is "+level);
         }
 
     }
