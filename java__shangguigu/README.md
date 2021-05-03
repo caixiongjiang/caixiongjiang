@@ -19,3 +19,5 @@
 
 * 🔥[3.1数组概述](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/3.1%E6%95%B0%E7%BB%84%E6%A6%82%E8%BF%B0.md)
 * 🔥[3.2一维数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/3.2%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84.md)
+* 🔥[3.3二维数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/3.3%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.md)
+* 🔥[3.4数组中的常见算法](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/3.4%E6%95%B0%E7%BB%84%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95.md)
