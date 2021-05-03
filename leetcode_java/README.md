@@ -1,5 +1,5 @@
 # 数组
-* 🔥[关于数组]
+* 🔥[关于数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E6%95%B0%E7%BB%84.md)
 * 🔥[二分法](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode35.md)
 * 🔥[移除元素](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode27.md)
 * 🔥[滑动窗口](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcoe209.md)

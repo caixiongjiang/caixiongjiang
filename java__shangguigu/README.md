@@ -7,7 +7,7 @@
 * 🌱[Eclipse配置](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/IDEA%2CEclipse%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/Eclipse%E7%9A%84%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE.pdf)
 </br></br>
 
-* 🔥[1.java语言概述](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/1java%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0.md)
+* 🔥[1.java语言概述](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/1.java%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0.md)
 </br></br>
 * 🔥[2.1java基本语法_变量和运算符](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/2.1java%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95_%E5%8F%98%E9%87%8F%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6.md)
 
