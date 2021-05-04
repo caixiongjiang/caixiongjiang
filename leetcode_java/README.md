@@ -22,4 +22,4 @@
 # 字符串
 * 🔥[简单字符串反转](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode344.md)
 * 🔥[进阶字符串反转](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode541.md)
-
+* 🔥[替换空格](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode%E5%89%91%E6%8C%87offer05.md)
