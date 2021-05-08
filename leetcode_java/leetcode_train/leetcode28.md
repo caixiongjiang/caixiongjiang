@@ -112,3 +112,79 @@ public void getNext(int[] next,String s){
     }
 }
 ```
+---
+### next数组（整体减一）java实现
+
+```java
+class Solution {
+    public void getNext(int[] next,String s){
+        int j=-1;
+        next[0]=j;
+        for(int i=1;i<s.length();i++){//注意i从1开始
+            while(j>=0 && s.charAt(i)!=s.charAt(j+1)){//前后缀不相同了
+                j=next[j];//回退操作
+            }
+            if(s.charAt(i)==s.charAt(j+1)){
+                j++;
+            }
+            next[i]=j;//将前缀的长度赋给next数组
+        }
+    }
+    public int strStr(String haystack, String needle) {
+        if(needle.length()==0){
+            return 0;
+        }
+        int[] next=new int[needle.length()];
+        getNext(next,needle);
+        int j=-1;
+        for(int i=0;i<haystack.length();i++){
+            while(j>=0 && haystack.charAt(i)!=needle.charAt(j+1)){
+                j=next[j];
+            }
+            if(haystack.charAt(i)==needle.charAt(j+1)){//匹配时，i和j同时向后移
+                j++;//i++在for循环中
+            }
+            if(j==(needle.length()-1)){//文本串s中出现了模式串
+                return (i-needle.length()+1);
+            }
+        }
+        return -1;
+    }
+}
+```
+
+
+### 前缀表（不减一）java实现
+
+```java
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int n = haystack.length(), m = needle.length();
+        if (m == 0) {
+            return 0;
+        }
+        int[] pi = new int[m];
+        for (int i = 1, j = 0; i < m; i++) {
+            while (j > 0 && needle.charAt(i) != needle.charAt(j)) {
+                j = pi[j - 1];
+            }
+            if (needle.charAt(i) == needle.charAt(j)) {
+                j++;
+            }
+            pi[i] = j;
+        }
+        for (int i = 0, j = 0; i < n; i++) {
+            while (j > 0 && haystack.charAt(i) != needle.charAt(j)) {
+                j = pi[j - 1];
+            }
+            if (haystack.charAt(i) == needle.charAt(j)) {
+                j++;
+            }
+            if (j == m) {
+                return i - m + 1;
+            }
+        }
+        return -1;
+    }
+}
+```
