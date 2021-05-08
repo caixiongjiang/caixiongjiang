@@ -25,3 +25,4 @@
 * 🔥[替换空格](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode%E5%89%91%E6%8C%87offer05.md)
 * 🔥[翻转字符串里的单词(花式翻转)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode151.md)
 * 🔥[左旋字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode%E5%89%91%E6%8C%87offer58%E2%85%A1.md)
+* 🔥[KMP算法核心：next数组的生成](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode28.md)
