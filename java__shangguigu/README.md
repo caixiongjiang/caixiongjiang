@@ -27,4 +27,4 @@
 </br></br>
 
 * 🔥[4.1面向对象概述](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/4.1%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E6%A6%82%E8%BF%B0.md)
-* 🔥[4.2面向对象的两个要素]
+* 🔥[4.2面向对象的两个要素](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/Java_Foundation/4.2%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%A4%E4%B8%AA%E8%A6%81%E7%B4%A0.md)
