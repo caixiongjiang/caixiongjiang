@@ -1,4 +1,8 @@
 # 数组
+
+* 🌱[vim命令使用指南，让你摆脱鼠标敲代码](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/markdown%E4%BD%BF%E7%94%A8/markdown%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md)
+</br></br>
+
 * 🔥[关于数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E6%95%B0%E7%BB%84.md)
 * 🔥[二分法](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode35.md)
 * 🔥[移除元素](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode27.md)
