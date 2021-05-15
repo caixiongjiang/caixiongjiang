@@ -35,3 +35,4 @@
 # 栈与队列
 * 🔥[关于栈和队列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97.md) 
 * 🔥[用栈实现队列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode232.md)
+* 🔥[用队列实现栈](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode225.md)
