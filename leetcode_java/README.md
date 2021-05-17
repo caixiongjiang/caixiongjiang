@@ -40,3 +40,4 @@
 * 🔥[栈的应用(删除字符串中所有相邻重复项，本质同为匹配问题)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode1047.md)
 * 🔥[栈的应用(计算后缀表达式)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode150.md)
 * 🔥[队列应用(单调队列经典题目)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode239.md)
+* 🔥[前k个高频元素和队列有什么关系](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode347.md)
