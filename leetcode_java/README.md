@@ -21,6 +21,9 @@
 
 # 哈希表
 * 🔥[关于哈希表](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E5%93%88%E5%B8%8C%E8%A1%A8.md)
+* 🔥[用数组实现哈希表（表长固定的情况）](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode242.md)
+* 🔥[Set使用：两个数组的交集](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode349.md)
+* 🔥[用Set来判断快乐数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode202.md)
 </br></br>
 
 # 字符串
