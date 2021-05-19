@@ -44,3 +44,9 @@
 * 🔥[栈的应用(计算后缀表达式)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode150.md)
 * 🔥[队列应用(单调队列经典题目)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode239.md)
 * 🔥[前k个高频元素和队列有什么关系](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode347.md)
+</br></br>
+
+# 二叉树
+二叉树的题目类型分类：
+![avater](https://camo.githubusercontent.com/05f375896b965b6c1b2ead25c838b5b3385d18a112878d8e9d3dabacaf2cce8f/68747470733a2f2f696d672d626c6f672e6373646e696d672e636e2f32303231303231393139303830393435312e706e67)
+* 🔥[关于二叉树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode347.md)
