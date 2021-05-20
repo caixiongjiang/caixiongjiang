@@ -105,6 +105,7 @@ cib/cab ; ciw/caw……
 * gD 跳转到全局函数定义.
 * g* 向下搜索光标所在单词 ( 当光标在 'rain' 会查找 'rainbow').
 * g# 向上搜索光标所在单词
+* ***Ctrl+v(Normal模式)：启用矩阵选中模式。再按shift+i，变成大光标模式***
 
  <span style="color:green">***数字n+操作符：即为操作n次***</span>
  

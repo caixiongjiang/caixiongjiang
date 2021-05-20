@@ -82,3 +82,42 @@ class Solution {
 ```
 
 ## 迭代做法
+```java
+/**
+ /**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> res=new ArrayList<Integer>();             //保存结果的数组
+        if(root==null){
+            return res;
+        }
+
+        Deque<TreeNode> stack=new LinkedList<TreeNode>();       //双端队列实现二叉树节点为元素的栈结构（链表结构）
+        TreeNode node=root;
+        while(!stack.isEmpty() || node!=null){
+            while(node!=null){        //按照栈中的顺序来进行:中间节点先入栈，再右孩子，在左孩子；此时出栈顺序为中左右
+                res.add(node.val);
+                stack.push(node);
+                node=node.left;
+            }
+            node=stack.pop();
+            node=node.right;
+        }
+        return res;
+    }
+}
+```
