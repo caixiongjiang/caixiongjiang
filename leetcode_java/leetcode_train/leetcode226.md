@@ -30,7 +30,7 @@
 
 ---
 ## 思路
-
+### 递归方法
 翻转操作可以用二叉树的指针交换完成（核心部分）。
 </br><span style="color:green">**需要注意的问题是,本题在翻转子树的时候只能采用前序和后序遍历**</span>
 
@@ -104,5 +104,63 @@ class Solution {
         root.left=root.right;
         root.right=tmp;
     } 
+}
+```
+
+### 迭代法（其实就是用栈或者队列的结构来代替递归）
+#### 层序遍历的方法（队列）
+```java
+class Solution {
+	public TreeNode invertTree(TreeNode root) {
+		if(root==null) {
+			return null;
+		}
+		//将二叉树中的节点逐层放入队列中，再迭代处理队列中的元素
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+		queue.add(root);
+		while(!queue.isEmpty()) {
+			//每次都从队列中拿一个节点，并交换这个节点的左右子树
+			TreeNode tmp = queue.poll();
+			TreeNode left = tmp.left;
+			tmp.left = tmp.right;
+			tmp.right = left;
+			//如果当前节点的左子树不为空，则放入队列等待后续处理
+			if(tmp.left!=null) {
+				queue.add(tmp.left);
+			}
+			//如果当前节点的右子树不为空，则放入队列等待后续处理
+			if(tmp.right!=null) {
+				queue.add(tmp.right);
+			}
+			
+		}
+		//返回处理完的根节点
+		return root;
+	}
+}
+```
+#### 深度优先搜索（前序）
+```java
+class Solution{
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null)
+            return root;
+        Stack<TreeNode> stack = new Stack<>();
+        stack.add(root);
+        while (!stack.empty()) {
+            TreeNode node = stack.pop();//中
+            //先交换子节点
+            TreeNode left = node.left;
+            node.left = node.right;
+            node.right = left;
+            if (node.right != null) {//入栈的顺序为右左，出栈则为左右
+                stack.push(node.right);
+            }
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+        }
+        return root;
+    }
 }
 ```
