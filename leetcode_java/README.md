@@ -56,3 +56,5 @@
 * 🔥[二叉树的层序遍历](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86.md)
 * 🔥[翻转二叉树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode226.md)
 * 🔥[判断二叉树是否对称](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode101.md)
+* 🔥[求树的最大深度](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode104.md)
+* 🔥[求树的最小深度]()
