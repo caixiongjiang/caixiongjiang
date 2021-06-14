@@ -59,3 +59,4 @@
 * 🔥[求树的最大深度](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode104.md)
 * 🔥[求树的最小深度](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode111.md)
 * 🔥[完全二叉树的节点个数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode222.md)
+* 🔥[判断是否是平衡二叉树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode110.md)
