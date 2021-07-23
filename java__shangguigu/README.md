@@ -2,7 +2,7 @@
 
 此笔记为[尚硅谷](https://space.bilibili.com/302417610?spm_id_from=333.788.b_765f7570696e666f.1)的b站java基础笔记
 
-尚硅谷还提供了[数据结构与算法的java语言实现](https://github.com/caixiongjiang/caixiongjiang/tree/main/java__shangguigu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95)
+尚硅谷还提供了[数据结构与算法的java语言实现](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/README.md)
 
 * 🌱[markdown说明文档](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/markdown%E4%BD%BF%E7%94%A8/markdown%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md)
 * 🌱[IDEA配置](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/IDEA%2CEclipse%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/%E5%B0%9A%E7%A1%85%E8%B0%B7_%E5%AE%8B%E7%BA%A2%E5%BA%B7_IntelliJIDEA%E7%9A%84%E5%AE%89%E8%A3%85%E3%80%81%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8(%E7%AE%80%E5%8C%96%E7%89%88).pdf)
