@@ -64,4 +64,4 @@
 * 🔥[二叉树的左叶子值之和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode404.md) 
 * 🔥[二叉树：判断是否存在根节点到叶子节点值的和等于给定值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode112.md)
 * 🔥[二叉树：找到所有根节点到叶子节点值的和等于给定值的所有路径](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode113.md)
-* 🔥[构造二叉树]()
+* 🔥[构造二叉树(中序+后序)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode106.md)
