@@ -67,3 +67,6 @@
 * 🔥[构造二叉树(中序+后序)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode106.md)
 * 🔥[构造二叉树(前序+中序)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode105.md)
 * 🔥[构造最大的二叉树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode654.md)
+* 🔥[合并两个二叉树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode617.md)
+* 🔥[二叉搜索树：搜索给定的值的节点为根节点的子树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode700.md)
+* 🔥[判断是否为二叉搜索树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode98.md)
