@@ -66,3 +66,4 @@
 * 🔥[二叉树：找到所有根节点到叶子节点值的和等于给定值的所有路径](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode113.md)
 * 🔥[构造二叉树(中序+后序)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode106.md)
 * 🔥[构造二叉树(前序+中序)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode105.md)
+* 🔥[构造最大的二叉树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode654.md)
