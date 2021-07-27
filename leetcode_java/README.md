@@ -73,3 +73,5 @@
 * 🔥[搜索树的最小绝对差](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode530.md)
 * 🔥[二叉搜索树中的众数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode501.md)
 * 🔥[二叉树的最近公共祖先](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode236.md)
+* 🔥[二叉搜索树的最近公共祖先](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode235.md)
+* 🔥[二叉搜索树中的插入操作](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode701.md)
