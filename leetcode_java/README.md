@@ -1,7 +1,7 @@
-# 数组
-
 * 🌱[vim命令使用指南，让你摆脱鼠标敲代码](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/vim/vim%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
 </br></br>
+
+# 数组
 
 * 🔥[关于数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E6%95%B0%E7%BB%84.md)
 * 🔥[二分法](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode35.md)
