@@ -63,28 +63,30 @@ key = 3
 ```java
 class Solution {
     public TreeNode deleteNode(TreeNode root, int key) {
-        root = delete(root,key);
-        return root;
-    }
-
-    private TreeNode delete(TreeNode root, int key) {
-        if (root == null) return null;
-
-        if (root.val > key) {
-            root.left = delete(root.left,key);//向右递归遍历找到要删除的节点
-        } else if (root.val < key) {
-            root.right = delete(root.right,key);//向左递归遍历找到要删除的节点
-        } else {//进行删除操作
-            if (root.left == null) return root.right;//待删除节点左孩子为空，右孩子不空，返回右孩子为根节点
-            if (root.right == null) return root.left;//待删除节点右孩子为空，右孩子不空，返回左孩子为根节点
-            //左右孩子节点都不为空，将删除节点的左子树头结点放到删除节点的右子树最左边的节点
-            TreeNode tmp = root.right;
-            while (tmp.left != null) {
-                tmp = tmp.left;//找到了右子树的最左边的节点
+        if(root == null) return null;//第一种情况：没找到删除的节点
+        if(root.val == key){
+            //第二种情况:左右孩子都为空（叶子节点），直接删除节点，返回null为根节点
+            //第三种情况：其左孩子为空，右孩子不为空，删除节点，右孩子补位，返回右孩子为新的根节点
+            //注意这里没有写第二种情况的判断语句是因为对第三种情况的判断已经包含了第二种情况
+            if(root.left == null) return root.right;
+            //第四种情况：其右孩子为空，左孩子不为空，删除节点，左孩子补位，返回左孩子为新的根节点
+            else if(root.right == null) return root.left;
+            //第五种情况：左右孩子节点都不为空，则将删除节点的左子树头结点（左孩子）放到删除节点的右子树的最左面节点的左孩子上，返回删除节点右孩子为新的根节点。
+            else{
+                TreeNode cur = root.right;
+                while(cur.left != null){
+                    cur = cur.left;//找到了右子树最左边的节点
+                }
+                cur.left = root.left;//把要删除的节点（root）左子树放在cur的左孩子的位置
+                root = root.right;//进行删除，返回旧root的右孩子作为新的root
+                return root;
             }
-            //删除节点
-            root.val = tmp.val;
-            root.right = delete(root.right,tmp.val);
+        }
+        if(root.val > key){
+            root.left = deleteNode(root.left, key);//递归向左调用
+        }
+        if(root.val < key){
+            root.right = deleteNode(root.right, key);//递归向右调用
         }
         return root;
     }
