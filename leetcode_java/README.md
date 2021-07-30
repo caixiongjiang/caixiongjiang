@@ -75,3 +75,4 @@
 * 🔥[二叉树的最近公共祖先](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode236.md)
 * 🔥[二叉搜索树的最近公共祖先](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode235.md)
 * 🔥[二叉搜索树中的插入操作](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode701.md)
+* 🔥[二叉搜索树中的删除操作](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode450.md)
