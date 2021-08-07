@@ -41,7 +41,7 @@ candidates 中的每个数字在每个组合中只能使用一次。
 ## 思路
 这道题与[39.组合总和（二）](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode39.md)只相差两个条件：
 </br>1.就是要求每个数字在每个组合中只能使用一次
-</br>2.数组candidates的元素是有重复的，而[39题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode39.md)
+</br>2.数组candidates的元素是有重复的，而[39题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode39.md)没有
 </br>**本题的核心在于集合（数组candidates）有重复元素，但还不能有重复的组合。**
 所以要在搜索的过程中就去掉重复组合。
 
