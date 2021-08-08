@@ -90,4 +90,5 @@
 * 🔥[回溯算法:电话号码的字母组合](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode17.md)
 * 🔥[回溯算法:求组合总和(二)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode39.md)
 * 🔥[回溯算法:求组合总和(三)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode40.md)
+* 🔥[回溯算法:分割回文串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode131.md)
 
