@@ -9,3 +9,4 @@
 * 🔥[递归回溯——八皇后问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E9%80%92%E5%BD%92%E5%9B%9E%E6%BA%AF%E2%80%94%E2%80%94%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98.md)
 ## 排序算法
 * 🔥[排序算法：冒泡排序](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.md)
+* 🔥[排序算法：选择排序](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.md)
