@@ -156,11 +156,12 @@ class Solution {
             }
             return;
         }
+        //s.substring(i,j)表示返回从i到j-1位置的子串
         for (int i = startIndex; i < s.length(); i++) {
             if (isValid(s, startIndex, i)) {
                 s = s.substring(0, i + 1) + "." + s.substring(i + 1);    //在str的后⾯插⼊⼀个逗点
                 pointNum++;
-                backTrack(s, i + 2, pointNum);// 插⼊逗点之后下⼀个⼦串的起始位置为i+2
+                backTrack(s, i + 2, pointNum);// 插⼊逗点之后下⼀个⼦串的起始位置为i+2(因为要算上逗点的位置)
                 pointNum--;// 回溯
                 s = s.substring(0, i + 1) + s.substring(i + 2);// 回溯删掉逗点
             } else {
