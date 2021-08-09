@@ -78,3 +78,33 @@ class Solution {
     }
 }
 ```
+
+## 拓展
+去重最关键的代码：
+```java
+if(i > 0 && nums[i] == nums[i - 1] && used[i - 1] == false){
+    continue;
+}
+```
+**如果改成used[i - 1] == true,也是正确的！**代码如下：
+```java
+if(i > 0 && nums[i] == nums[i - 1] && used[i - 1] == true){
+    continue;
+}
+```
+如果要对树层中前一位去重，就用used[i - 1] == false，如果要对树枝前一位去重用used[i - 1] == true。
+
+对于排列问题，树层上去重和树枝上去重，都是可以的，但是树层上去重效率更高！
+
+输入: [1,1,1] 来举一个例子。
+
+树层上去重(used[i - 1] == false)，的树形结构如下：
+![avater](https://camo.githubusercontent.com/21ccccf9646bcffda172f35b4539ab97e16af3de0a2daed56fe6becfd58e75cd/68747470733a2f2f696d672d626c6f672e6373646e696d672e636e2f32303230313132343230313430363139322e706e67)
+树枝上去重（used[i - 1] == true）的树型结构如下：
+
+![avater](https://camo.githubusercontent.com/e8d166989363be9240741ed92057eff08d369fc54cfe5d65e39a76f635a40570/68747470733a2f2f696d672d626c6f672e6373646e696d672e636e2f32303230313132343230313433313537312e706e67)
+很清晰的看到，树层上对前一位去重非常彻底，效率很高，树枝上对前一位去重虽然最后可以得到答案，但是做了很多无用搜索。
+
+
+<span style="color:red">**注意，布尔型used数组和递归层数一一对应。比如，同一树层上used数组上的true的个数相同。**</span>
+
