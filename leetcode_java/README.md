@@ -92,4 +92,5 @@
 * 🔥[回溯算法:求组合总和(三)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode40.md)
 * 🔥[回溯算法:分割回文串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode131.md)
 * 🔥[回溯算法:复制IP地址](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode93.md)
+* 🔥[回溯算法:子集](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode78.md)
 
