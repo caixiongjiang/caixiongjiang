@@ -95,4 +95,6 @@
 * 🔥[回溯算法:子集](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode78.md)
 * 🔥[回溯算法:子集Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode90.md)
 * 🔥[回溯算法:递增子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode491.md)
+* 🔥[回溯算法:全排列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode46.md)
+* 🔥[回溯算法:全排列Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode47.md)
 
