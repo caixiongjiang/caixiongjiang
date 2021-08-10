@@ -16,6 +16,7 @@
 输出：["JFK","MUC","LHR","SFO","SJC"]
 ```
 示例 2：
+
 ![avater](https://assets.leetcode.com/uploads/2021/03/14/itinerary2-graph.jpg)
 
 ```
@@ -56,6 +57,86 @@
 
 一个机场映射多个机场，机场之间要靠字母序排列，一个机场映射多个机场，可以使用std::unordered_map，如果让多个机场之间再有顺序的话，就是用std::map 或者std::multimap 或者 std::multiset。
 
+<span style="color:green">**为什么一定要增删元素呢，正如开篇我给出的图中所示，出发机场和到达机场是会重复的，搜索的过程没及时删除目的机场就会死循环。所以搜索的过程中就是要不断的删multiset里的元素**</span>
+
+在遍历targets的过程中**可以使用"航班次数"这个字段的数字做相应的增减，来标记到达机场是否使用过了。**
+
+如果“航班次数”大于零，说明目的地还可以飞，如果如果“航班次数”等于零说明目的地不能飞了，而不用对集合做删除元素或者增加元素的操作。
+
+**相当于说我不删，我就做一个标记！**
+
+## 回溯法
+
+回溯模板如下：
+```java
+public void backtracking(参数) {
+    if (终止条件) {
+        存放结果;
+        return;
+    }
+
+    for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) {
+        处理节点;
+        backtracking(路径，选择列表); // 递归
+        回溯，撤销处理结果
+    }
+}
+```
+本题以输入：[["JFK", "KUL"], ["JFK", "NRT"], ["NRT", "JFK"]为例，抽象为树形结构如下：
+
+![avater](https://camo.githubusercontent.com/97fc71990118675e1736bf595445afc0e4593fa13d02ea9a85df16151c8df01f/68747470733a2f2f696d672d626c6f672e6373646e696d672e636e2f323032303131313531383036353535352e706e67)
+
+## 回溯三部曲
+
+* 递归函数参数
+在讲解映射关系的时候，已经讲过了，使用```Map<String, Map<String, Integer>> map;``` 来记录航班的映射关系，我定义为全局变量。
+参数里还需要ticketNum，表示有多少个航班（终止条件会用上）。
+
+代码如下：
+```java
+private Deque<String> res;
+private Map<String, Map<String, Integer>> map;
+private boolean backTracking(int ticketNum)
+```
+**注意这里的返回值为boolean**
+</br>一般函数返回值都是void，这次为什么是boolean呢？
+
+因为我们只需要找到一个行程，就是在树形结构中唯一的一条通向叶子节点的路线，如图：
+![avater](https://camo.githubusercontent.com/97fc71990118675e1736bf595445afc0e4593fa13d02ea9a85df16151c8df01f/68747470733a2f2f696d672d626c6f672e6373646e696d672e636e2f323032303131313531383036353535352e706e67)
+所以找到了这个叶子节点了直接返回!
+
+* 递归终止条件
+拿题目中的示例为例，输入: [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]] ，这是有4个航班，那么只要找出一种行程，行程里的机场个数是5就可以了。
+
+所以终止条件是：**我们回溯遍历的过程中，遇到的机场个数，如果达到了（航班数量+1），那么我们就找到了一个行程，把所有航班串在一起了。**
+
+代码如下：
+```java
+if (result.size() == ticketNum + 1) {
+    return true;
+}
+```
+
+* 单层搜索的逻辑
+
+遍历过程如下：
+```java
+if(map.containsKey(last)){//防止出现null
+   	for(Map.Entry<String, Integer> target : map.get(last).entrySet()){
+		int count = target.getValue();
+        if(count > 0){
+                res.add(target.getKey());
+                target.setValue(count - 1);
+                if(backTracking(ticketNum)) return true;
+                res.removeLast();
+                target.setValue(count);
+        }
+}
+```
+
+## Java中Map的 entrySet() 详解以及用法(四种遍历map的方式)
+
+[Map的 entrySet() 用法](https://blog.csdn.net/q5706503/article/details/85122343)
 
 
 整体代码如下：
