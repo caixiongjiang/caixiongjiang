@@ -97,4 +97,5 @@
 * 🔥[回溯算法:递增子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode491.md)
 * 🔥[回溯算法:全排列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode46.md)
 * 🔥[回溯算法:全排列Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode47.md)
+* 🔥[回溯算法:安排行程问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode332.md)
 
