@@ -168,7 +168,7 @@ class Solution {
     public List<String> findItinerary(List<List<String>> tickets) {
         map = new HashMap<String, Map<String, Integer>>();
         res = new LinkedList<>();
-        for(List<String> t : tickets){
+        for(List<String> t : tickets){//这个for循环是为了用map构造邻接表
             Map<String, Integer> temp;
             if(map.containsKey(t.get(0))){
                 temp = map.get(t.get(0));
