@@ -99,4 +99,6 @@
 * 🔥[回溯算法:全排列Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode47.md)
 * (×)🔥[回溯算法:安排行程问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode332.md)
 * 🔥[回溯算法:N皇后问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode51.md)
+* 🔥[回溯算法:解数独](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode37.md)
+
 
