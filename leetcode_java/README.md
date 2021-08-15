@@ -106,7 +106,7 @@
 # 贪心算法
 题目分类大纲如下：
 ![avater](https://camo.githubusercontent.com/4fc596ed291c6a4f5d2f5eaa9bea34fe0af4ac9eae815bba4f96ee1bf653dd68/68747470733a2f2f696d672d626c6f672e6373646e696d672e636e2f32303231303232303135323234353538342e706e67)
-* 🔥[关于贪心算法]()
+* 🔥[关于贪心算法](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E8%B4%AA%E5%BF%83.md)
 * 🔥[贪心算法: 分发饼干](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode455.md)
 
 
