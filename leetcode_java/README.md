@@ -111,5 +111,6 @@
 * 🔥[贪心算法: 摆动序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode376.md)
 * 🔥[贪心算法: 最大子序和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode53.md)
 * 🔥[贪心算法:买卖股票的最佳时机Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode122.md)
+* 🔥[贪心算法:跳跃游戏](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode55.md)
 
 
