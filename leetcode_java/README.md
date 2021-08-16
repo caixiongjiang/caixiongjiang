@@ -113,5 +113,6 @@
 * 🔥[贪心算法:买卖股票的最佳时机Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode122.md)
 * 🔥[贪心算法:跳跃游戏](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode55.md)
 * 🔥[贪心算法:跳跃游戏Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode45.md)
+* 🔥[贪心算法:](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode.md)
 
 
