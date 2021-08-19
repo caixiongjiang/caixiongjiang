@@ -54,8 +54,8 @@
 完整代码如下：
 ```java
 class Solution {
-    //两个贪心：一个是如果有负数只选负数进行反转。
-    //还有一个是对绝对值较大的负数和绝对值较小的正数进行反转。
+    //两个贪心：一个是如果有负数选绝对值较大的负数进行反转。
+    //还有一个是对绝对值较小的正数进行反转。
     public int largestSumAfterKNegations(int[] nums, int k) {
         if(nums.length == 1) return k % 2 == 0 ? nums[0] : -nums[0];//反转次数为偶数就是原来的数
         Arrays.sort(nums);
