@@ -115,6 +115,7 @@
 * 🔥[贪心算法:跳跃游戏Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode45.md)
 * 🔥[贪心算法:k次取反后最大化的数组和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode1005.md)
 * 🔥[贪心算法:加油站](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode134.md)
+* 🔥[贪心算法:分发糖果](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode135.md)
 
 
 
