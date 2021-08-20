@@ -117,6 +117,8 @@
 * 🔥[贪心算法:加油站](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode134.md)
 * 🔥[贪心算法:分发糖果](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode135.md)
 * 🔥[贪心算法:柠檬水找零](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode860.md)
+* 🔥[贪心算法:柠檬水找零](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode860.md)
+* 🔥[贪心算法:根据身高重建队列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode406.md)
 
 
 
