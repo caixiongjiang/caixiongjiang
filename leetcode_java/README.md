@@ -98,7 +98,7 @@
 * 🔥[回溯算法:递增子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode491.md)
 * 🔥[回溯算法:全排列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode46.md)
 * 🔥[回溯算法:全排列Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode47.md)
-* (×)🔥[回溯算法:安排行程问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode332.md)
+* (!)🔥[回溯算法:安排行程问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode332.md)
 * 🔥[回溯算法:N皇后问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode51.md)
 * 🔥[回溯算法:解数独](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode37.md)
 </br></br>
@@ -118,7 +118,7 @@
 * 🔥[贪心算法:分发糖果](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode135.md)
 * 🔥[贪心算法:柠檬水找零](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode860.md)
 * 🔥[贪心算法:柠檬水找零](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode860.md)
-* 🔥[贪心算法:根据身高重建队列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode406.md)
+* (!)🔥[贪心算法:根据身高重建队列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode406.md)
 
 
 
