@@ -118,6 +118,7 @@
 * 🔥[贪心算法:分发糖果](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode135.md)
 * 🔥[贪心算法:柠檬水找零](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode860.md)
 * (!)🔥[贪心算法:根据身高重建队列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode406.md)
+* 🔥[贪心算法:用最少数量的箭引爆气球](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode452.md)
 
 
 
