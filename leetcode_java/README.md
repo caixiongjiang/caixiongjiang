@@ -121,6 +121,7 @@
 * 🔥[贪心算法:用最少数量的箭引爆气球](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode452.md)
 * 🔥[贪心算法:无重叠区间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode435.md)
 * 🔥[贪心算法:划分字母区间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode763.md)
+* 🔥[贪心算法:合并区间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode56.md)
 
 
 
