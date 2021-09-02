@@ -123,6 +123,8 @@
 * 🔥[贪心算法:划分字母区间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode763.md)
 * 🔥[贪心算法:合并区间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode56.md)
 * 🔥[贪心算法:单调递增的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode738.md)
+* 🔥[贪心算法:买卖股票的最佳时机含手续费](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode714.md)
+
 
 
 
