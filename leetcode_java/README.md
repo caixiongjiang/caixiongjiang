@@ -132,6 +132,7 @@
 * 🔥[关于动态规划](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
 * 🔥[动态规划：斐波那契数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode509.md)
 * 🔥[动态规划：爬楼梯](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode70.md)
+* 🔥[动态规划：使用最小花费爬楼梯](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode746.md)
 
 
 
