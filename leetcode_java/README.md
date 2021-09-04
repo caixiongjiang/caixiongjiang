@@ -125,6 +125,11 @@
 * 🔥[贪心算法:单调递增的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode738.md)
 * 🔥[贪心算法:买卖股票的最佳时机含手续费](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode714.md)
 * 🔥[贪心算法:监控二叉树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode968.md)
+</br></br>
+
+# 动态规划
+![avater](https://camo.githubusercontent.com/624ae48228610285917d87d92baba28f9e2132199c3e266dbfb82f59acccf302/68747470733a2f2f636f64652d7468696e6b696e672e63646e2e626365626f732e636f6d2f706963732fe58aa8e68081e8a784e588922de680bbe7bb93e5a4a7e7bab2312e6a7067)
+* 🔥[关于动态规划]()
 
 
 
