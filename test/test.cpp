@@ -1,35 +1,29 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 
-//冒泡排序函数
-void bubbleSort(int * arr, int len){
-  for(int i = 0; i < len - 1; i++){
-    for(int j = 0; j < len - i - 1; j++){
-      if(arr[j] > arr[j + 1]){
-        int temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-      }
-    }
-  }
+//const使用场景
+struct student {
+	string name;
+	int age;
+	int score;
+};
+//将函数中的形参改为指针，可以节省内存空间，而且不会赋值一个新的副本出来
+void printStudent(const student * s) {
+	//s->age = 10; //加入const之后，一旦有修改的操作就会报错，可以防止我们的误操作。
+	cout << "姓名： " << s->name << "年龄： "
+	<< s->age << "分数： " << s->score << endl;
 }
 
-//打印数组
-void printArray(int * arr, int len){
-  for(int i = 0;i < len; i++){
-    cout << arr[i] << endl;
-  }
-}
+int main() {
+	//创建结构体变量
+	student s = { "张三", 15, 83 };
 
-int main(){ 
-  //1.先创建一个数组
-  int arr[10] = {4,3,6,9,1,2,10,8,7,5};
-  int len = sizeof(arr) / sizeof(arr[0]);
-  //2.创建函数，实现冒泡排序
-  bubbleSort(arr, len);
-  //3.打印排序后的数组
-  printArray(arr, len);
-  system("pause");
-  return 0;
+	//通过函数来打印结构体变量信息
+
+	printStudent(&s);
+
+	system("pause");
+	return 0;
 }
