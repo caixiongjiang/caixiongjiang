@@ -141,7 +141,7 @@
 
 # 背包问题
 ![avater](https://camo.githubusercontent.com/5957259b2baf6135b4d6cb086e3f373cdfd9285837c83001310d882785f20d1a/68747470733a2f2f636f64652d7468696e6b696e672e63646e2e626365626f732e636f6d2f706963732fe58aa8e68081e8a784e588922de8838ce58c85e997aee9a298e680bbe7bb932e706e67)
-* 🔥[动态规划：关于01背包问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/.md)
+* 🔥[动态规划：关于01背包问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E01%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98.md)
 
 
 
