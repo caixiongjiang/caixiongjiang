@@ -1,53 +1,30 @@
 #include<iostream>
-#include<string>
+#include<vector>
 using namespace std;
 
-
-//1.设计英雄结构体
-struct Hero {
-	string name;
-	int age;
-	string sex;
-};
-//打印排序后的数组中的信息
-void printHero(struct Hero heroArray[], int len) {
-	for (int i = 0; i < len; i++) {
-		cout << "姓名： " << heroArray[i].name << "年龄: " << heroArray[i].age
-			<< "性别： " << heroArray[i].sex << endl;
+void test_2_wei_bag_problem1(){
+	vector<int> weight = {1, 3, 4};
+	vector<int> value = {15, 20, 30};
+	int bagWeight = 4;
+	//二维数组
+	vector<vector<int>> dp(weight.size(), vector<int>(bagWeight + 1, 0));
+	//初始化
+	for(int j = weight[0]; j <= bagWeight; j++){
+		dp[0][j] = value[0];
 	}
-}
 
-//冒泡排序实现年龄的升序排列
-void bubbleSort(struct Hero heroArray[], int len) {
-	for (int i = 0; i < len - 1; i++) {
-		for (int j = 0; j < len - i - 1; j++) {
-			if (heroArray[j].age > heroArray[j + 1].age) {
-				struct Hero temp = heroArray[j];
-				heroArray[j] = heroArray[j + 1];
-				heroArray[j + 1] = temp;
-			}
+	//weight数组的大小，就是物品个数
+	for(int i = 1; i < weight.size(); i++){
+		for(int j = 0; j < bagWeight; j++){
+			dp[i][j] = max(dp[i - 1][j],dp[i - 1][j - weight[i] + value[i]]);
 		}
 	}
+
+	cout << dp[weight.size() - 1][bagWeight] << endl;
 }
 
-
-int main() {
-	//2.创建数组存放5名英雄
-	Hero heroArray[5] = {
-		{"刘备", 23, "男"},
-		{"张飞", 22, "男"},
-		{"关羽", 20, "男"},
-		{"赵云", 19, "男"},
-		{"貂蝉", 21, "女"}
-	};
-
-	int len = sizeof(heroArray) / sizeof(heroArray[0]);
-	
-	//3.对数组进行排序，按照年龄进行升序排列
-	bubbleSort(heroArray, len);
-	//4.将排序后结果打印输出
-	printHero(heroArray, len);
-
+int main(){
+	test_2_wei_bag_problem1();
 	system("pause");
 	return 0;
 }
