@@ -1,31 +1,43 @@
-#include<stdio.h>
-int main()
-{
- int count=0,count1=0,flag = 1;
- double average=0,sum=0,num=0;
- 
- while(1){ 
-        scanf("%lf",&num);
-        if(num<0){ 
-        if(count>0)   flag = 1;
-        else if(count == 0 )  flag = 0;  //第一个成绩为负数，count==0
-        break;
-        }else{
-            flag = 1;
-            sum+=num;
-            count++;  
-            average = sum*1.0/count;
-            if(num<60)
-            count1++;
-        }
-    }  
+#include<iostream>
 
-    if(flag == 0)                        //用于判断在输入结束前的大于0的分数个数是否大于0，若大于0，flag==1；
-    {
-     printf("Average = 0.00");
-    }else if(flag == 1){
-    printf("Average = %.2lf\n",average);
-    printf("Count = %d",count1);
- }
-  return 0;
- } 
+using namespace std;
+
+//交换函数
+
+//1.值传递
+void mySwap01(int a, int b) {
+	int temp = a;
+	a = b;
+	b = temp;
+	/*cout << "swap01 a = " << a << endl;
+	cout << "swap01 b = " << b << endl;*/
+}
+
+//2.地址传递
+void mySwap02(int* a, int* b) {
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
+//3.引用传递
+void mySwap03(int& a, int& b) {
+	int temp = a;
+	a = b;
+	b = temp;
+}
+
+
+int main() {
+	int a = 10;
+	int b = 20;
+
+	mySwap01(a, b); //值传递，形参不会修饰实参，实参 不改变
+	mySwap02(&a, &b);//地址传递，形参是会修饰实参的，实参改变
+	mySwap03(a, b);//引用传递，形参会修饰实参，实参改变
+
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
+
+	system("pause");
+	return 0;
+}
