@@ -146,7 +146,7 @@
 * 🔥[动态规划：分割等和子集](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode416.md)
 * 🔥[动态规划：最后一块石头的重量Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode1049.md)
 * 🔥[动态规划：目标和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode494.md)
-
+* 🔥[动态规划：一零和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode474.md)
 
 
 
