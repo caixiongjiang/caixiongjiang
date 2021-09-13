@@ -147,6 +147,6 @@
 * 🔥[动态规划：最后一块石头的重量Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode1049.md)
 * 🔥[动态规划：目标和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode494.md)
 * 🔥[动态规划：一和零](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode474.md)
-* 🔥[动态规划：关于完全背包]()
-
+* 🔥[动态规划：关于完全背包](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85.md)
+* 🔥[动态规划：零钱兑换Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode518.md)
 
