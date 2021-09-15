@@ -151,3 +151,5 @@
 * 🔥[动态规划：零钱兑换Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode518.md)
 * 🔥[动态规划：组合总和Ⅵ(其实是排列总和)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode377.md)
 * 🔥[动态规划：让我再爬一次楼梯](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode70dp.md)
+* 🔥[动态规划：零钱兑换](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode322.md)
+
