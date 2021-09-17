@@ -2,42 +2,50 @@
 
 using namespace std;
 
-//交换函数
+//深拷贝与浅拷贝
 
-//1.值传递
-void mySwap01(int a, int b) {
-	int temp = a;
-	a = b;
-	b = temp;
-	/*cout << "swap01 a = " << a << endl;
-	cout << "swap01 b = " << b << endl;*/
-}
+class Person {
+public:
+	Person() {
+		cout << "Person 的默认构造函数调用" << endl;
+	}
+	
+	Person(int age, int height) {
+		m_Age = age;
+		m_Height = new int(height);
+		cout << "Person 的有参构造函数调用" << endl;
+	}
 
-//2.地址传递
-void mySwap02(int* a, int* b) {
-	int temp = *a;
-	*a = *b;
-	*b = temp;
-}
-//3.引用传递
-void mySwap03(int& a, int& b) {
-	int temp = a;
-	a = b;
-	b = temp;
-}
+	//自己实现一个拷贝构造函数来解决浅拷贝带来的问题
+	Person(const Person& p) {
+		cout << "拷贝构造函数的调用" << endl;
+		m_Age = p.m_Age;
+		//m_Height = p.m_Height;  编译器默认实现就是这行代码
+		m_Height = new int(*p.m_Height);//使用深拷贝：在堆区重新寻找一块地址存放信息
+	}
 
+	~Person() {
+		//析构代码：将堆区开辟的数据做一个释放操作
+		if (m_Height != NULL) {
+			delete m_Height;
+			m_Height = NULL;
+		}	
+		cout << "Person 的析构构造函数调用" << endl;
+	}
+	int m_Age;//年龄
+	int* m_Height;//身高
+};
+
+void test01() {
+	Person p1(23, 180);
+	cout << "p1的年龄为：" << p1.m_Age << "       身高为："<< *p1.m_Height << endl;
+	Person p2(p1);
+	cout << "p2的年龄为：" << p2.m_Age << "       身高为："<< *p2.m_Height << endl;
+}
 
 int main() {
-	int a = 10;
-	int b = 20;
 
-	mySwap01(a, b); //值传递，形参不会修饰实参，实参 不改变
-	mySwap02(&a, &b);//地址传递，形参是会修饰实参的，实参改变
-	mySwap03(a, b);//引用传递，形参会修饰实参，实参改变
-
-	cout << "a = " << a << endl;
-	cout << "b = " << b << endl;
-
+	test01();
 	system("pause");
 	return 0;
 }
