@@ -154,4 +154,4 @@
 * 🔥[动态规划：零钱兑换](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode322.md)
 * 🔥[动态规划：完全平方数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode279.md)
 * 🔥[动态规划：单词拆分](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode139.md)
-* 🔥[动态规划：关于多重背包]()
+* 🔥[动态规划：关于多重背包](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%85%B3%E4%BA%8E%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98.md)
