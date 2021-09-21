@@ -89,7 +89,8 @@ public:
 大家可以本题和[121. 买卖股票的最佳时机](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode121.md)的代码几乎一样，唯一的区别在：
 
 dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] - prices[i]);
-**这正是因为本题的股票可以买卖多次！**所以买入股票的时候，可能会有之前买卖的利润即：dp[i - 1][1]，所以dp[i - 1][1] - prices[i]。
+
+**这正是因为本题的股票可以买卖多次**!所以买入股票的时候，可能会有之前买卖的利润即：dp[i - 1][1]，所以dp[i - 1][1] - prices[i]。
 
 想到到这一点，对这两道题理解的比较深刻了。
 
