@@ -1,51 +1,58 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 
-//深拷贝与浅拷贝
+//类对象作为类成员
 
-class Person {
+//手机类
+class Phone {
 public:
-	Person() {
-		cout << "Person 的默认构造函数调用" << endl;
-	}
-	
-	Person(int age, int height) {
-		m_Age = age;
-		m_Height = new int(height);
-		cout << "Person 的有参构造函数调用" << endl;
+	Phone(string pName) {
+		cout << "Phone的构造函数调用" << endl;
+		m_PName = pName;
 	}
 
-	//自己实现一个拷贝构造函数来解决浅拷贝带来的问题
-	Person(const Person& p) {
-		cout << "拷贝构造函数的调用" << endl;
-		m_Age = p.m_Age;
-		//m_Height = p.m_Height;  编译器默认实现就是这行代码
-		m_Height = new int(*p.m_Height);//使用深拷贝：在堆区重新寻找一块地址存放信息
+	~Phone() {
+		cout << "Phone的析构函数调用" << endl;
 	}
 
-	~Person() {
-		//析构代码：将堆区开辟的数据做一个释放操作
-		if (m_Height != NULL) {
-			delete m_Height;
-			m_Height = NULL;
-		}	
-		cout << "Person 的析构构造函数调用" << endl;
-	}
-	int m_Age;//年龄
-	int* m_Height;//身高
+	//手机品牌的名称
+	string m_PName;
 };
 
+//人类
+class	 Person {
+public:
+	//Phone m_Phone = pName;   隐式转化法
+	Person(string name, string pName) : m_Name(name), m_Phone(pName){
+		cout << "Person的构造函数调用" << endl;
+	}
+
+	~Person(){
+		cout << "Person的析构函数调用" << endl;
+	}
+
+	//姓名
+	string m_Name;
+	//手机
+	Phone m_Phone;
+};
+
+//当其他的类的对象作为本类的成员，构造时候先构造类对象，再构造自身。（先构造腿才能去构造身体）
+//析构的顺序与构造相反（先把身体拆了才能拆腿）
+
 void test01() {
-	Person p1(23, 180);
-	cout << "p1的年龄为：" << p1.m_Age << "       身高为："<< *p1.m_Height << endl;
-	Person p2(p1);
-	cout << "p2的年龄为：" << p2.m_Age << "       身高为："<< *p2.m_Height << endl;
+	Person p("张三", "苹果MAX");
+	cout << p.m_Name << "拿着：" << p.m_Phone.m_PName << endl;
 }
 
-int main() {
 
+int main() {
 	test01();
+
+
+
 	system("pause");
 	return 0;
 }
