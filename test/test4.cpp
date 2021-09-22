@@ -1,52 +1,40 @@
 #include<iostream>
-#include<string>
 
 using namespace std;
 
-//类对象作为类成员
+//静态成员函数
+//所有对象共享同一个函数
+//静态成员函数只能访问静态成员变量
 
-//手机类
-class Phone {
+class Person {
 public:
-	Phone(string pName) {
-		cout << "Phone的构造函数调用" << endl;
-		m_PName = pName;
+	//静态成员函数
+	static void func() {
+		m_A = 100;//静态成员函数可以访问静态成员变量
+		//m_B = 200;  静态成员函数不可以访问非静态成员变量
+		cout << "static void func调用" << endl;
 	}
 
-	~Phone() {
-		cout << "Phone的析构函数调用" << endl;
-	}
+	static int m_A;//静态成员变量
+	int m_B;
 
-	//手机品牌的名称
-	string m_PName;
+	//静态成员函数也是有访问权限的
+private:
+	static void func2() {
+		cout << "static void func2调用" << endl;
+	}
 };
 
-//人类
-class	 Person {
-public:
-	//Phone m_Phone = pName;   隐式转化法
-	Person(string name, string pName) : m_Name(name), m_Phone(pName){
-		cout << "Person的构造函数调用" << endl;
-	}
-
-	~Person(){
-		cout << "Person的析构函数调用" << endl;
-	}
-
-	//姓名
-	string m_Name;
-	//手机
-	Phone m_Phone;
-};
-
-//当其他的类的对象作为本类的成员，构造时候先构造类对象，再构造自身。（先构造腿才能去构造身体）
-//析构的顺序与构造相反（先把身体拆了才能拆腿）
+int Person::m_A = 0;
 
 void test01() {
-	Person p("张三", "苹果MAX");
-	cout << p.m_Name << "拿着：" << p.m_Phone.m_PName << endl;
+	//1.通过对象访问
+	Person p;
+	p.func();
+	//2.通过类名访问
+	Person::func();
+	//Person::func2(); 类外访问不到私有静态成员函数
 }
-
 
 int main() {
 	test01();
