@@ -35,5 +35,5 @@ for i=1:5
 end
 k=0.5; %分辨系数取值
 l=(min+k*max)./(x+k*max);%求关联系数矩阵
-guanliandu = SUM(l')/n;
+guanliandu = sum(l')/n;
 [rs,rind]=sort(guanliandu,'descend'); %对关联度进行排序
