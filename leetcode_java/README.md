@@ -169,3 +169,7 @@
 * 🔥[动态规划：买卖股票的最佳时机Ⅳ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode188.md)
 * 🔥[动态规划：最佳买卖股票时机含冷冻期](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode309.md)
 * 🔥[动态规划：最佳买卖股票时机含手续费](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode714dp.md)
+
+子序列系列：
+![avater](https://camo.githubusercontent.com/d16049d91e6f7ad4859a7a9df372a17d799b0cefa800838651166ae77a711ec8/68747470733a2f2f636f64652d7468696e6b696e672e63646e2e626365626f732e636f6d2f706963732fe58aa8e68081e8a784e588922de5ad90e5ba8fe58897e997aee9a298e680bbe7bb932e6a7067)
+* 🔥[动态规划：最长递增子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode300.md)
