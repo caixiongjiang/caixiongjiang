@@ -145,6 +145,7 @@ public:
             }else{
                 //如果找不到说明所有的数都比nums[i]大，此时要更新d[l],所以这里将pos设为0
                 int l = 1, r = len, pos = 0;
+                //二分法查找
                 while(l <= r){
                     int mid = (l + r) >> 1;// >>在c++中为右移符号（相当于 /2）
                     if(d[mid] < nums[i]){
