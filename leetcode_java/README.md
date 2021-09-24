@@ -175,3 +175,4 @@
 * 🔥[动态规划：最长递增子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode300.md)
 * 🔥[动态规划：最长连续递增序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode674.md)
 * 🔥[动态规划：最长重复子数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode718.md)
+* 🔥[动态规划：最长公共子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode1143.md)
