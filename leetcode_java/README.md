@@ -179,3 +179,4 @@
 * 🔥[动态规划：不相交的线](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode1035.md)
 * 🔥[动态规划：最大子序和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode53dp.md)
 * 🔥[动态规划：判断子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode392.md)
+* 🔥[动态规划：不同的子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode115.md)
