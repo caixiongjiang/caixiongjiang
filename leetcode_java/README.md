@@ -187,3 +187,4 @@
 
 # 单调栈
 * 🔥[单调栈：每日温度](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode739.md)
+* 🔥[单调栈：下一个更大元素Ⅰ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode496.md)
