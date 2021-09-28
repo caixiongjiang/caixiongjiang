@@ -150,7 +150,7 @@ public:
         for (int i = 1; i < nums2.size(); i++) {
             while (!st.empty() && nums2[i] > nums2[st.top()]) {
                 if (umap.count(nums2[st.top()]) > 0) { // 看map里是否存在这个元素
-                    int index = umap[nums2[st.top()]]; // 根据map找到nums2[st.top()] 在 nums1中的下表
+                    int index = umap[nums2[st.top()]]; // 根据map找到nums2[st.top()] 在 nums1中的下标
                     result[index] = nums2[i];
                 }
                 st.pop();
