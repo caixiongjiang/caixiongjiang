@@ -84,5 +84,20 @@ for (int i = 0; i < nums.size(); i++) {
 
 整体代码如下：
 ```c++
-
+class Solution {
+public:
+    vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
+        vector<int> vec = nums;
+        sort(vec.begin(), vec.end());//从小到大排序之后，元素下标就是小于当前数字的数字
+        int hash[101];
+        for(int i = vec.size() - 1; i >= 0; i--){
+            hash[vec[i]] = i;
+        }
+        //此时哈希表里保存的每一个元素数值对应的小于这个数数值的个数
+        for(int i = 0; i < nums.size(); i++){
+            vec[i] = hash[nums[i]];
+        }
+        return vec;
+    }
+};
 ```
