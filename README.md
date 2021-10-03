@@ -59,3 +59,6 @@
 * [matlab速成](https://github.com/caixiongjiang/caixiongjiang/blob/main/matlab/README.md)🔥
 * [数学建模算法](https://github.com/caixiongjiang/caixiongjiang/blob/main/matlab/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95/README.md)🔥
 ### &emsp;[程序员应该访问的网站（star) ](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)🌱
+
+### &emsp;&nbsp;**小游戏** 😄
+* [Chinese-Chess](https://github.com/caixiongjiang/Chinese-Chess)
