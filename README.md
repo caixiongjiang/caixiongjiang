@@ -51,14 +51,17 @@
 
 
 ## &emsp;**我的开源项目：**
+---
 ### &emsp;&nbsp;**学习规划**🌱
 * [algorithms and data structures](https://github.com/caixiongjiang/caixiongjiang/tree/main/leetcode_java)🔥 ：leetcode复习攻略
 * [Java Foundation](https://github.com/caixiongjiang/caixiongjiang/tree/main/java__shangguigu)🔥 ：Java基础必备知识
 * [pat(c++)](https://github.com/caixiongjiang/caixiongjiang/tree/main/pat%EF%BC%88c%2B%2B%EF%BC%89)🔥 ：胡凡版算法笔记和上级实训题解，浙大pta网站刷题
-* [尚硅谷Java数据结构与java算法-经典问题及解法](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/README.md)🔥 ：经典数据结构算法
-* [matlab速成](https://github.com/caixiongjiang/caixiongjiang/blob/main/matlab/README.md)🔥 ：常用的matlab语法和结构
-* [数学建模算法](https://github.com/caixiongjiang/caixiongjiang/blob/main/matlab/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95/README.md)🔥 ：用于数学建模的算法的现成实例
-### &emsp;[程序员应该访问的网站（star) ](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)🌱
+* [Java_shangguigu](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/README.md)🔥 ：经典数据结构算法
+* [Matlab Express](https://github.com/caixiongjiang/caixiongjiang/blob/main/matlab/README.md)🔥 ：常用的matlab语法和结构
+* [Mathematical modeling algorithm](https://github.com/caixiongjiang/caixiongjiang/blob/main/matlab/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95/README.md)🔥 ：用于数学建模的算法的现成实例
 
 ### &emsp;&nbsp;**小游戏** 😄
 * [Chinese-Chess](https://github.com/caixiongjiang/Chinese-Chess)🔥 :纯手工Qt绘制的棋盘，实现人机，人人大战，入门小项目
+### &emsp;&nbsp;**兴趣模块** ⚡
+* [awesome](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)🔥 ：程序员应该访问的网站（star）
+* [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry#chinese-poetry-%E6%9C%80%E5%85%A8%E4%B8%AD%E6%96%87%E8%AF%97%E6%AD%8C%E5%8F%A4%E5%85%B8%E6%96%87%E9%9B%86%E6%95%B0%E6%8D%AE%E5%BA%93)🔥 : 最全中文诗歌古典文集数据库
