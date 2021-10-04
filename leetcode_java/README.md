@@ -206,4 +206,5 @@
 * [1365.有多少小于当前数字的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1365.md)
 * [941.有效的山脉数组(双指针)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode941.md)
 * [1207.独一无二的出现次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1207.md)
-* [283.独一无二的出现次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode283.md)【数组】【双指针】
+* [283.移动零](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode283.md)【数组】【双指针】
+* [189.旋转数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode189.md)
