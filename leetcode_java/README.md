@@ -204,3 +204,4 @@
 
 # 数组
 * [1365.有多少小于当前数字的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1365.md)
+* [941.有效的山脉数组(双指针)](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode941.md)
