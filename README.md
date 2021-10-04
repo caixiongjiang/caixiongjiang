@@ -50,7 +50,7 @@
 ![Jarson Github Stats](https://github-readme-stats.vercel.app/api?username=caixiongjiang&show_icons=true_color=fff&icon_color=0000FF&text_color=000000&bg_color=ffffff)
 
 
-## &emsp;**我的开源项目：**
+## My open source project :computer:
 ---
 ### &emsp;&nbsp;**学习规划**🌱
 * [algorithms and data structures](https://github.com/caixiongjiang/caixiongjiang/tree/main/leetcode_java)🔥 ：leetcode复习攻略
