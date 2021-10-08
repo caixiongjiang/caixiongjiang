@@ -55,3 +55,27 @@ public:
     }
 };
 ```
+
+## 优化：将辅助数组变成辅助树
+
+代码如下：
+```c++
+class Solution{
+public:
+    vector<int> sortArrayByParityII(vector<int>& nums){
+        vector<int> result(nums.size());
+        int evenIndex = 0; //偶数下标
+        int oddIndex = 1; //奇数下标
+        for(int i = 0; i < nums.size(); i++){
+            if(nums[i] % 2 == 0){
+                result[evenIndex] = nums[i];
+                evenIndex += 2;
+            }else{
+                result[oddIndex] = nums[i];
+                oddIndex += 2;
+            }
+        }
+        return result;
+    }
+};
+```
