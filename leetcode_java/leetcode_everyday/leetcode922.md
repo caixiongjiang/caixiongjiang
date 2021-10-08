@@ -56,7 +56,7 @@ public:
 };
 ```
 
-## 优化：将辅助数组变成辅助树
+## 方法二：将辅助数组变成辅助树
 
 代码如下：
 ```c++
@@ -76,6 +76,25 @@ public:
             }
         }
         return result;
+    }
+};
+```
+
+## 方法三:在原数组上修改
+
+代码如下：
+```c++
+class Solution {
+public:
+    vector<int> sortArrayByParityII(vector<int>& A) {
+        int oddIndex = 1;
+        for (int i = 0; i < A.size(); i += 2) {
+            if (A[i] % 2 == 1) { // 在偶数位遇到了奇数
+                while(A[oddIndex] % 2 != 0) oddIndex += 2; // 在奇数位找一个偶数
+                swap(A[i], A[oddIndex]); // 替换
+            }
+        }
+        return A;
     }
 };
 ```
