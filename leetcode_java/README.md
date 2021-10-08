@@ -209,4 +209,5 @@
 * [283.移动零](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode283.md)【数组】【双指针】
 * [189.旋转数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode189.md)
 * [724.寻找数组的中心下标](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode724.md)
-* [34.寻找数组的中心下标](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode34.md)【二分法】
+* [34.在排序数组中查找元素的第一个和最后一个位置](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode34.md)【二分法】
+* [922.按奇偶排序树组Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode922.md)
