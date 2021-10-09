@@ -1,20 +1,21 @@
 ## 关于单源最短路径（Dijistra算法)
 
 最短路径（DP的应用）
+
 单源最短路径，不允许出现负环
+
 核心思想：更新估算距离，松弛
-δ ( u , v ) ≤ δ ( u , x ) + δ ( x , v ) \delta(u, v) \leq \delta(u, x) + \delta(x, v)
-δ(u,v)≤δ(u,x)+δ(x,v)
+
+δ (u , v) ≤ δ (u , x) + δ (x , v) 
 
 时间复杂度与采用的数据结构有关，标准的dijkstra应该是用堆实现的。
-Array O(v 2 v^2v 
-2
- )
-Binary heap O(( V + E ) l g V (V+E)lgV(V+E)lgV)
-Fibonacci heap O(E + V l g V E+VlgVE+VlgV)
 
-如果对于所有的边权值均为1，那么Dijkstra算法可以用BFS实现
-使用FIFO队列代替Priority队列，其时间复杂度为O(V + E V+EV+E)
+* Array O( v^2 )
+* Binary heap O((V + E) lgV )
+* Fibonacci heap O(E + V lgV)
+
+**如果对于所有的边权值均为1，那么Dijkstra算法可以用BFS实现**
+**使用FIFO队列代替Priority队列，其时间复杂度为O(V + E)**
 
 **数组实现：**
 ```c++
