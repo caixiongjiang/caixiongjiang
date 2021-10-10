@@ -1,4 +1,4 @@
-## 编号5894：至少在两个数组中出现的值
+## 编号5894：至少在两个数组中出现的值(AC)
 
 给你三个整数数组 nums1、nums2 和 nums3 ，请你构造并返回一个 不同 数组，且由 至少 在 两个 数组中出现的所有值组成。数组中的元素可以按 任意 顺序排列。
  
@@ -36,7 +36,7 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ---
-## 我提交的代码
+## 我的题解
 
 ```c++
 class Solution {
@@ -70,3 +70,24 @@ public:
 };
 ```
 ## 思路
+
+整体思路就是通过哈希数组或者HashMap进行数组的统计，如果满足两个数组同一位置的个数大于等于2就将它压入目标数组。
+
+这里提供一个HashMap的版本：
+```c++
+class Solution {
+    public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
+        HashSet <Integer> set1 = new HashSet(), set2 = new HashSet(), set3 = new HashSet();
+        for(int i : nums1) set1.add(i);
+        for(int i : nums2) set2.add(i);
+        for(int i : nums3) set3.add(i);
+        HashMap <Integer, Integer> map = new HashMap();
+        for(int i : set1) map.put(i, map.getOrDefault(i, 0) + 1);
+        for(int i : set2) map.put(i, map.getOrDefault(i, 0) + 1);
+        for(int i : set3) map.put(i, map.getOrDefault(i, 0) + 1);
+        ArrayList <Integer> res = new ArrayList();
+        for(int i : map.keySet()) if(map.get(i) >= 2) res.add(i);
+        return res;
+    }
+}
+```
