@@ -52,20 +52,20 @@ k 个数字的 平均值 为这些数字求和后再除以 k 。
 暴力解法：
 ```c++
 class Solution {
-public:
-    //寻找丢失数据(平均分配问题)
-vector<int> missingRolls(vector<int>& rolls, int mean, int n) {
-	vector<int>res;
-	int sum_rolls = 0;
-	int m = rolls.size();
-	for (int i = 0; i < m; i++) {
-		sum_rolls += rolls[i];
-	}
-	int sum = mean * (m + n) - sum_rolls;
-	if (sum > n * 6 || sum < n) return res;
-	res.insert(res.begin(), n - sum % n, sum / n);
-    res.insert(res.end(), sum % n, sum / n + 1);
-	return res;
-}
+    public:
+        //寻找丢失数据(平均分配问题)
+        vector<int> missingRolls(vector<int>& rolls, int mean, int n) {
+        vector<int>res;
+        int sum_rolls = 0;
+        int m = rolls.size();
+        for(int i = 0; i < m; i++){
+            sum_rolls += rolls[i];
+        }
+        int sum = mean * (m + n) - sum_rolls;
+        if (sum > n * 6 || sum < n) return res;
+        res.insert(res.begin(), n - sum % n, sum / n);
+        res.insert(res.end(), sum % n, sum / n + 1);
+        return res;
+    }
 };
 ```
