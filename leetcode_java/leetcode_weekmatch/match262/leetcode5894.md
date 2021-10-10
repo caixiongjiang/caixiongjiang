@@ -36,4 +36,37 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ---
+## 我提交的代码
+
+```c++
+class Solution {
+public:
+    vector<int> twoOutOfThree(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3) {
+        int size = 100;
+        int j = 0;
+        vector<int> ret;
+        int hash1[101]{};
+        int hash2[101]{};
+        int hash3[101]{};
+        for(int i = nums1.size() - 1; i >= 0; i--){
+            hash1[nums1[i]]++;
+        }
+        
+        for(int i = nums2.size() - 1; i >= 0; i--){
+            hash2[nums2[i]]++;
+        }
+        
+        for(int i = nums3.size() - 1; i >= 0; i--){
+            hash3[nums3[i]]++;
+        }
+        
+        for(int i = 0; i <= size; i++){
+            if((hash1[i] > 0 && hash2[i] > 0) ||(hash1[i] > 0 && hash3[i] > 0) || (hash2[i] > 0 && hash3[i] > 0)){
+                ret.push_back(i);
+            }
+        }
+        return ret;
+    }
+};
+```
 ## 思路
