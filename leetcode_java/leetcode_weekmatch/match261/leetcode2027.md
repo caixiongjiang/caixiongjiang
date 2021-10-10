@@ -34,9 +34,8 @@
 * 3 <= s.length <= 1000
 * s[i] 为 'X' 或 'O'
 
-
 来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/contest/weekly-contest-261/problems/minimum-moves-to-convert-string/
+链接：https://leetcode-cn.com/problems/minimum-moves-to-convert-string
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ---
