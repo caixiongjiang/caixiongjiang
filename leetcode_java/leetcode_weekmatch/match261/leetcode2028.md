@@ -1,4 +1,4 @@
-## 编号2028：找出缺失的观测数据
+## 编号2028：找出缺失的观测数据(AC)
 
 现有一份 n + m 次投掷单个 六面 骰子的观测数据，骰子的每个面从 1 到 6 编号。观测数据中缺失了 n 份，你手上只拿到剩余 m 次投掷的数据。幸好你有之前计算过的这 n + m 次投掷数据的 平均值 。
 
@@ -48,3 +48,24 @@ k 个数字的 平均值 为这些数字求和后再除以 k 。
 
 ---
 ## 思路
+
+暴力解法：
+```c++
+class Solution {
+public:
+    //寻找丢失数据(平均分配问题)
+vector<int> missingRolls(vector<int>& rolls, int mean, int n) {
+	vector<int>res;
+	int sum_rolls = 0;
+	int m = rolls.size();
+	for (int i = 0; i < m; i++) {
+		sum_rolls += rolls[i];
+	}
+	int sum = mean * (m + n) - sum_rolls;
+	if (sum > n * 6 || sum < n) return res;
+	res.insert(res.begin(), n - sum % n, sum / n);
+    res.insert(res.end(), sum % n, sum / n + 1);
+	return res;
+}
+};
+```
