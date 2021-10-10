@@ -1,4 +1,4 @@
-## 编号5896：股票价格波动
+## 编号5896：股票价格波动(×)
 
 给你一支股票价格的数据流。数据流中每一条记录包含一个 时间戳 和该时间点股票对应的 价格 。
 
@@ -51,3 +51,59 @@ stockPrice.minimum();     // 返回 2 ，最低价格时间戳为 4 ，价格为
 
 ---
 ## 思路
+
+一道比较基础的数据结构题。我们需要观察题目的条件，来选择合适的数据结构存储信息。
+
+我们需要的信息有：
+
+* 每个时间戳对应的价格
+* 当前的最晚时间戳
+* 当前的最低价格
+* 当前的最高价格
+**记录时间戳对应的价格，自然想到用一个map或unordered_map，同时因为要求最晚时间，所以考虑使用有序数据结构map。**
+
+**记录最低和最高价格，考虑使用有序数据结构set，但这里可能出现重复的价格，所以使用multiset。**当然，也可以使用map来维护每个价格出现的次数。
+
+* 各操作时间复杂度均为O(logN)。
+* 空间复杂度O(N)。
+
+整体代码如下：
+```c++
+class StockPrice {
+    multiset<int> prices;
+    map<int, int> history;
+    
+public:
+    StockPrice() {}
+    
+    void update(int timestamp, int price) {
+        if (history.count(timestamp))//此函数对具有特定键的元素进行计数，如果包含键的元素存在，则返回1，如果容器中不存在具有键的元素，则返回0。
+            prices.erase(prices.find(history[timestamp]));//erase方法用来从一个map中删除掉指定的节点
+        history[timestamp] = price;
+        prices.insert(price);
+    }
+    
+    int current() {
+        return history.rbegin()->second;//rbegin()返回一个指向map尾部的逆向迭代器
+    }
+    
+    int maximum() {
+        return *prices.rbegin();
+    }
+    
+    int minimum() {
+        return *prices.begin();//指向map头部
+    }
+};
+
+
+
+/**
+ * Your StockPrice object will be instantiated and called as such:
+ * StockPrice* obj = new StockPrice();
+ * obj->update(timestamp,price);
+ * int param_2 = obj->current();
+ * int param_3 = obj->maximum();
+ * int param_4 = obj->minimum();
+ */
+```
