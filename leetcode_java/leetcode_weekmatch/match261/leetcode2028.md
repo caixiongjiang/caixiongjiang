@@ -63,8 +63,8 @@ class Solution {
         }
         int sum = mean * (m + n) - sum_rolls;
         if (sum > n * 6 || sum < n) return res;
-        res.insert(res.begin(), n - sum % n, sum / n);
-        res.insert(res.end(), sum % n, sum / n + 1);
+        res.insert(res.begin(), n - sum % n, sum / n);//插入(n-sum % n)个(sum/n)
+        res.insert(res.end(), sum % n, sum / n + 1);//插入(sum % n)个(sum/n + 1)
         return res;
     }
 };
