@@ -42,3 +42,54 @@
 
 ---
 ## 思路
+
+这道题目一看以为是哈希，仔细一看不行，要有顺序。
+
+所以模拟同时遍历两个数组，进行对比就可以了。
+
+对比的时候需要一下几点：
+
+* name[i] 和 typed[j]相同，则i++，j++ （继续向后对比）
+* name[i] 和 typed[j]不相同
+</br>&emsp;看是不是第一位就不相同了，也就是j如果等于0，那么直接返回false
+</br>&emsp;不是第一位不相同，就让j跨越重复项，移动到重复项之后的位置，再次比较name[i] 和typed[j]
+</br>&emsp;&emsp;如果 name[i] 和 typed[j]相同，则i++，j++ （继续向后对比）
+</br>&emsp;&emsp;不相同，返回false
+* 对比完之后有两种情况
+</br>&emsp;name没有匹配完，例如name:"pyplrzzzzdsfa" type:"ppyypllr"
+</br>&emsp;type没有匹配完，例如name:"alex" type:"alexxrrrrssda"
+动画如下：
+
+![avater](https://camo.githubusercontent.com/443ed030b0d1046bc3a1fa2d25a929aa0c259ada607b9d11adfac78f8c0f93aa/68747470733a2f2f636f64652d7468696e6b696e672e63646e2e626365626f732e636f6d2f676966732f3932352ee995bfe68c89e994aee585a52e676966)
+
+整体c++代码如下：
+```c++
+class Solution {
+public:
+    bool isLongPressedName(string name, string typed) {
+        int i = 0, j = 0;
+        while (i < name.size() && j < typed.size()) {
+            if (name[i] == typed[j]) { // 相同则同时向后匹配
+                j++; i++;
+            } else { // 不相同
+                if (j == 0) return false; // 如果是第一位就不相同直接返回false
+                // j跨越重复项，向后移动，同时防止j越界
+                while(j < typed.size() && typed[j] == typed[j - 1]) j++;
+                if (name[i] == typed[j]) { // j跨越重复项之后再次和name[i]匹配
+                    j++; i++; // 相同则同时向后匹配
+                }
+                else return false;
+            }
+        }
+        // 说明name没有匹配完，例如 name:"pyplrzzzzdsfa" type:"ppyypllr"
+        if (i < name.size()) return false;
+
+        // 说明type没有匹配完，例如 name:"alex" type:"alexxrrrrssda"
+        while (j < typed.size()) {
+            if (typed[j] == typed[j - 1]) j++;
+            else return false;
+        }
+        return true;
+    }
+};
+```
