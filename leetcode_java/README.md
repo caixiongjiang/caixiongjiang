@@ -221,3 +221,9 @@
 * [234.回文链表](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode234.md)
 * [143.重排列表](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode143.md)
 * [141.环形链表](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode141.md)
+
+# 哈希表
+* [205.同构字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode205.md)【哈希表的应用】
+
+# 字符串
+* [925.长按键入](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode925.md)【模拟匹配】
