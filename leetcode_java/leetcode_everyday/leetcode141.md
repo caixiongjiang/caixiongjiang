@@ -77,16 +77,24 @@ fast和slow各自再走一步， fast和slow就相遇了
 
 整体代码如下：
 ```c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
         ListNode* fast = head;
         ListNode* slow = head;
-        while(fast != NULL && fast->next != NULL) {
+        while(fast != NULL && fast->next != NULL){
             slow = slow->next;
             fast = fast->next->next;
-            // 快慢指针相遇，说明有环
-            if (slow == fast) return true;
+            //快慢指针相遇，说明有环
+            if(slow == fast) return true;
         }
         return false;
     }
