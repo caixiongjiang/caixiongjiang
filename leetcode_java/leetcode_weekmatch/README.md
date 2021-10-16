@@ -13,3 +13,7 @@
 * (!)[5897：将数组分为两个数组并最小化数组和的差](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode5897.md)
 
 # 双周赛
+* [5885：使每位学生都有座位的最少移动次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode5885.md)
+* [5886：如果相邻两个颜色均相同则删除当前颜色](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode5886.md)
+* [5887：网络空闲的时刻](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode5887.md)
+* [5888：两个有序数组的第 K 小乘积](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode5888.md)
