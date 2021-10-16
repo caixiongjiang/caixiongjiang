@@ -227,4 +227,7 @@
 
 # 字符串
 * [925.长按键入](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode925.md)【模拟匹配】
-* [844.比较含退格的字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode844.md)
+* [844.比较含退格的字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode844.md)【栈模拟】【空间更优的双指针】
+
+# 二叉树
+* [129.求根到叶子节点数字之和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode129.md)
