@@ -49,7 +49,9 @@
 * 1 <= n <= 100
 * 1 <= seats[i], students[j] <= 100
 
-题目链接：https://leetcode-cn.com/contest/biweekly-contest-63/problems/minimum-number-of-moves-to-seat-everyone/
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/minimum-number-of-moves-to-seat-everyone
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ## 思路
 
