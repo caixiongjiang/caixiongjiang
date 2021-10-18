@@ -60,7 +60,7 @@ ABBBBBBBAA -> ABBBBBBAA
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ---
-## 方法一
+## 思路
 
 方法一的思路非常简单。如果Alice要进行删除操作，必须找到连续的三个"A"才行，而Bob要进行删除，必须找到连续的三个"B"。而Alice先手，所以必须能找到"AAA"的个数比"BBB"的个数多Alice才能赢，所以直接上代码。（不过此方法的时间效率较低）
 
@@ -84,5 +84,26 @@ public:
 };
 ```
 
-## 方法二
+```c++
+//写法2
+class Solution {
+public:
+    bool winnerOfGame(string colors) {
+        int n = colors.size();
+        if(n<=2) return false;
+        int A = 0;
+        int B = 0;
+        for(int i=1;i<n-1;i++){
+            if(colors[i]=='A'&&colors[i-1]=='A'&&colors[i+1]=='A'){
+                A++;
+            }
+            else if(colors[i]=='B'&&colors[i-1]=='B'&&colors[i+1]=='B'){
+                B++;
+            }
+        }
+        if(A>B) return true;
+        else return false;
+    }
+};
+```
 
