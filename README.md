@@ -65,3 +65,4 @@
 ### &emsp;&nbsp;**兴趣模块** ⚡
 * [awesome](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)🔥 ：程序员应该访问的网站（star）
 * [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry#chinese-poetry-%E6%9C%80%E5%85%A8%E4%B8%AD%E6%96%87%E8%AF%97%E6%AD%8C%E5%8F%A4%E5%85%B8%E6%96%87%E9%9B%86%E6%95%B0%E6%8D%AE%E5%BA%93)🔥 : 最全中文诗歌古典文集数据库
+* [ChineseBqB](https://github.com/zhaoolee/ChineseBQB)🔥 : 最全中国表情包大合集（假笑男孩）
