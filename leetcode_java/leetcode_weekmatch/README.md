@@ -7,15 +7,15 @@
 * [2030：含特定字母的最小子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match261/leetcode2030.md)
 
 ## match262
-* [5894：至少在两个数组中出现的值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode5894.md)
-* [5895：获取单值网格的最小操作数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode5895.md)
-* [5896：股票价格波动](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode5896.md)
-* (!)[5897：将数组分为两个数组并最小化数组和的差](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode5897.md)
+* [2032：至少在两个数组中出现的值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode2032.md)
+* [2033：获取单值网格的最小操作数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode2033.md)
+* [2034：股票价格波动](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode2034.md)
+* (!)[2035：将数组分为两个数组并最小化数组和的差](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode2035.md)
 
 # 双周赛
 
 ## matchⅡ63
-* [5885：使每位学生都有座位的最少移动次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode5885.md)
-* [5886：如果相邻两个颜色均相同则删除当前颜色](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode5886.md)
-* [5888：网络空闲的时刻](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode5888.md)
-* [5887：两个有序数组的第 K 小乘积](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode5887.md)
+* [2037：使每位学生都有座位的最少移动次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode2037.md)
+* [2038：如果相邻两个颜色均相同则删除当前颜色](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode2038.md)
+* [2039：网络空闲的时刻](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode2039.md)
+* [2040：两个有序数组的第 K 小乘积](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode2040.md)
