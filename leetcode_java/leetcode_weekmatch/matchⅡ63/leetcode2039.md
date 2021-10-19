@@ -98,6 +98,7 @@ public:
         
         // 记录哪些服务器已被扩展
         vector<bool> vis(n);
+        //pair是C++中一种模板类型。每个pair对象可以存储两个值，这两个值可以是不同的数据类型。存储的值可以是基本数据类型也可以是自定义数据类型。
         queue<pair<int, int>> q;
         q.emplace(0, 0);
         vis[0] = true;
