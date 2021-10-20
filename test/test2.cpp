@@ -2,45 +2,70 @@
 
 using namespace std;
 
-//常函数
-class Person{
+//加号运算符重载
+
+class Person
+{
 public:
-	//this指针的本质是指针常量，指针的指向是不可以修改的
-	//此处的const表示this指针指向的值也不可以修改
-	void showPerson() const {
-		//this->m_A = 100; 指针指向的值不可以修改
-		//this = NULL; this指针不可以修改指针的指向	
-		m_B = 100;
+	//1.成员函数重载“+”
+	Person operator+(Person& p)
+	{
+		Person temp;
+		temp.m_A = this->m_A + p.m_A;
+		temp.m_B = this->m_B + p.m_B;
+		return temp;
 	}
-	void func() {
-	}
-	
-	//特殊变量，即在常函数中也可以修改这个值，加上mutable关键字
-	mutable int m_B; 
 	int m_A;
+	int m_B;
 };
 
-void test01() {
-	Person p;
-	p.showPerson();
+//2.全局函数重载“+”
+//Person operator+(Person& p1, Person& p2)
+//{
+//	Person temp;
+//	temp.m_A = p1.m_A + p2.m_A;
+//	temp.m_B = p1.m_B + p2.m_B;
+//	return temp;
+//}
+
+//函数重载的版本
+Person operator+(Person& p1, int num)
+{
+	Person temp;
+	temp.m_A = p1.m_A + num;
+	temp.m_B = p1.m_B + num;
+	return temp;
 }
 
-//常对象
-void test02() {
-	const Person p;//在对象前加上const称为常对象
-	//p.m_A = 100;
-	p.m_B = 1000;//m_B是特殊值，在常对象下也可以修改
+void test01()
+{
+	Person p1;
+	p1.m_A = 10;
+	p1.m_B = 10;
+	Person p2;
+	p2.m_A = 10;
+	p2.m_B = 10;
 
-	//常对象只能调用常函数
-	p.showPerson();
-	//p.func(); 
-	//常对象不可以调用普通成员函数，因为普通成员函数可以修改属性
-	cout << "m_B = " << p.m_B << endl;
+	//成员函数重载本质调用
+	//Person p3 = p1.operator+(p2);
+	
+	//全局函数重载本质调用
+	//Person p3 = operator+(p1, p2);
+	
+	Person p3 = p1 + p2;
+	//运算符重载也可以发生函数重载
+	Person p4 = p1 + 100;//Person + int
+
+	cout << "p3.m_A = " << p3.m_A << endl;
+	cout << "p3.m_B = " << p3.m_B << endl;
+	cout << "p4.m_A = " << p4.m_A << endl;
+	cout << "p4.m_B = " << p4.m_B << endl;
 }
 
 int main() {
 	test01();
-	test02();
+
+
 	system("pause");
 	return 0;
 }
