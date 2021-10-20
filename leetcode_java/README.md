@@ -231,3 +231,8 @@
 
 # 二叉树
 * [129.求根到叶子节点数字之和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode129.md)
+* [1382.将二叉搜索树变平衡](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1382.md)
+
+# 二分查找
+* [668.乘法表中的第k小的数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode668.md)【值作为边界】
+
