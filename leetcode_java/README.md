@@ -235,4 +235,5 @@
 
 # 二分查找
 * [668.乘法表中的第k小的数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode668.md)【值作为边界】
+* [719.找出第k小的距离对](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode719.md)【距离作为边界】
 
