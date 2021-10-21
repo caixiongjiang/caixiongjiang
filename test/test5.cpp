@@ -2,41 +2,52 @@
 
 using namespace std;
 
-class Person {
-public:
-	Person(int age) {
-		//this指针指向被调用的成员函数所属的对象
-		//（谁调用这个函数就指向谁）
-		this->age = age;
-	}
+//重载递减运算符
 
-	Person&	PersonAddAge(Person& p) {
-		this->age += p.age;
-		//this是指向p2的指针，而*this指向的就是p2这个对选哪个本体
+//自定义整型
+class Myinteger {
+	friend ostream& operator<<(ostream& cout, Myinteger myint);
+public:
+	Myinteger() {
+		m_Num = 3;
+	}
+	//重载前置--运算符  返回引用为了一直对一个数据进行递减操作
+	Myinteger& operator--() {
+		//先进行--的运算，再将自身做返回
+		m_Num--;
 		return *this;
 	}
-
-	int age;
+	//重载前置--运算符  返回值
+	Myinteger operator--(int) {
+		//先记录当时的结果
+		Myinteger temp = *this;
+		//后递增
+		m_Num--;
+		//最后将记录结果返回
+		return temp;
+	}
+private:
+	int m_Num;
 };
 
-//1.解决名称冲突
-void test01() {
-	Person p1(18);
-	cout << "p1的年龄为：" << p1.age << endl; 
+ostream& operator<<(ostream& cout, Myinteger myint) {
+	cout << myint.m_Num;
+	return cout;
 }
 
-//2.返回对象本身用*this
+void test01() {
+	Myinteger myint;
+	cout << --(--myint) << endl;
+	cout << myint << endl;
+}
 
 void test02() {
-	Person p1(10);
-	Person p2(10);
-	//链式编程思想
-	p2.PersonAddAge(p1).PersonAddAge(p1).PersonAddAge(p1);
-	cout << "p2的年龄为： " << p2.age << endl;
+	Myinteger myint;
+	cout << myint-- << endl;
+	cout << myint << endl;
 }
 
 int main() {
-
 	test01();
 	test02();
 	system("pause");
