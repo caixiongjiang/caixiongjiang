@@ -1,55 +1,44 @@
 #include<iostream>
-#include<string>
 
 using namespace std;
 
-//类对象作为类成员
+//左移运算符重载
 
-//手机类
-class Phone {
+class Person {
+	friend ostream& operator<<(ostream& cout, Person& p);
 public:
-	Phone(string pName) {
-		cout << "Phone的构造函数调用" << endl;
-		m_PName = pName;
+	Person(int a, int b) {
+		m_A = a;
+		m_B = b;
 	}
+private:
+	//利用成员函数来重载左移运算符 p.operator(cout) 简化版本 p << cout
+	//不会利用成员函数重载<< 运算符，因为无法实现cout在左侧
+	//void operator << (cout) {
+	//
+	//}
 
-	~Phone() {
-		cout << "Phone的析构函数调用" << endl;
-	}
-
-	//手机品牌的名称
-	string m_PName;
+	int m_A;
+	int m_B;
 };
 
-//人类
-class	 Person {
-public:
-	//Phone m_Phone = pName;   隐式转化法
-	Person(string name, string pName) : m_Name(name), m_Phone(pName){
-		cout << "Person的构造函数调用" << endl;
-	}
-
-	~Person(){
-		cout << "Person的析构函数调用" << endl;
-	}
-
-	//姓名
-	string m_Name;
-	//手机
-	Phone m_Phone;
-};
-
-//当其他的类的对象作为本类的成员，构造时候先构造类对象，再构造自身。（先构造腿才能去构造身体）
-//析构的顺序与构造相反（先把身体拆了才能拆腿）
-
-void test01() {
-	Person p("张三", "苹果MAX");
-	cout << p.m_Name << "拿着：" << p.m_Phone.m_PName << endl;
+//只能利用全局函数来实现重载左移运算符
+ostream & operator<<(ostream &cout ,Person &p) {		//本质  operator<<(cout, p)    简化 cout << p
+	cout << "m_A =" << p.m_A << "  m_B =" << p.m_B;
+	return cout;
 }
 
+void test01() {
+	Person p(10, 10);
+	//p.m_A = 10;
+	//p.m_B = 10;
+
+	cout << p <<"  Hello World!" <<endl;
+}
 
 int main() {
 	test01();
+
 	system("pause");
 	return 0;
 }
