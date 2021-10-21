@@ -2,42 +2,59 @@
 
 using namespace std;
 
-//静态成员函数
-//所有对象共享同一个函数
-//静态成员函数只能访问静态成员变量
+//重载递增运算符
 
-class Person {
+//自定义整型
+class MyInteger
+{
+friend ostream& operator<<(ostream& cout, MyInteger myint);
 public:
-	//静态成员函数
-	static void func() {
-		m_A = 100;//静态成员函数可以访问静态成员变量
-		//m_B = 200;  静态成员函数不可以访问非静态成员变量
-		cout << "static void func调用" << endl;
+	MyInteger() {
+		m_Num = 0;
 	}
-
-	static int m_A;//静态成员变量
-	int m_B;
-
-	//静态成员函数也是有访问权限的
+	
+	//重载前置++运算符    返回引用为了一直对一个数据进行递增操作
+	MyInteger& operator++() {
+		//先进行++的运算，再将自身做一个返回
+		m_Num++;
+		return *this; 
+	}
+	//重载后置++运算符
+	//MyInteger& operator++(int)   int代表占位参数，可以用于区分前置和后置递增
+	MyInteger operator++(int) {
+		//先记录当时的结果
+		MyInteger temp = *this;
+		//后递增
+		m_Num++;
+		//最后将记录结果做返回
+		return temp;
+	}
 private:
-	static void func2() {
-		cout << "static void func2调用" << endl;
-	}
+	int m_Num;
 };
 
-int Person::m_A = 0;
+//重载<<运算符
+ostream& operator<<(ostream& cout, MyInteger myint) {
+	cout << myint.m_Num;
+	return cout;
+}
+
 
 void test01() {
-	//1.通过对象访问
-	Person p;
-	p.func();
-	//2.通过类名访问
-	Person::func();
-	//Person::func2(); 类外访问不到私有静态成员函数
+	MyInteger myint;
+	cout << ++(++myint) << endl;
+	cout << myint << endl;
+}
+
+void test02() {
+	MyInteger myint;
+	cout << myint++ << endl;
+	cout << myint << endl;
 }
 
 int main() {
 	test01();
+	test02();
 	system("pause");
 	return 0;
 }
