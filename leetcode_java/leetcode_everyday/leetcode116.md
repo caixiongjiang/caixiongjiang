@@ -40,11 +40,53 @@ struct Node {
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ---
+## 思路
+
+注意题目提示内容，：
+
+* 你只能使用常量级额外空间。
+* 使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。
+
+基本上就是要求使用递归了，迭代的方式一定会用到栈或者队列。
+
 ## 递归
 
-整体代码如下：
-```c++
+一想用递归怎么做呢，虽然层序遍历是最直观的，但是递归的方式确实不好想。
 
+如图，假如当前操作的节点是cur：
+![avater](https://camo.githubusercontent.com/3b60f368fe9d0d491e635976ea10aa5f1820c6a625f4e18c7518b1a26dd89c5d/68747470733a2f2f636f64652d7468696e6b696e672e63646e2e626365626f732e636f6d2f706963732f3131362ee5a1abe58585e6af8fe4b8aae88a82e782b9e79a84e4b88be4b880e4b8aae58fb3e4bea7e88a82e782b9e68c87e99288312e706e67)
+
+图中cur节点为元素4，那么搭线的逻辑代码：(**注意注释中操作1和操作2和图中的对应关系**）
+```c++
+if (cur->left) cur->left->next = cur->right; // 操作1
+if (cur->right) {
+    if (cur->next) cur->right->next = cur->next->left; // 操作2
+    else cur->right->next = NULL;
+}
+```
+
+使用前序遍历，整体代码如下：
+
+```c++
+class Solution {
+private:
+    void traversal(Node* cur) {
+        if (cur == NULL) return;
+                                // 中
+        if (cur->left) cur->left->next = cur->right; // 操作1
+        if (cur->right) {
+            if (cur->next) cur->right->next = cur->next->left; // 操作2
+            else cur->right->next = NULL;
+        }
+        traversal(cur->left);   // 左
+        traversal(cur->right);  // 右
+    }
+public:
+    Node* connect(Node* root) {
+        traversal(root);
+        return root;
+    }
+};
 ```
 
 ## 迭代（层序遍历）
@@ -100,9 +142,24 @@ public:
 };
 ```
 
-
 ```c++
-//写法二
+/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    Node* left;
+    Node* right;
+    Node* next;
+
+    Node() : val(0), left(NULL), right(NULL), next(NULL) {}
+
+    Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) {}
+
+    Node(int _val, Node* _left, Node* _right, Node* _next)
+        : val(_val), left(_left), right(_right), next(_next) {}
+};
+*/
 class Solution {
 public:
     Node* connect(Node* root) {
