@@ -1,3 +1,7 @@
+**本仓库代码攻略均在代码随想录的基础上写的**
+转载自[代码随想录主页](https://github.com/youngyangyang04/leetcode-master)
+仅用于个人学习
+
 * 🌱[vim命令使用指南，让你摆脱鼠标敲代码](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/vim/vim%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
  
 * 🌱[力扣周赛+双周赛](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/README.md)
