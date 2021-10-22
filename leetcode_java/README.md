@@ -244,3 +244,4 @@
 
 # 贪心算法
 * [649.Dota2参议院](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode649.md)
+* [1221.分割平衡字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1221.md)
