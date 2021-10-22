@@ -240,8 +240,14 @@
 * [719.找出第k小的距离对](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode719.md)【距离作为边界】
 
 # 回溯算法
-* [52.N皇后Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode52.md)
+* [52.N皇后Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode52.md)【有难度】
 
 # 贪心算法
-* [649.Dota2参议院](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode649.md)
+* [649.Dota2参议院](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode649.md)【有难度】
 * [1221.分割平衡字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1221.md)
+
+# 动态规划
+* [5.最长回文子串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode05.md)
+
+
+
