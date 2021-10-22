@@ -241,3 +241,6 @@
 
 # 回溯算法
 * [52.N皇后Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode52.md)
+
+# 贪心算法
+* [649.Dota2参议院](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode649.md)
