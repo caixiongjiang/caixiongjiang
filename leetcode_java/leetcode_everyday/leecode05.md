@@ -60,7 +60,8 @@
 
 * 情况一：下标i 与 j相同，同一个字符例如a，当然是回文子串
 * 情况二：下标i 与 j相差为1，例如aa，也是文子串
-* 情况三：下标：i 与 j相差大于1的时候，例如cabac，此时s[i]与s[j]已经相同了，我们看i到j区间是不是回文子串就看aba是不是回文就可以了，那么aba的区间就是 i+1 与 j-1区间，这个区间是不是回文就看dp[i + 1][j - 1]是否为true。
+* 情况三：下标：i 与 j相差大于1的时候，例如cabac，此时s[i]与s[j]已经相同了，我们看i到j区间是不是回文子串就看aba是不是回文就可以了，<span style="color:yellow">那么aba的区间就是 i+1 与 j-1区间，这个区间是不是回文就看dp[i + 1][j - 1]是否为true。</span>
+
 以上三种情况分析完了，那么递归公式如下：
 ```c++
 if (s[i] == s[j]) {
@@ -194,6 +195,49 @@ public:
             }
         }
         return s.substr(left, maxlenth);
+    }
+};
+```
+
+## 双指针
+
+动态规划的空间复杂度是偏高的，我们再看一下双指针法。
+
+首先确定回文串，就是找中心然后想两边扩散看是不是对称的就可以了。
+
+在遍历中心点的时候，要注意中心点有两种情况。
+
+一个元素可以作为中心点，两个元素也可以作为中心点。
+
+那么有人同学问了，三个元素还可以做中心点呢。其实三个元素就可以由一个元素左右添加元素得到，四个元素则可以由两个元素左右添加元素得到。
+
+所以我们在计算的时候，要注意一个元素为中心点和两个元素为中心点的情况。
+
+这两种情况可以放在一起计算，但分别计算思路更清晰，我倾向于分别计算，代码如下：
+```c++
+class Solution {
+public:
+    int left = 0;
+    int right = 0;
+    int maxLength = 0;
+    string longestPalindrome(string s) {
+        int result = 0;
+        for (int i = 0; i < s.size(); i++) {
+            extend(s, i, i, s.size()); // 以i为中心
+            extend(s, i, i + 1, s.size()); // 以i和i+1为中心
+        }
+        return s.substr(left, maxLength);
+    }
+    void extend(const string& s, int i, int j, int n) {
+        while (i >= 0 && j < n && s[i] == s[j]) {
+            if (j - i + 1 > maxLength) {
+                left = i;
+                right = j;
+                maxLength = j - i + 1;
+            }
+            i--;
+            j++;
+        }
     }
 };
 ```
