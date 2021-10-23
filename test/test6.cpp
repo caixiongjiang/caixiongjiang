@@ -1,47 +1,62 @@
 #include<iostream>
-#include<string>
 
 using namespace std;
 
-class Person
-{
+//赋值运算符重载
+
+class Person {
 public:
-	//写姓名
-	void setName(string name) {
-		m_Name = name;
-	}
-	//获取姓名
-	string getName() {
-		return m_Name;
-	}
-	//获取年龄 只读
-	int getAge() {
-		m_Age = 23;//初始化为0岁
-		return m_Age;
-	}
-	//设置情人 只写
-	void setLover(string lover) {
-		m_Lover = lover;
+	Person(int age) {
+		m_Age =	new int(age);
 	}
 
-private:
-	//姓名 可读可写
-	string m_Name;
-	//年龄 只读
-	int m_Age;
-	//情人 只写
-	string m_Lover;
+	~Person() {
+		if (m_Age != NULL) {
+			delete m_Age;
+			m_Age = NULL;
+		}
+	}
+
+	//重载赋值运算符
+	 Person& operator=(Person& p) {
+		//编译器提供的是浅拷贝
+		//m_Age = p.m_Age;
+
+		//应该先判断是否有属性在堆区，如果有，先释放干净，然后再深拷贝
+		if (m_Age != NULL) {
+			delete m_Age;
+			m_Age = NULL;
+		}
+		//深拷贝
+		m_Age = new int(*p.m_Age); 
+
+		//返回对象本身
+		return *this;
+	}
+
+	int *m_Age;
 };
 
+void test01() {
+	Person p1(18);
+	Person p2(20);
+	Person p3(30);
+
+	p3 = p2 = p1;	//赋值操作
+	cout << "p1的年龄为：" << *p1.m_Age << endl;
+	cout << "p2的年龄为：" << *p2.m_Age << endl;
+	cout << "p3的年龄为：" << *p3.m_Age << endl;
+}
+
 int main() {
-
-	Person p;
-	p.setName("张三");
-	cout << "姓名为：" << p.getName() << endl;
-	cout << "年龄为：" << p.getAge() << endl;
-	//设置情人为LISA，但不能获取到这个数据
-	p.setLover("LISA");
-
+	test01();
+	//int a = 10;
+	//int b = 20;
+	//int c = 30;
+	//c = b = a;
+	//cout << "a = " << a  << endl;
+	//cout << "b = " << b << endl;
+	//cout << "c = " << c  << endl;
 	system("pause");
 	return 0;
 }
