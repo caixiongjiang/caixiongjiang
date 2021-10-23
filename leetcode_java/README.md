@@ -253,6 +253,6 @@
 # 动态规划
 * [5.最长回文子串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode05.md)
 * [132.分割回文串Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode132.md)【有难度，在[前一题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode05.md)的基础上写】
-
+* [673.最长递增子序列的个数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode673.md)【难度较大】
 
 
