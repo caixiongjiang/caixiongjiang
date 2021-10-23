@@ -1,71 +1,52 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 
-//加号运算符重载
+//函数调用运算符重载
 
-class Person
-{
+//打印输出类
+class MyPrint {
 public:
-	//1.成员函数重载“+”
-	Person operator+(Person& p)
-	{
-		Person temp;
-		temp.m_A = this->m_A + p.m_A;
-		temp.m_B = this->m_B + p.m_B;
-		return temp;
+	//重载函数调用运算符
+	void operator()(string test) {
+		cout << test << endl;
 	}
-	int m_A;
-	int m_B;
+
 };
 
-//2.全局函数重载“+”
-//Person operator+(Person& p1, Person& p2)
-//{
-//	Person temp;
-//	temp.m_A = p1.m_A + p2.m_A;
-//	temp.m_B = p1.m_B + p2.m_B;
-//	return temp;
-//}
-
-//函数重载的版本
-Person operator+(Person& p1, int num)
-{
-	Person temp;
-	temp.m_A = p1.m_A + num;
-	temp.m_B = p1.m_B + num;
-	return temp;
+void MyPrint02(string test) {
+	cout << test << endl;
 }
 
-void test01()
-{
-	Person p1;
-	p1.m_A = 10;
-	p1.m_B = 10;
-	Person p2;
-	p2.m_A = 10;
-	p2.m_B = 10;
+void test01() {
+	MyPrint myPrint;
+	myPrint("Hello World!");//由于使用起来非常类似于函数调用，因此成为仿函数
+	MyPrint02("hello world!");
+}
 
-	//成员函数重载本质调用
-	//Person p3 = p1.operator+(p2);
-	
-	//全局函数重载本质调用
-	//Person p3 = operator+(p1, p2);
-	
-	Person p3 = p1 + p2;
-	//运算符重载也可以发生函数重载
-	Person p4 = p1 + 100;//Person + int
+//仿函数非常灵活，没有固定的写法
+//加法类
 
-	cout << "p3.m_A = " << p3.m_A << endl;
-	cout << "p3.m_B = " << p3.m_B << endl;
-	cout << "p4.m_A = " << p4.m_A << endl;
-	cout << "p4.m_B = " << p4.m_B << endl;
+class MyAdd {
+public:
+	int operator()(int num1, int num2) {
+		return num1 + num2;
+	}
+};
+
+void test02() {
+	MyAdd myadd;
+	int ret = myadd(100, 100);
+	cout << "ret = " << ret << endl;
+	
+	//匿名函数对象:用完之后会立即被释放
+	cout << MyAdd()(100, 100) << endl;
 }
 
 int main() {
 	test01();
-
-
+	test02();
 	system("pause");
 	return 0;
 }
