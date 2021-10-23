@@ -1,59 +1,55 @@
 #include<iostream>
-#include<string>
 
 using namespace std;
 
-class Building;
-class GoodGay
-{
+//关系运算符重载
+class Person {
 public:
-	GoodGay();
+	Person(string name, int age) {
+		m_Name = name;
+		m_Age = age;
+	}
+	//重载关系运算符 == 号
+	bool operator==(Person& p) {
+		if (this->m_Name == p.m_Name && this->m_Age == p.m_Age) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	//重载关系运算符 !=号
+	bool operator!=(Person& p) {
+		if (this->m_Name != p.m_Name || this->m_Age != p.m_Age) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	string m_Name;
+	int m_Age;
 
-	void visit();//让visit函数可以访问Building中私有的成员
-	void visit2();//让visit2函数不可以访问Building中私有的成员
-private:
-	Building *  building;
 };
 
-class Building {
-	//告诉编译器 GoodGay下的成员函数作为本类的好朋友，可以访问私有的成员 
-	friend void GoodGay::visit();
-public:
-	Building();
-public:
-	string m_SittingRoom;//客厅
-private:
-	string m_BedRoom;//卧室
+void test01(){
+	Person p1("Tom", 18);
+	Person p2("Jerry", 18);
+	
+	if (p1 == p2) {
+		cout << "p1和p2是相等的" << endl;
+	}
+	else {
+		cout << "p1和p2是不相等的" << endl;
+	}
 
-};
-
-//类外实现他们的函数
-Building::Building() {
-	this->m_SittingRoom = "客厅";
-	this->m_BedRoom = "卧室";
-}
-
-GoodGay::GoodGay() {
-	building = new Building;
-}
-
-void GoodGay::visit()
-{
-	cout << "visit函数正在访问：" << building->m_SittingRoom << endl;
-
-	cout << "vist函数正在访问：" << building->m_BedRoom << endl;
-}
-void GoodGay::visit2()
-{
-	cout << "vist2函数正在访问：" << building->m_SittingRoom<< endl;
-
-	//cout << "visit2函数正在访问：" << building->m_BedRoom << endl;
-}
-
-void test01() {
-	GoodGay gg;
-	gg.visit();
-	gg.visit2();
+	if (p1 != p2) {
+		cout << "p1和p2是不相等的" << endl;
+	}
+	else {
+		cout << "p1和p2是相等的" << endl;
+	}
 }
 
 int main() {
