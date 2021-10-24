@@ -15,7 +15,7 @@
 ## match264
 * [5906：句子中的有效单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5906.md)
 * [5907：下一个更大的数值平衡数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5907.md)
-* (!)[5908：统计最高分的节点数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5908.md)
+* [5908：统计最高分的节点数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5908.md)
 * [5909：并行课程 III](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5909.md)
 
 # 双周赛
