@@ -12,6 +12,12 @@
 * [2034：股票价格波动](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode2034.md)
 * (!)[2035：将数组分为两个数组并最小化数组和的差](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode2035.md)
 
+## match264
+* [2032：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode.md)
+* [2032：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode.md)
+* [2032：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode.md)
+* [2032：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode.md)
+
 # 双周赛
 
 ## matchⅡ63
