@@ -2,61 +2,52 @@
 
 using namespace std;
 
-//赋值运算符重载
-
-class Person {
+//多继承语法
+class Base1
+{
 public:
-	Person(int age) {
-		m_Age =	new int(age);
+	Base1()
+	{
+		m_A = 100;
 	}
-
-	~Person() {
-		if (m_Age != NULL) {
-			delete m_Age;
-			m_Age = NULL;
-		}
-	}
-
-	//重载赋值运算符
-	 Person& operator=(Person& p) {
-		//编译器提供的是浅拷贝
-		//m_Age = p.m_Age;
-
-		//应该先判断是否有属性在堆区，如果有，先释放干净，然后再深拷贝
-		if (m_Age != NULL) {
-			delete m_Age;
-			m_Age = NULL;
-		}
-		//深拷贝
-		m_Age = new int(*p.m_Age); 
-
-		//返回对象本身
-		return *this;
-	}
-
-	int *m_Age;
+	int m_A;
 };
 
-void test01() {
-	Person p1(18);
-	Person p2(20);
-	Person p3(30);
+class Base2
+{
+public:
+	Base2()
+	{
+		m_A = 200;
+	}
+	int m_A;
+};
 
-	p3 = p2 = p1;	//赋值操作
-	cout << "p1的年龄为：" << *p1.m_Age << endl;
-	cout << "p2的年龄为：" << *p2.m_Age << endl;
-	cout << "p3的年龄为：" << *p3.m_Age << endl;
+//子类 需要继承Base1和Base2
+//语法 ：class 子类： 继承方式   父类1，继承方式   父类2... 
+class Son :public Base1, public Base2
+{
+public:
+	Son() 
+	{
+		m_C = 300;
+		m_D = 400;
+	}
+	int m_C;
+	int m_D;
+};
+
+void test01()
+{
+	Son s;
+	cout << "size of Son = " << sizeof(s) << endl;// 结果为16
+	//当父类中出现同名成员，需要加作用域区分
+	cout << "Base1下的m_A = " << s.Base1::m_A << endl;
+	cout << "Base2下的m_A = " << s.Base2::m_A << endl;
 }
 
 int main() {
 	test01();
-	//int a = 10;
-	//int b = 20;
-	//int c = 30;
-	//c = b = a;
-	//cout << "a = " << a  << endl;
-	//cout << "b = " << b << endl;
-	//cout << "c = " << c  << endl;
 	system("pause");
 	return 0;
 }
