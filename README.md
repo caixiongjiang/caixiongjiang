@@ -55,7 +55,7 @@
 * [algorithms and data structures](https://github.com/caixiongjiang/caixiongjiang/tree/main/leetcode_java)🔥 ：leetcode复习攻略
 * [Java Foundation](https://github.com/caixiongjiang/caixiongjiang/tree/main/java__shangguigu)🔥 ：Java基础必备知识
 * [Qt-BaseLearning](https://github.com/caixiongjiang/Qt-BaseLearn)🔥 ：Qt基础知识和常用控件
-* [pat(c++)](https://github.com/caixiongjiang/caixiongjiang/tree/main/pat%EF%BC%88c%2B%2B%EF%BC%89)🔥 ：胡凡版算法笔记和上级实训题解，浙大pta网站刷题
+* [pat(c++)](https://github.com/caixiongjiang/caixiongjiang/tree/main/pat%EF%BC%88c%2B%2B%EF%BC%89)🔥 ：胡凡版算法笔记和上机实训题解，浙大pta网站刷题
 * [Java_shangguigu](https://github.com/caixiongjiang/caixiongjiang/blob/main/java__shangguigu/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/README.md)🔥 ：经典数据结构算法
 * [Matlab Express](https://github.com/caixiongjiang/caixiongjiang/blob/main/matlab/README.md)🔥 ：常用的matlab语法和结构
 * [Mathematical modeling algorithm](https://github.com/caixiongjiang/caixiongjiang/blob/main/matlab/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95/README.md)🔥 ：用于数学建模的算法的现成实例
