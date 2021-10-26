@@ -13,10 +13,10 @@
 * (!)[2035：将数组分为两个数组并最小化数组和的差](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match262/leetcode2035.md)
 
 ## match264
-* [5906：句子中的有效单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5906.md)
-* [5907：下一个更大的数值平衡数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5907.md)
-* [5908：统计最高分的节点数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5908.md)
-* [5909：并行课程 III](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode5909.md)
+* [2047：句子中的有效单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2047.md)
+* [2048：下一个更大的数值平衡数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2048.md)
+* [2049：统计最高分的节点数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2049.md)
+* [2050：并行课程 III](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2050.md)
 
 # 双周赛
 
