@@ -257,6 +257,7 @@
 
 # 图论
 * [463.岛屿的周长](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode463.md)【模拟】
-
+* [841.钥匙和房间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode841.md)【有向图】 dfs,bfs都可以
+* [127.单词接龙](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode127.md)【广搜】
 
 
