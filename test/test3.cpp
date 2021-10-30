@@ -2,131 +2,39 @@
 
 using namespace std;
 
-//普通实现页面
-
-//Java页面
-//class Java {
-//public:
-//	void header() {
-//		cout << "首页，公开课，登录，注册...(公共头部)" << endl;
-//	}
-//	void footer() {
-//		cout << "帮助中心，交流合作，站内地图...(公共底部)" << endl;
-//	}
-//	void left() {
-//		cout << "Java, Python, C++,...(公共分类列表)" << endl;
-//	}
-//	void content() {
-//		cout << "Java 学科视频" << endl;
-//	}
-//};
-//
-////Python页面
-//class Python {
-//public:
-//	void header() {
-//		cout << "首页，公开课，登录，注册...(公共头部)" << endl;
-//	}
-//	void footer() {
-//		cout << "帮助中心，交流合作，站内地图...(公共底部)" << endl;
-//	}
-//	void left() {
-//		cout << "Java, Python, C++,...(公共分类列表)" << endl;
-//	}
-//	void content() {
-//		cout << "Python 学科视频" << endl;
-//	}
-//};
-////C++页面
-//class Cpp {
-//public:
-//	void header() {
-//		cout << "首页，公开课，登录，注册...(公共头部)" << endl;
-//	}
-//	void footer() {
-//		cout << "帮助中心，交流合作，站内地图...(公共底部)" << endl;
-//	}
-//	void left() {
-//		cout << "Java, Python, C++,...(公共分类列表)" << endl;
-//	}
-//	void content() {
-//		cout << "C++学科视频" << endl;
-//	}
-//};
-
-
-//继承实现页面
-
-//公共页面类
-class BasePage {
-public:
-	void header() {
-		cout << "首页，公开课，登录，注册...(公共头部)" << endl;
-	}
-	void footer() {
-		cout << "帮助中心，交流合作，站内地图...(公共底部)" << endl;
-	}
-	void left() {
-		cout << "Java, Python, C++,...(公共分类列表)" << endl;
-	}
+//纯虚函数和抽象类
+class Base
+{
+public :
+	//纯虚函数
+	//只要有一个纯虚函数，这个类称为抽象类
+	//抽象类特点：
+	//1.无法实例化对象
+	//2.抽象类的子类必须要重写父类中的纯虚函数，否则也属于抽象类
+	virtual void func() = 0;//虚函数的基础上可以直接写等于0变成纯虚函数
 };
 
-//继承的好处：减少重复代码
-//语法： class 子类: 继承方式 父类
-//子类  也称为  派生类
-//父类  也称为  基类
-
-//Java页面
-class Java : public BasePage {
+class Son : public Base
+{
 public:
-	void content() {
-		cout << "Java学科视频" << endl;
-	}
+	virtual void func() 
+	{
+		cout << "func函数调用" << endl;
+	};
 };
 
-//Python页面
-class Python : public BasePage {
-public:
-	void content() {
-		cout << "Python学科视频" << endl;
-	}
-};
-
-//C++页面
-class Cpp : public BasePage {
-public:
-	void content() {
-		cout << "C++学科视频" << endl;
-	}
-};
-
-
-void test01() {
-	cout << "Java下载视频页面如下：" << endl;
-	Java ja;
-	ja.header();
-	ja.footer();
-	ja.left();
-	ja.content();
-
-	cout << "---------------------------" << endl;
-	cout << "Python下载视频页面如下：" << endl;
-	Python py;
-	py.header();
-	py.footer();
-	py.left();
-	py.content();
-
-	cout << "---------------------------" << endl;
-	cout << "C++下载视频页面如下：" << endl;
-	Cpp cpp;
-	cpp.header();
-	cpp.footer();
-	cpp.left();
-	cpp.content();
+void test01()
+{
+	//抽象类是不能实例化对象的
+	//Base b;
+	//new Base
+	Son s; //子类必须要重写父类中的纯虚函数，否则无法实例化对象
+	Base* base = new Son;
+	base->func();
 }
 
-int main() {
+int main() 
+{
 	test01();
 	system("pause");
 	return 0;

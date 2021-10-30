@@ -3,48 +3,130 @@
 
 using namespace std;
 
-//函数调用运算符重载
+//分别利用普通写法和多态技术实现计算器
 
-//打印输出类
-class MyPrint {
+//普通写法
+class Calculator
+{
 public:
-	//重载函数调用运算符
-	void operator()(string test) {
-		cout << test << endl;
+
+	int getResult(string oper) 
+	{
+		if (oper == "+") 
+		{
+			return m_Num1 + m_Num2;
+		}
+		else if(oper == "-")
+		{
+			return m_Num1 - m_Num2;
+		}
+		else if (oper == "*")
+		{
+			return m_Num1 * m_Num2;
+		}
+		//如果想扩展新的功能，要求修改源码
+		//在真实的开发中 提倡 开闭原则
+		//开闭原则：对扩展进行开放，对修改进行关闭
 	}
 
+	int m_Num1;//操作数1
+	int m_Num2;//操作数2
 };
 
-void MyPrint02(string test) {
-	cout << test << endl;
+void test01()
+{
+	//创建一个计算器的对象
+	Calculator c;
+	c.m_Num1 = 10;
+	c.m_Num2 = 20;
+
+	cout << c.m_Num1 << "+" << c.m_Num2 << "=" << c.getResult("+") << endl;
+	cout << c.m_Num1 << "-" << c.m_Num2 << "=" << c.getResult("-") << endl;
+	cout << c.m_Num1 << "*" << c.m_Num2 << "=" << c.getResult("*") << endl;
 }
 
-void test01() {
-	MyPrint myPrint;
-	myPrint("Hello World!");//由于使用起来非常类似于函数调用，因此成为仿函数
-	MyPrint02("hello world!");
-}
+//利用多态实现计算器
+//多态带来的好处：
+//1.组织结构清晰
+//2.可读性强
+//3.对于前期和后期的扩展以及维护性高
 
-//仿函数非常灵活，没有固定的写法
-//加法类
-
-class MyAdd {
+//实现计算机的抽象类
+class AbstractCalculator
+{
 public:
-	int operator()(int num1, int num2) {
-		return num1 + num2;
+	//父类使用虚函数
+	virtual int getResult() 
+	{
+		return 0;
+	}
+	int m_Num1;
+	int m_Num2;
+};
+
+//加法计算器类
+class AddCalculator : public AbstractCalculator
+{
+public:
+	int getResult()
+	{
+		return m_Num1 + m_Num2;
 	}
 };
 
-void test02() {
-	MyAdd myadd;
-	int ret = myadd(100, 100);
-	cout << "ret = " << ret << endl;
-	
-	//匿名函数对象:用完之后会立即被释放
-	cout << MyAdd()(100, 100) << endl;
+//减法计算器类
+class SubCalculator : public AbstractCalculator
+{
+public:
+	int getResult()
+	{
+		return m_Num1 - m_Num2;
+	}
+};
+
+//乘法计算器类
+class MulCalculator : public AbstractCalculator
+{
+public:
+	int getResult()
+	{
+		return m_Num1 * m_Num2;
+	}
+};
+
+void test02() 
+{
+	//多态使用条件
+	//父类指针或者引用指向子类对象
+
+	//加法运算
+	AbstractCalculator * abc = new AddCalculator;
+	abc->m_Num1 = 20;
+	abc->m_Num2 = 30;
+
+	cout << abc->m_Num1 << "+" << abc->m_Num2 << "=" << abc->getResult() << endl;
+	//堆区数据：用完后记得销毁
+	delete abc;
+
+	//减法运算
+	abc = new SubCalculator;
+	abc->m_Num1 = 20;
+	abc->m_Num2 = 30;
+
+	cout << abc->m_Num1 << "-" << abc->m_Num2 << "=" << abc->getResult() << endl;
+	delete abc;
+
+	//乘法运算
+	abc = new MulCalculator;
+	abc->m_Num1 = 20;
+	abc->m_Num2 = 30;
+
+	cout << abc->m_Num1 << "*" << abc->m_Num2 << "=" << abc->getResult() << endl;
+	delete abc;
 }
 
-int main() {
+int main() 
+{
 	test01();
 	test02();
 	system("pause");
