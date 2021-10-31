@@ -16,7 +16,7 @@
 * [2047：句子中的有效单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2047.md)
 * [2048：下一个更大的数值平衡数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2048.md)
 * [2049：统计最高分的节点数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2049.md)
-* [2050：并行课程 III](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2050.md)
+* (!)[2050：并行课程 III](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2050.md)
 
 # 双周赛
 
@@ -27,7 +27,7 @@
 * (!)[2040：两个有序数组的第 K 小乘积](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode2040.md)
 
 ## matchⅡ64
-* [2037：使每位学生都有座位的最少移动次数]()
-* [2037：使每位学生都有座位的最少移动次数]()
-* [2037：使每位学生都有座位的最少移动次数]()
-* [2037：使每位学生都有座位的最少移动次数]()
+* [2037：数组中第 K 个独一无二的字符串]()
+* [2037：两个最好的不重叠活动]()
+* [2037：蜡烛之间的盘子]()
+* [2037：棋盘上有效移动组合的数目]()
