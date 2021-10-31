@@ -47,3 +47,46 @@ events[i].length == 3
 
 ---
 ## 思路
+
+按照题目意思，我们需要找到最多两个时间不重叠的活动，求出这个最高的价值。也就是说，**我们要从每一个活动中找寻其他活动中开始时间大于该活动结束时间且价值最大的一个。寻找开始时间大于该活动结束时间的第一个活动我们可以通过二分查找的方式快速解决，因为是有序存放的开始时间，所以查找到的活动后面的所有活动开始时间都必定大于查找到的这一个，我们通过后缀的方式预先求出查找位置以后所有活动的最大值即可。**
+
+* 1.使用map表有序存放每个活动的开始时间和最大值, 如果有重复的开始时间保存最大的那个即可。
+* 2.**通过后缀和的方式，反序遍历map表，通过哈希表记录大于当前开始时间的最大价值**，比如说大于90时间的最大值是50，大于30时间的最大值是20，那么此时大于30时间的最大值就应该变为50。经过此操作，哈希表内存放的是大于当前开始时间的所有后续活动的最大价值。
+* 3.遍历每一个活动events，**在map里查找大于本活动结束时间的开始时间第一个活动**，在操作2的哈希表里面获取大于这个开始时间的所有后续活动的最大价值即可。
+
+代码如下：
+```c++
+class Solution {
+public:
+    int maxTwoEvents(vector<vector<int>>& events) {
+        int n = events.size();
+        map<int, int> mapping;
+        for (int i = 0; i < n; ++i) { // 保存{开始时间，最大价值}
+            if (mapping.count(events[i][0]) > 0) {
+                mapping[events[i][0]] = max(mapping[events[i][0]], events[i][2]);
+            } else {
+                mapping[events[i][0]] = events[i][2];
+            }
+        }
+        auto x = mapping.rbegin();
+        unordered_map<int, int> mx; // 保存{大于此开始时间的最大价值}
+        int tot = 0;
+        while (x != mapping.rend()) {
+            tot = max(tot, x->second);
+            mx[x->first] = tot;
+            ++x;
+        }
+        int val = 0;
+        for (int i = 0; i < n; ++i) {
+            auto idx = mapping.upper_bound(events[i][1]); // 二分查找开始时间大于本活动结束时间的第一个活动
+            if (idx == mapping.end()) {
+                val = max(val, events[i][2]);
+            } else {
+                int cnt = mx[idx->first];
+                val = max(val, events[i][2] + cnt); // 查找哈希表
+            }
+        }
+        return val;
+    }
+}; 
+```
