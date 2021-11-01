@@ -22,7 +22,7 @@
 * [2057：值相等的最小索引](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2057.md)
 * [2058：找出临界点之间的最小和最大距离](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2058.md)
 * [2059：转化数字的最小运算数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2059.md)
-* [2060：同源字符串检测](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2060.md)
+* (!)[2060：同源字符串检测](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2060.md)
 
 
 # 双周赛
