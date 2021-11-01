@@ -18,6 +18,13 @@
 * [2049：统计最高分的节点数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2049.md)
 * (!)[2050：并行课程 III](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2050.md)
 
+## match265
+* [2057：值相等的最小索引](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2057.md)
+* [2058：找出临界点之间的最小和最大距离](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2058.md)
+* [2059：转化数字的最小运算数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2059.md)
+* [2060：同源字符串检测](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2060.md)
+
+
 # 双周赛
 
 ## matchⅡ63
@@ -27,7 +34,7 @@
 * (!)[2040：两个有序数组的第 K 小乘积](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A163/leetcode2040.md)
 
 ## matchⅡ64
-* [2037：数组中第 K 个独一无二的字符串]()
-* [2037：两个最好的不重叠活动]()
-* [2037：蜡烛之间的盘子]()
-* [2037：棋盘上有效移动组合的数目]()
+* [2053：数组中第 K 个独一无二的字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A164/leetcode2053.md)
+* [2054：两个最好的不重叠活动](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A164/leetcode2054.md)
+* [2055：蜡烛之间的盘子](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A164/leetcode2055.md)
+* [2056：棋盘上有效移动组合的数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A164/leetcode2056.md)
