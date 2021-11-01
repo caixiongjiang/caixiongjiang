@@ -1,36 +1,110 @@
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
-//继承中的对象模型
-class Base {
+//多态案例2   制作饮品
+class AbstractDrinking
+{
 public:
-	int m_A;
-protected:
-	int m_B;
-private:
-	int m_C;
+	//煮水
+	virtual void Boil() = 0;
+
+	//冲泡
+	virtual void Brew() = 0;
+
+	//倒入杯中
+	virtual void PourInCup() = 0;
+
+	//加入辅料
+	virtual void PutSomething() = 0;
+
+	//制作饮品
+	void makeDrink()
+	{
+		Boil();
+		Brew();
+		PourInCup();
+		PutSomething();
+	}
 };
 
-class Son :public Base {
+//制作咖啡
+class Coffee : public AbstractDrinking
+{
 public:
-	int m_D;
+	//煮水
+	virtual void Boil()
+	{
+		cout << "煮农夫山泉" << endl;
+	}
+
+	//冲泡
+	virtual void Brew()
+	{
+		cout << "冲泡咖啡" << endl;
+	}
+
+	//倒入杯中
+	virtual void PourInCup()
+	{
+		cout << "倒入杯中" << endl;
+	}
+
+	//加入辅料
+	virtual void PutSomething()
+	{
+		cout << "加入糖和牛奶" << endl;
+	}
 };
 
-//利用开发人员命令提示工具查看对象模型
-//跳转盘符 F：
-//跳转文件路径 cd 具体路径下
-//查看命名（dir）
-//cl /d1 reportSingleClassLayout类名 文件名 
+//制作茶叶
+class Tea : public AbstractDrinking
+{
+public:
+	//煮水
+	virtual void Boil()
+	{
+		cout << "煮矿泉水" << endl;
+	}
 
-void test01() {
-	//结果为16
-	//父类中所有非静态成员属性都会被子类继承下去
-	//父类中私有的成员属性 是被编译器给隐藏了，因此访问不到，但是确实被继承下去了
-	cout << "size of Son = " << sizeof(Son) << endl;
+	//冲泡
+	virtual void Brew()
+	{
+		cout << "冲泡茶叶" << endl;
+	}
+
+	//倒入杯中
+	virtual void PourInCup()
+	{
+		cout << "倒入杯中" << endl;
+	}
+
+	//加入辅料
+	virtual void PutSomething()
+	{
+		cout << "加入枸杞" << endl;
+	}
+};
+
+//制作函数
+void doWork(AbstractDrinking * abs)
+{
+	abs->makeDrink();
+	delete abs;	//释放
 }
 
-int main() {
+void test01() 
+{
+	//制作咖啡
+	doWork(new Coffee);	//AbstractDrinking *abs = new Coffee 
+										//父类的指针指向子类的对象
+	cout << "-------------------------" << endl;
+	//制作茶叶
+	doWork(new Tea);
+}
+ 
+int main()
+{
 	test01();
 	system("pause");
 	return 0;
