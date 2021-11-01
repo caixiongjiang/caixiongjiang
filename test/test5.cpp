@@ -1,63 +1,74 @@
-#include <iostream>
-
+#include<iostream>
+#include<string>
 using namespace std;
 
-//继承中同名成员处理
-class Base
+//虚析构和纯虚析构
+
+class Animal
 {
 public:
-	Base() 
+
+	Animal()
 	{
-		m_A = 100;
+		cout << "Animal的构造函数调用" << endl;
 	}
-	void func()
-	{
-		cout << "Base-func()函数调用" << endl;
-	}
-	void func(int a)
-	{
-		cout << "Base-func(int a)函数调用" << endl;
-	}
-	int m_A;
+	//利用虚析构可以解决父类指针释放子类对象时不干净的问题
+	//virtual ~Animal()
+	//{
+	//	cout << "Animal的析构函数调用" << endl;
+	//}
+	
+	//纯虚析构  需要有声明也需要有实现
+	//有了纯虚析构 之后这个类也属于抽象类，无法实例化对象
+	virtual ~Animal() = 0;
+	
+	//纯虚函数
+	virtual void speak() = 0;
+
 };
 
-class Son :public Base
+Animal:: ~Animal()
 {
+	cout << "Animal的纯虚析构函数" << endl;
+}
+
+class Cat : public Animal
+{	
 public:
-	Son()
+	Cat(string name) 
 	{
-		m_A = 200;
+		cout << "Cat的构造函数使用" << endl;
+		m_Name = new string(name);
 	}
-	void func()
+	virtual void speak()
 	{
-		cout << "Son-func()函数调用" << endl;
+		cout << *m_Name << "小猫在说话" << endl;
 	}
-	int m_A;
+
+	~Cat() 
+	{
+		if (m_Name != NULL) 
+		{
+			cout << "Cat析构函数调用" << endl;
+			delete m_Name;
+			m_Name = NULL;
+		}
+	}
+	string *m_Name;
 };
 
 void test01()
 {
-	Son s;
-	cout << "Son下的m_A = " << s.m_A << endl;	//输出200
-	//如果通过子类对象 访问父类中的同名成员， 需要加一个作用域
-	cout << "Base下的m_A = " << s.Base::m_A << endl;	//输出100
+	Animal * animal = new Cat("Tom");
+	animal->speak();
+	//父类指针在析构时候 不会调用子类中析构函数，
+	//导致子类如果有堆区属性，会出现内存的泄露情况
+	delete animal;
 }
 
-//同名成员函数的处理方式
-void test02() 
+int main()
 {
-	Son s;
-	s.func();//直接调用 调用的是子类中的同名成员
-	//如何调用到父类中的同名成员函数？
-	s.Base::func();
-	//如果子类中出现和父类同名的成员函数，子类的同名成员会隐藏掉父类的所有同名成员函数
-	//s.func(100);   出现报错
-	s.Base::func(100);
-}
-
-int main() {
 	test01();
-	test02();
 	system("pause");
 	return 0;
 }
