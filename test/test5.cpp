@@ -1,69 +1,157 @@
 #include<iostream>
-#include<string>
+
 using namespace std;
 
-//虚析构和纯虚析构
-
-class Animal
+//抽象不同零件类
+//抽象CPU类
+class CPU
 {
 public:
-
-	Animal()
-	{
-		cout << "Animal的构造函数调用" << endl;
-	}
-	//利用虚析构可以解决父类指针释放子类对象时不干净的问题
-	//virtual ~Animal()
-	//{
-	//	cout << "Animal的析构函数调用" << endl;
-	//}
-	
-	//纯虚析构  需要有声明也需要有实现
-	//有了纯虚析构 之后这个类也属于抽象类，无法实例化对象
-	virtual ~Animal() = 0;
-	
-	//纯虚函数
-	virtual void speak() = 0;
-
+	//抽象的计算函数
+	virtual void calculator() = 0;
 };
 
-Animal:: ~Animal()
+//抽象显卡类
+class GPU
 {
-	cout << "Animal的纯虚析构函数" << endl;
-}
-
-class Cat : public Animal
-{	
 public:
-	Cat(string name) 
+	//抽象的显示函数
+	virtual void display() = 0;
+};
+
+//抽象内存条类
+class Memory
+{
+public:
+	//抽象的存储函数
+	virtual void storage() = 0;
+};
+
+//电脑类
+class Computer
+{
+public:
+	Computer(CPU* cpu, GPU* gpu, Memory* mem)
 	{
-		cout << "Cat的构造函数使用" << endl;
-		m_Name = new string(name);
-	}
-	virtual void speak()
-	{
-		cout << *m_Name << "小猫在说话" << endl;
+		m_cpu = cpu;
+		m_gpu = gpu;
+		m_mem = mem;
 	}
 
-	~Cat() 
+	//提供工作的函数
+	void work()
 	{
-		if (m_Name != NULL) 
+		//让零件工作起来，调用接口
+		m_cpu->calculator();
+
+		m_gpu->display();
+
+		m_mem->storage();
+	}
+	//提供析构函数 释放3个电脑零件
+	~Computer()
+	{
+		//释放cpu零件
+		if (m_cpu != NULL) 
 		{
-			cout << "Cat析构函数调用" << endl;
-			delete m_Name;
-			m_Name = NULL;
+			delete m_cpu;
+			m_cpu = NULL;
+		}
+		//释放显卡零件
+		if (m_gpu != NULL)
+		{
+			delete m_gpu;
+			m_gpu = NULL;
+		}
+		//释放内存条零件
+		if (m_mem != NULL)
+		{
+			delete m_mem;
+			m_mem = NULL;
 		}
 	}
-	string *m_Name;
+private:
+	CPU * m_cpu;//cpu的零件指针
+	GPU * m_gpu;//显卡零件指针
+	Memory * m_mem;//内存条的零件指针
+};
+
+//具体厂商
+//Intel厂商
+class IntelCPU : public CPU
+{
+public:
+	virtual void calculator()
+	{
+		cout << "Intel的CPU开始计算了!" << endl;
+	}
+};
+
+class IntelGPU : public GPU
+{
+public:
+	virtual void display()
+	{
+		cout << "Intel的显卡开始显示了!" << endl;
+	}
+};
+
+class IntelMemory : public Memory
+{
+public:
+	virtual void storage()
+	{
+		cout << "Intel的内存条开始存储了!" << endl;
+	}
+};
+
+//Lenovo厂商
+class LenovoCPU : public CPU
+{
+public:
+	virtual void calculator()
+	{
+		cout << "Lenovo的CPU开始计算了!" << endl;
+	}
+};
+
+class LenovoGPU : public GPU
+{
+public:
+	virtual void display()
+	{
+		cout << "Lenovo的显卡开始显示了!" << endl;
+	}
+};
+
+class LenovoMemory : public Memory
+{
+public:
+	virtual void storage()
+	{
+		cout << "Lenovo的内存条开始存储了!" << endl;
+	}
 };
 
 void test01()
 {
-	Animal * animal = new Cat("Tom");
-	animal->speak();
-	//父类指针在析构时候 不会调用子类中析构函数，
-	//导致子类如果有堆区属性，会出现内存的泄露情况
-	delete animal;
+	//第一台电脑零件
+	CPU* IntelCpu = new IntelCPU;
+	GPU* IntelGpu = new IntelGPU;
+	Memory* IntelMem = new IntelMemory;
+
+	cout << "第一台电脑开始工作：" << endl;
+	//创建第一台电脑
+	Computer* computer1 = new Computer(IntelCpu, IntelGpu, IntelMem);
+	computer1->work();
+	delete computer1;
+	
+	cout << "-----------------------" << endl;
+	cout << "第二台电脑开始工作：" << endl;
+	//第二台电脑组装
+	Computer* computer2 = new Computer(new LenovoCPU, new LenovoGPU, new LenovoMemory);
+	computer2->work();
+	delete computer2;
 }
 
 int main()
