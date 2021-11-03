@@ -40,3 +40,100 @@
 
 ---
 ## 思路
+
+首先要知道并查集可以解决什么问题呢？
+
+主要就是集合问题，两个节点在不在一个集合，也可以将两个节点添加到一个集合中。
+
+这里整理出我的并查集模板如下：
+```c++
+int n = 1005; // 节点数量3 到 1000
+int father[1005];
+
+// 并查集初始化
+void init() {
+    for (int i = 0; i < n; ++i) {
+        father[i] = i;
+    }
+}
+// 并查集里寻根的过程
+int find(int u) {
+    return u == father[u] ? u : father[u] = find(father[u]);
+}
+// 将v->u 这条边加入并查集
+void join(int u, int v) {
+    u = find(u);
+    v = find(v);
+    if (u == v) return ;
+    father[v] = u;
+}
+// 判断 u 和 v是否找到同一个根
+bool same(int u, int v) {
+    u = find(u);
+    v = find(v);
+    return u == v;
+}
+```
+
+以上模板汇总，只要修改 n 和father数组的大小就可以了。
+
+并查集主要有三个功能。
+
+* 1.寻找根节点，函数：find(int u)，也就是判断这个节点的祖先节点是哪个
+* 2.将两个节点接入到同一个集合，函数：join(int u, int v)，将两个节点连在同一个根节点上
+* 3.判断两个节点是否在同一个集合，函数：same(int u, int v)，就是判断两个节点是不是同一个根节点
+
+简单介绍并查集之后，我们再来看一下这道题目。
+
+题目说是无向图，返回一条可以删去的边，使得结果图是一个有着N个节点的树。
+
+如果有多个答案，则返回二维数组中最后出现的边。
+
+那么我们就可以从前向后遍历每一条边，边的两个节点如果不在同一个集合，就加入集合（即：同一个根节点）。
+
+如果边的两个节点已经出现在同一个集合里，说明着边的两个节点已经连在一起了，如果再加入这条边一定就出现环了。
+
+这个思路清晰之后，代码就很好写了。
+
+并查集C++代码如下：
+```c++
+class Solution {
+private:
+    int n = 1005; // 节点数量3 到 1000
+    int father[1005];
+
+    // 并查集初始化
+    void init() {
+        for (int i = 0; i < n; ++i) {
+            father[i] = i;
+        }
+    }
+    // 并查集里寻根的过程
+    int find(int u) {
+        return u == father[u] ? u : father[u] = find(father[u]);
+    }
+    // 将v->u 这条边加入并查集
+    void join(int u, int v) {
+        u = find(u);
+        v = find(v);
+        if (u == v) return ;
+        father[v] = u;
+    }
+    // 判断 u 和 v是否找到同一个根，本题用不上
+    bool same(int u, int v) {
+        u = find(u);
+        v = find(v);
+        return u == v;
+    }
+public:
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+        init();
+        for (int i = 0; i < edges.size(); i++) {
+            if (same(edges[i][0], edges[i][1])) return edges[i];
+            else join(edges[i][0], edges[i][1]);
+        }
+        return {};
+    }
+};
+```
+可以看出，主函数的代码很少，就判断一下边的两个节点在不在同一个集合就可以了。
