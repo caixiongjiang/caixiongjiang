@@ -39,7 +39,7 @@
 ### 方法一：最小堆
 ### 思路与算法
 
-本题为经典题目，解题的原理和方法都可以参考「42.接雨水」，本题主要从一维数组变成了二维数组。
+本题为经典题目，解题的原理和方法都可以参考[42.接雨水](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode42.md)，本题主要从一维数组变成了二维数组。
 首先我们思考一下什么样的方块一定可以接住水：
 
 * 该方块不为最外层的方块；
