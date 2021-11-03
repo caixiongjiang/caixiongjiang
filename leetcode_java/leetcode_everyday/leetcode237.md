@@ -52,3 +52,30 @@
 ---
 ## 思路
 
+整体的思路是**与下一个节点交换**
+
+删除链表中的节点的常见的方法是定位到待删除节点的上一个节点，修改上一个节点的 \textit{next}next 指针，使其指向待删除节点的下一个节点，即可完成删除操作。
+
+这道题中，传入的参数node为要被删除的节点，无法定位到该节点的上一个节点。注意到要被删除的节点不是链表的末尾节点，因此node.next不为空，可以通过对node和node.next进行操作实现删除节点。
+
+<span style="color:green">在给定节点node的情况下，可以通过修改node的next指针的指向，删除node的下一个节点。但是题目要求删除node，为了达到删除node的效果，只要在删除节点之前，将node的节点值修改为node.next的节点值即可。</span>
+
+整体代码如下：
+```c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    void deleteNode(ListNode* node) {
+        node->val = node->next->val;
+        node->next = node->next->next;
+    }
+};
+```
+
