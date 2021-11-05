@@ -273,4 +273,5 @@
 # 每日一题
 * [237.删除链表中的节点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode237.md)【删除节点的第二种方法】
 * [407.接雨水Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode407.md)【最小堆经典题目】
+* [367.有效的完全平方数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode367.md)【最小堆经典题目】
 * [1218.最长定差子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1218.md)【动态规划】
