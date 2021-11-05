@@ -1,108 +1,39 @@
 #include<iostream>
-
+#include<fstream>
 using namespace std;
 
-//多态案例2   制作饮品
-class AbstractDrinking
+class Person
 {
 public:
-	//煮水
-	virtual void Boil() = 0;
 
-	//冲泡
-	virtual void Brew() = 0;
-
-	//倒入杯中
-	virtual void PourInCup() = 0;
-
-	//加入辅料
-	virtual void PutSomething() = 0;
-
-	//制作饮品
-	void makeDrink()
-	{
-		Boil();
-		Brew();
-		PourInCup();
-		PutSomething();
-	}
+	char m_Name[64];//姓名
+	int m_Age;			 //年龄
 };
 
-//制作咖啡
-class Coffee : public AbstractDrinking
+//二进制文件  读文件
+void test01()
 {
-public:
-	//煮水
-	virtual void Boil()
-	{
-		cout << "煮农夫山泉" << endl;
-	}
+	//1.包含头文件
 
-	//冲泡
-	virtual void Brew()
+	//2.创建流对象
+	ifstream ifs;
+	//3.打开文件   判断文件是否打开成功
+	ifs.open("person.txt", ios::in | ios::binary);
+	if (!ifs.is_open())
 	{
-		cout << "冲泡咖啡" << endl;
+		cout << "文件打开失败" << endl;
+		return;
 	}
+	//4.读文件
+	Person p;
 
-	//倒入杯中
-	virtual void PourInCup()
-	{
-		cout << "倒入杯中" << endl;
-	}
+	ifs.read((char*)&p, sizeof(Person));
 
-	//加入辅料
-	virtual void PutSomething()
-	{
-		cout << "加入糖和牛奶" << endl;
-	}
-};
-
-//制作茶叶
-class Tea : public AbstractDrinking
-{
-public:
-	//煮水
-	virtual void Boil()
-	{
-		cout << "煮矿泉水" << endl;
-	}
-
-	//冲泡
-	virtual void Brew()
-	{
-		cout << "冲泡茶叶" << endl;
-	}
-
-	//倒入杯中
-	virtual void PourInCup()
-	{
-		cout << "倒入杯中" << endl;
-	}
-
-	//加入辅料
-	virtual void PutSomething()
-	{
-		cout << "加入枸杞" << endl;
-	}
-};
-
-//制作函数
-void doWork(AbstractDrinking * abs)
-{
-	abs->makeDrink();
-	delete abs;	//释放
+	cout << "姓名：" << p.m_Name << "    年龄：" << p.m_Age << endl;
+	//5.关闭文件
+	ifs.close();
 }
 
-void test01() 
-{
-	//制作咖啡
-	doWork(new Coffee);	//AbstractDrinking *abs = new Coffee 
-										//父类的指针指向子类的对象
-	cout << "-------------------------" << endl;
-	//制作茶叶
-	doWork(new Tea);
-}
- 
 int main()
 {
 	test01();
