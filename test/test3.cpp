@@ -1,39 +1,32 @@
 #include<iostream>
-
+#include<fstream>
 using namespace std;
 
-//纯虚函数和抽象类
-class Base
-{
-public :
-	//纯虚函数
-	//只要有一个纯虚函数，这个类称为抽象类
-	//抽象类特点：
-	//1.无法实例化对象
-	//2.抽象类的子类必须要重写父类中的纯虚函数，否则也属于抽象类
-	virtual void func() = 0;//虚函数的基础上可以直接写等于0变成纯虚函数
-};
-
-class Son : public Base
+//二进制文件  写文件
+class Person
 {
 public:
-	virtual void func() 
-	{
-		cout << "func函数调用" << endl;
-	};
+	
+	char m_Name[64];//姓名
+	int m_Age;			 //年龄
 };
 
 void test01()
 {
-	//抽象类是不能实例化对象的
-	//Base b;
-	//new Base
-	Son s; //子类必须要重写父类中的纯虚函数，否则无法实例化对象
-	Base* base = new Son;
-	base->func();
+	//1.包含头文件
+
+	//2.创建流对象
+	ofstream ofs;
+	//3.打开文件
+	ofs.open("person.txt", ios::out | ios::binary);
+	//4.写文件
+	Person p = { "张三", 18 };
+	ofs.write((const char*)&p, sizeof(Person));
+	//5.关闭文件
+	ofs.close();
 }
 
-int main() 
+int main()
 {
 	test01();
 	system("pause");
