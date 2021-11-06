@@ -278,3 +278,4 @@
 * [407.接雨水Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode407.md)【最小堆经典题目】
 * [367.有效的完全平方数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode367.md)
 * [1218.最长定差子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1218.md)【动态规划】
+* [268.丢失的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode268.md)【排序|哈希集合|位运算|数学方法】
