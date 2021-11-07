@@ -60,15 +60,15 @@
 class Solution {
 public:
     int countVowelSubstrings(string word) { 
-        unordered_map<char,int>m;
-        if(word.size()<5)return 0;
-        int num=0;
+        unordered_map<char,int> m;
+        if(word.size() < 5) return 0;
+        int num = 0;
         string s;
-        for(int end=4; end < word.size(); end++){       
+        for(int end = 4; end < word.size(); end++){       
             for(int start = 0; start <= end; start++){
                 m=unordered_map<char, int>();              
                 s=word.substr(start, end - start + 1);
-                int flag=0;	//标记是否为元音子串
+                int flag=0; //标记是否为元音子串
                 for(char c: s){
                     if(c!='a' && c!='e' && c!='i' && c!='o'&& c!='u'){
                         flag=1;
@@ -83,4 +83,5 @@ public:
         return num;  
     }
 };
+
 ```
