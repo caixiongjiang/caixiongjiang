@@ -1,4 +1,4 @@
-## 编号2063:分配给商店的最多商品的最小值
+## 编号2063:分配给商店的最多商品的最小值（×）
 
 给你一个整数 n ，表示有 n 间零售商店。总共有 m 种产品，每种产品的数目用一个下标从 0 开始的整数数组 quantities 表示，其中 quantities[i] 表示第 i 种商品的数目。
 
@@ -50,39 +50,47 @@
 ---
 ## 思路
 
-二分选取一个$mid$作为答案，检查$mid$是否合法。
+如果一个目标是x能满足某种条件，x+1一定能满足某种条件；且检验条件的复杂度不高。 我们就可以考虑二分搜索的这种方式。
 
-由于商品必须分配完成不能剩余 且 每个商店只能分配一种商品。
+在这道题中，check的过程就是采用贪心法，假设x可以满足条件，每个店都分配最大的商品（假设值），这样分配的店数一定是最少的。
 
-则为每一个商店都分配$mid$件商品，有三种情况：
+由于同一个店只能持有一种商品，所以某个商品需要的店数一定为 商品总数 除以 最大分配数 向上取整。
 
-令
-
-$$cnt = \sum_{k=0}^nquantities_k / mid$$
-
-代表 对每个商店都分配$mid$商品可以满足多少个商店
-
-$$f(k)=\begin{cases}1, quantities_k \bmod mid \neq 0 \cr 0, quantities_k \bmod mid = 0\end{cases}, mod = \sum_{k=0}^nf(k)$$
-
-
-代表 对$cnt$个商店都分配$mid$个商品后，还剩余$mod$种商品没有分配完
-
-* $cnt > n$ 说明足够对每个商店分配 $mid$ 商品，但是一定存在剩余，不合法。
-* $cnt=n$ 说明足够对每个商店分配 $mid$ 商品，但必须满足没有剩余 即 mod = 0
-* $cnt < n$说明不能对每个商店都分配 $mid$ 商品，但剩余的商品种类必须满足未能分配的商店 即 $mod = n - cnt$。我们可以把所有剩下的商品恰好都分配到剩余的商店中 且 每种剩余的商品数量一定小于$mid$。
-
-总和所有条件，满足
-
-$$cnt + mod \leq n$$
-
-
-即
-
-$$\sum_{k=0}^n\lceil quantities_k / mid \rceil \leq n$$
-
-我们使用二分求得满足此条件的下界即可。
+我们基于贪心的策略，去看分配的店数量是否满足条件即可；然后在进一步缩小搜索空间，直到找到最小的最大值。
 
 代码如下：
 ```c++
-
+class Solution {
+public:
+    bool check(vector<int>& q, int n, long long x) {
+        int nn = 0;
+        for (auto cnt: q) {
+            nn += cnt / x;
+            if (cnt % x != 0) nn++;
+        }
+        if (nn > n) return false;
+        return true;
+    }
+    
+    int minimizedMaximum(int n, vector<int>& quantities) {
+        long long sum = 0;
+        for (auto q: quantities) {
+            sum += q;
+        }
+        long long l = 0;
+        long long r = sum;
+        
+        while(l < r) {
+            long long mid = (l + r)  / 2;
+            if (mid == 0) return 1;
+            if (check(quantities, n, mid)) {
+                r = mid;
+            } else {
+                l = mid + 1;
+            }
+        }
+        
+        return l;
+    }
+};
 ```
