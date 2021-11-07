@@ -66,8 +66,8 @@ public:
         string s;
         for(int end = 4; end < word.size(); end++){       
             for(int start = 0; start <= end; start++){
-                m=unordered_map<char, int>();              
-                s=word.substr(start, end - start + 1);
+                m = unordered_map<char, int>();              
+                s = word.substr(start, end - start + 1);
                 int flag=0; //标记是否为元音子串
                 for(char c: s){
                     if(c!='a' && c!='e' && c!='i' && c!='o'&& c!='u'){
@@ -83,5 +83,4 @@ public:
         return num;  
     }
 };
-
 ```
