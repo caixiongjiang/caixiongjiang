@@ -41,3 +41,29 @@ M 中最大的整数是 2, 而且 M 中有4个值为2的元素。因此返回 4�
 
 ---
 ## 思路
+
+这道题上来我的思路就是死做，按照他的步骤将所有操作做一遍，再取统计取得最大数值时，数组中出现的个数！
+
+但其实这道题不需要这么麻烦，直接看官方给的思路
+
+今天这道题关键在于理解题意，因为每个范围都是从 0 开始，**所以，我们只需要求得最小的行和最小的列，两者相乘即可。**
+
+如下图所示，在一个大矩形中，给定了三个范围，我们找到最小的行和最小的列，就是图中蓝色的区域，相乘就是结果。
+
+![avater](https://pic.leetcode-cn.com/1636244271-HDtqYj-file_1636244282644)
+
+代码如下：
+```c++
+class Solution {
+public:
+    int maxCount(int m, int n, vector<vector<int>>& ops) {
+        int mina = m, minb = n;
+        for (const auto& op: ops) {
+            mina = min(mina, op[0]);
+            minb = min(minb, op[1]);
+        }
+        return mina * minb;
+    }
+};
+```
+
