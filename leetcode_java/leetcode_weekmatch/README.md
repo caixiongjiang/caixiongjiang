@@ -25,10 +25,10 @@
 * (!)[2060：同源字符串检测](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2060.md)
 
 ## match266
-* [2061：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2061.md)
-* [2062：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2062.md)
-* [2063：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2063.md)
-* [2064：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2064.md)
+* [2061：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2061.md)
+* [2062：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2062.md)
+* [2063：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2063.md)
+* [2064：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2064.md)
 
 
 # 双周赛
