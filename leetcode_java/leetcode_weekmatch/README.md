@@ -16,19 +16,19 @@
 * [2047：句子中的有效单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2047.md)
 * [2048：下一个更大的数值平衡数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2048.md)
 * [2049：统计最高分的节点数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2049.md)
-* (!)[2050：并行课程 III](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2050.md)
+* (×)[2050：并行课程 III](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match264/leetcode2050.md)
 
 ## match265
 * [2057：值相等的最小索引](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2057.md)
 * [2058：找出临界点之间的最小和最大距离](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2058.md)
-* [2059：转化数字的最小运算数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2059.md)
-* (!)[2060：同源字符串检测](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2060.md)
+* (×)[2059：转化数字的最小运算数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2059.md)
+* (×)[2060：同源字符串检测](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2060.md)
 
 ## match266
 * [2062：统计字符串中的元音子字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2062.md)
 * [2063：所有子字符串中的元音](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2063.md)
 * [2064：分配给商店的最多商品的最小值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2064.md)
-* (!)[2065：最大化一张图中的路径价值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2065.md)
+* (×)[2065：最大化一张图中的路径价值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2065.md)
 
 
 # 双周赛
