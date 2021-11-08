@@ -56,3 +56,35 @@
 
 ---
 ## 思路
+
+A，B分开求解。后文中简称s为secret；g为guess。
+
+A：直接逐位对比secret和guess，如果相同，直接对A累计+1即可。
+
+B：对s和g进行各个字母的计数。为了更好的性能，将数字'0'-'9'映射到一个长度为10的数组中计数。统计完数字之后，我们对每个数字中s和g中出现次数少的那个累计计数到B，就可以得到s和g重复的字母数量。最后减去A的数量即可。
+
+
+代码如下：
+```c++
+class Solution {
+public:
+    string getHint(string secret, string guess) {
+        int n = secret.size();
+        int A = 0, B = 0;
+        vector<int> cntA(10), cntB(10);//使用数组记录0到9数字的个数
+        for(int i = 0; i < n; i++){
+            if(secret[i] == guess[i]) A++;
+            cntA[secret[i] - '0']++;
+            cntB[guess[i] - '0']++;
+        }
+
+        for(int i = 0; i < 10; i++){
+            B += min(cntA[i], cntB[i]);//统计数字相同的个数
+        }
+        B -= A;//将位置相同且数字相同的“公牛”数字个数减掉就为“奶牛”数字个数
+        string ans = "";
+        ans = to_string(A) + "A" + to_string(B) + "B";
+        return ans;
+    }
+};
+```
