@@ -1,96 +1,134 @@
-## 编号2063:分配给商店的最多商品的最小值（×）
+## 编号2063:所有子字符串中的元音(AC)
 
-给你一个整数 n ，表示有 n 间零售商店。总共有 m 种产品，每种产品的数目用一个下标从 0 开始的整数数组 quantities 表示，其中 quantities[i] 表示第 i 种商品的数目。
+给你一个字符串 word ，返回 word 的所有子字符串中 元音的总数 ，元音是指 'a'、'e'、'i'、'o' 和 'u' 。
 
-你需要将 所有商品 分配到零售商店，并遵守这些规则：
+子字符串 是字符串中一个连续（非空）的字符序列。
 
-一间商店 至多 只能有 一种商品 ，但一间商店拥有的商品数目可以为 任意 件。
-分配后，每间商店都会被分配一定数目的商品（可能为 0 件）。用 x 表示所有商店中分配商品数目的最大值，你希望 x 越小越好。也就是说，你想 最小化 分配给任意商店商品数目的 最大值 。
-请你返回最小的可能的 x 。
+注意：由于对 word 长度的限制比较宽松，答案可能超过有符号 32 位整数的范围。计算时需当心。
 
  
 
 示例 1：
 ```
-输入：n = 6, quantities = [11,6]
-输出：3
-解释： 一种最优方案为：
-- 11 件种类为 0 的商品被分配到前 4 间商店，分配数目分别为：2，3，3，3 。
-- 6 件种类为 1 的商品被分配到另外 2 间商店，分配数目分别为：3，3 。
-分配给所有商店的最大商品数目为 max(2, 3, 3, 3, 3, 3) = 3 。
+输入：word = "aba"
+输出：6
+解释：
+所有子字符串是："a"、"ab"、"aba"、"b"、"ba" 和 "a" 。
+- "b" 中有 0 个元音
+- "a"、"ab"、"ba" 和 "a" 每个都有 1 个元音
+- "aba" 中有 2 个元音
+因此，元音总数 = 0 + 1 + 1 + 1 + 1 + 2 = 6 。
 ```
 示例 2：
 ```
-输入：n = 7, quantities = [15,10,10]
-输出：5
-解释：一种最优方案为：
-- 15 件种类为 0 的商品被分配到前 3 间商店，分配数目为：5，5，5 。
-- 10 件种类为 1 的商品被分配到接下来 2 间商店，数目为：5，5 。
-- 10 件种类为 2 的商品被分配到最后 2 间商店，数目为：5，5 。
-分配给所有商店的最大商品数目为 max(5, 5, 5, 5, 5, 5, 5) = 5 。
+输入：word = "abc"
+输出：3
+解释：
+所有子字符串是："a"、"ab"、"abc"、"b"、"bc" 和 "c" 。
+- "a"、"ab" 和 "abc" 每个都有 1 个元音
+- "b"、"bc" 和 "c" 每个都有 0 个元音
+因此，元音总数 = 1 + 1 + 1 + 0 + 0 + 0 = 3 。
 ```
 示例 3：
 ```
-输入：n = 1, quantities = [100000]
-输出：100000
-解释：唯一一种最优方案为：
-- 所有 100000 件商品 0 都分配到唯一的商店中。
-分配给所有商店的最大商品数目为 max(100000) = 100000 。 
+输入：word = "ltcd"
+输出：0
+解释："ltcd" 的子字符串均不含元音。
+```
+示例 4：
+```
+输入：word = "noosabasboosa"
+输出：237
+解释：所有子字符串中共有 237 个元音。 
 ```
 提示：
 
-* m == quantities.length
-* 1 <= m <= n <= 105
-* 1 <= quantities[i] <= 105
+* 1 <= word.length <= 105
+* word 由小写英文字母组成
 
 来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/minimized-maximum-of-products-distributed-to-any-store
+链接：https://leetcode-cn.com/problems/vowels-of-all-substrings
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ---
 ## 思路
 
-如果一个目标是x能满足某种条件，x+1一定能满足某种条件；且检验条件的复杂度不高。 我们就可以考虑二分搜索的这种方式。
+上来一看和前面的题目好像，上来就用暴力（双指针）的方法，结果就是超出时间限制！
 
-在这道题中，check的过程就是采用贪心法，假设x可以满足条件，每个店都分配最大的商品（假设值），这样分配的店数一定是最少的。
-
-由于同一个店只能持有一种商品，所以某个商品需要的店数一定为 商品总数 除以 最大分配数 向上取整。
-
-我们基于贪心的策略，去看分配的店数量是否满足条件即可；然后在进一步缩小搜索空间，直到找到最小的最大值。
-
-代码如下：
+下面粘上我暴力的代码：
 ```c++
 class Solution {
 public:
-    bool check(vector<int>& q, int n, long long x) {
-        int nn = 0;
-        for (auto cnt: q) {
-            nn += cnt / x;
-            if (cnt % x != 0) nn++;
-        }
-        if (nn > n) return false;
-        return true;
-    }
-    
-    int minimizedMaximum(int n, vector<int>& quantities) {
-        long long sum = 0;
-        for (auto q: quantities) {
-            sum += q;
-        }
-        long long l = 0;
-        long long r = sum;
-        
-        while(l < r) {
-            long long mid = (l + r)  / 2;
-            if (mid == 0) return 1;
-            if (check(quantities, n, mid)) {
-                r = mid;
-            } else {
-                l = mid + 1;
+    long long countVowels(string word) {
+        int res = 0;
+        for(int end = 0; end < word.size(); end++){
+            for(int start = 0; start <= end; start++){
+                string s = word.substr(start, end - start + 1);
+                for(char c : s){
+                    if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') res++;
+                }
             }
         }
+        return res;
+    }
+};
+```
+
+想想也是，第二题怎么会比第一题简单！！笑死！！
+
+## 动态规划
+
+对于以字符wrd[idx]为末尾字符的字符串，可看做由以wrd[idx-1]为末尾字符的字符串，添加字符wrd[idx]得来。
+
+那么所求答案就是上一个字符串的结果，加上“新添加字符的影响”。
+
+在添加新字符时，原有字符所能组成的子串会增加（即原有字符到新字符组成的串）。此时，新增的字符有两种可能：
+
+1.是元音字符。
+
+对于这种情况，增加了一个元音字符，其自身作为子串使得总答案+1；也使得前面每个字符的“最大长度子串（即该字符到末尾字符组成的字符串）”的元音字符数量+1。我们可以用一个变量prevNum保存之前子串中元音字符的个数。
+
+2.不是元音字符。
+
+此时，前面每个字符的“最大长度子串”的元音字符数量不变。直接加入这个数量即可（因为新加入字符使得这些子串，作为新串的一部分被遍历到了）。
+
+
+动态规划代码：
+```c++
+class Solution {
+public:
+    long long countVowels(string word) 
+    {
+        long long wrdSize = word.size();
+        long long ans = 0;
+                
+        long long prevValidCharNum = 0;
+        //赋初值
+        if(isValidChar(word[0])) { 
+            ans = 1; 
+            prevValidCharNum = 1;  
+        }
         
-        return l;
+        for(long long i = 1; i < wrdSize ; i++)
+        {
+            if(isValidChar(word[i])){
+                ans += 1;
+                ans += (prevValidCharNum + i);
+                prevValidCharNum = prevValidCharNum + i + 1; // 不要忘记更新元音字符数量，+1是其自身对应的字符数量
+            }
+            else{
+                ans += prevValidCharNum;
+            }
+        }        
+        return ans;
+    }
+    
+    bool isValidChar(char c){
+        vector<char> dict({'a','e','i','o','u'});
+        for(auto v:dict){
+            if( c == v) return true;
+        }
+        return false;
     }
 };
 ```

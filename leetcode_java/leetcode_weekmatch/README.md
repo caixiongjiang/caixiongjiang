@@ -25,10 +25,10 @@
 * (!)[2060：同源字符串检测](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match265/leetcode2060.md)
 
 ## match266
-* [2061：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2061.md)
-* [2062：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2062.md)
-* [2063：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2063.md)
-* [2064：](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2064.md)
+* [2062：统计字符串中的元音子字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2062.md)
+* [2063：所有子字符串中的元音](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2063.md)
+* [2064：分配给商店的最多商品的最小值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2064.md)
+* (!)[2065：最大化一张图中的路径价值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2065.md)
 
 
 # 双周赛

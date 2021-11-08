@@ -280,3 +280,4 @@
 * [1218.最长定差子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode1218.md)【动态规划】
 * [268.丢失的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode268.md)【排序|哈希集合|位运算|数学方法】
 * [598.范围求和Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode598.md)
+* [299.猜数字游戏](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode299.md)
