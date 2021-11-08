@@ -46,9 +46,9 @@
 ```
 提示：
 
-1 <= secret.length, guess.length <= 1000
-secret.length == guess.length
-secret 和 guess 仅由数字组成
+* 1 <= secret.length, guess.length <= 1000
+* secret.length == guess.length
+* secret 和 guess 仅由数字组成
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/bulls-and-cows
