@@ -268,6 +268,9 @@
 * (!)[684.冗余连接](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode684.md)【并查集基础题目】
 * (!)[685.冗余连接Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode685.md)【并查集基础题目】
 
+# 模拟
+* [657.机器人能否回到原点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode657.md)
+
 
 
 # 每日一题
