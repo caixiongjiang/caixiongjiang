@@ -41,3 +41,24 @@ timeSeries 按 非递减 顺序排列
 
 ---
 ## 思路
+
+题目比较简单，只要注意最后一次中毒的时间别忘了加！！
+
+代码如下：
+```c++
+class Solution {
+public:
+    int findPoisonedDuration(vector<int>& timeSeries, int duration) {
+        int res = 0;
+        for(int i = 0; i < timeSeries.size() - 1; i++){
+            if(timeSeries[i] + duration - 1 < timeSeries[i + 1]){
+                res += duration;
+            }else{
+                res += (timeSeries[i + 1] - timeSeries[i]);
+            }
+        }
+        res += duration;//加最后一次中毒的时间
+        return res;
+    }
+};
+```
