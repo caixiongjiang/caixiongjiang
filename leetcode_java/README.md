@@ -286,4 +286,5 @@
 * [299.猜数字游戏](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode299.md)
 * (!)[488.祖玛游戏](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode488.md)【双指针|回溯】【困难】
 * [495.提莫攻击](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode495.md)【简单模拟】
+* (!)[629.K个逆序对数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode629.md)【序列DP】【困难】
 * [375.猜数字大小Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode375.md)
