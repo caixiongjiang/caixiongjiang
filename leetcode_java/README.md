@@ -272,6 +272,11 @@
 * [657.机器人能否回到原点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode657.md)
 * [31.下一个排列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode31.md)
 
+# 位运算
+
+# 算法模板
+* [各类算法模板](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/%E5%90%84%E7%B1%BB%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF.md)
+
 
 # 每日一题
 
