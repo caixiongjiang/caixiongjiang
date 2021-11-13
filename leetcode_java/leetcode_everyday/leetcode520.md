@@ -30,3 +30,46 @@
 
 ---
 ## 思路
+
+比较简单的分情况判断题
+
+我的思路是根据前两个字母的情况分类讨论：
+
+如果第一个字母是大写，则有两种情况：
+* 1.第二个字母是大写，则所有字母都是大写
+* 2.第二个字母是小写，则后面所有字母都是小写
+
+如果第一个字母是小写：
+* 则后面所有字母都是小写。
+
+代码如下：
+```c++
+class Solution {
+public:
+    bool detectCapitalUse(string word) {
+        int i = 0;
+        if(word[i] >= 65 && word[i] <= 90){
+            i++;
+            if(word[i] >= 65 && word[i] <= 90){
+                i++;
+                for(; i < word.size(); i++){
+                    if(word[i] >= 97 && word[i] <= 122) return false;
+                }
+                return true;
+            }else{
+                i++;
+                for(; i < word.size(); i++){
+                    if(word[i] >= 65 && word[i] <= 90) return false;
+                }
+                return true;
+            }
+        }else{
+            i++;
+            for(; i < word.size(); i++){
+                if(word[i] >= 65 && word[i] <= 90) return false;
+            }
+            return true;
+        }
+    }
+};
+```
