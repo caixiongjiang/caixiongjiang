@@ -93,7 +93,7 @@ public:
             for (int j = 0; j < rows; ++j) {
                 if (i + j >= cols)
                     break;
-                int idx = j * cols + i + j;
+                int idx = j * cols + i + j;//按行遍历  i = 0 对应 j = 0,1,2,3...  idx为对应encodedText的顺序
                 ans.push_back(encodedText[idx]);
             }
         }
