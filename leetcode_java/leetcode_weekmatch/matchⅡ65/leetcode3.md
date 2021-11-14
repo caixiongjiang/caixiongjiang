@@ -50,27 +50,7 @@
 ---
 ## 思路
 
-刚上来一看这道题感觉好简单，放在第三题有点奇怪，但还是上当了，直接写了超时的代码上去。
-
-代码如下：
-```c++
-class Solution {
-public:
-    vector<int> maximumBeauty(vector<vector<int>>& items, vector<int>& queries) {
-        vector<int> ans(queries.size());
-        for(int j = 0; j < queries.size(); j++){
-            int n = 0;
-            for(int i = 0; i < items.size(); i++){
-                if(items[i][0] <= queries[j]){
-                    n = max(n, items[i][1]);
-                }
-            }
-            ans[j] = n;
-        }
-        return ans;
-    }
-};
-```
+思路比较简单，但说明在查找美丽值之前，一定要排序！！！
 
 下面附上的是竞赛前几的大佬的代码：
 ```c++
@@ -87,6 +67,7 @@ public:
         sort(qs.begin(), qs.end());
         vector<int> results(m);
         int maxVal = 0;
+        //两次循环将符合条件的最大美丽值找出来
         for (int i = 0, j = 0; i < m; ++i) {
             while (j < n && items[j][0] <= qs[i].first) {
                 maxVal = max(maxVal, items[j++][1]);
