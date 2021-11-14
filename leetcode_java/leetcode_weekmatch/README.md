@@ -30,6 +30,13 @@
 * [2064：分配给商店的最多商品的最小值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2064.md)
 * (×)[2065：最大化一张图中的路径价值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2065.md)
 
+## match267
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode.md)
+
+
 
 # 双周赛
 
