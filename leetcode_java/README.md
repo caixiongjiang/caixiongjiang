@@ -33,6 +33,7 @@
 * 🔥[map使用：两数之和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode01.md)
 * 🔥[map使用：四数相加Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode454.md)
 * 🔥[map使用：赎金信](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode383.md)
+* 🔥[map使用：三数之和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode15.md)
 </br></br>
 
 # 字符串
