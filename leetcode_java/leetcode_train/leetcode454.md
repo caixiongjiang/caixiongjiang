@@ -36,3 +36,29 @@
 ---
 ## 思路
 
+
+代码如下：
+```c++
+class Solution {
+public:
+    int fourSumCount(vector<int>& A, vector<int>& B, vector<int>& C, vector<int>& D) {
+        unordered_map<int, int> map;//key:a+b的值，value:a+b数值出现的次数
+        //遍历A数组和B数组，统计两个数组元素之和，和出现的次数，放到map中
+        for(int a : A){
+            for(int b : B){
+                map[a + b]++;
+            }
+        }
+        int count = 0;//统计a+b+c+d = 0 出现的次数
+        //在遍历C数组和D数组，找到如果0-(c+d)在map中出现过的话，就把map中的key对应的value统计出来
+        for(int c : C){
+            for(int d : D){
+                if(map.find(0 - (c + d)) != map.end()){
+                    count += map[0 - (c + d)];
+                }
+            }
+        }
+        return count;
+    }
+};
+```

@@ -296,4 +296,4 @@
 * [375.猜数字大小Ⅱ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode375.md)【动态规划】
 * [520.检测大写字母](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode520.md)【简单分类讨论】
 * [677.键值映射](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode677.md)【类的实现】【暴力|哈希映射|字典树】
-* [319.灯泡开关](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode319.md)
+* [319.灯泡开关](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode319.md)【数论】
