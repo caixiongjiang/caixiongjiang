@@ -54,6 +54,7 @@ public:
             string word = words[i];
             int wordLength = words[i].size();
             for(int j = 0; j < wordLength; j++){
+                //|=是按位或并赋值的意思。若有两个整型变量a和b，那么a|=b;就是a=a|b;的意思。
                 masks[i] |= 1 << (word[j] - 'a');
             }
         }
