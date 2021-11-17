@@ -300,3 +300,4 @@
 * [677.键值映射](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode677.md)【类的实现】【暴力|哈希映射|字典树】
 * [319.灯泡开关](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode319.md)【数论】
 * [391.完美矩形](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode391.md)【困难】
+* [318.最大单词长度乘积](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode318.md)
