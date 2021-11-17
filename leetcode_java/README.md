@@ -274,6 +274,8 @@
 # 模拟
 * [657.机器人能否回到原点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode657.md)
 * [31.下一个排列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode31.md)
+* [36.有效的数独](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode36.md)
+
 
 # 位运算
 
