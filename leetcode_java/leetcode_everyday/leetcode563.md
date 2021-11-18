@@ -81,16 +81,28 @@
 class Solution {
 public:
     int ans = 0;
-    int findTilt(TreeNode* root) {
+
+    int findTilt(TreeNode root) {
         dfs(root);
         return ans;
     }
-    int dfs(TreeNode* node){
-        if(node == nullptr) return 0;
-        int leftSum = dfs(node->left);
-        int rightSum = dfs(node->right);
-        ans += abs(leftSum - rightSum);
-        return leftSum + rightSum + node->val;
+
+    int dfs(TreeNode node) {
+        if (node == null) {
+            // 空节点返回0
+            return 0;
+        }
+
+        // 左子树之和
+        int left = dfs(node.left);
+        // 右子树之和
+        int right = dfs(node.right);
+
+        // 总坡度存储在全局变量 ans 中
+        ans += Math.abs(left - right);
+
+        // 返回值是子树之和
+        return left + right + node.val;
     }
 };
 ```
