@@ -304,8 +304,5 @@
 * [391.完美矩形](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode391.md)【困难】
 * [318.最大单词长度乘积](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode318.md)【位运算降低复杂度】
 * [563.二叉树的坡度](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode563.md)【二叉树遍历】
-<<<<<<< HEAD
+* [397.整数替换](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode397.md)
 * [594.最长和谐子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode594.md)【枚举|哈希表】
-=======
-* [397.整数替换](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode397.md)【】
->>>>>>> 9c809539de45425bed29dffd65bf1dd4d6234203
