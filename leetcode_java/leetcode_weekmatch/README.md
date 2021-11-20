@@ -31,10 +31,10 @@
 * (×)[2065：最大化一张图中的路径价值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match266/leetcode2065.md)
 
 ## match267
-* [买票需要的时间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode.md)
-* [反转偶数长度组的节点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode.md)
-* [解码斜向换位密码](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode.md)
-* (×)[处理含限制条件的好友请求](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode.md)
+* [2073:买票需要的时间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode2073.md)
+* [2074:反转偶数长度组的节点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode2074.md)
+* [2075:解码斜向换位密码](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode2075.md)
+* (×)[2076:处理含限制条件的好友请求](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode2076.md)
 
 
 
@@ -53,7 +53,7 @@
 * (!)[2056：棋盘上有效移动组合的数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A164/leetcode2056.md)
 
 ## matchⅡ65
-* [检查两个字符串是否几乎相等](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode.md)
-* [模拟行走机器人 II](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode.md)
-* [每一个查询的最大美丽值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode.md)
-* (×)[你可以安排的最多任务数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode.md)
+* [2068:检查两个字符串是否几乎相等](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode2068.md)
+* [2069:模拟行走机器人 II](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode2069.md)
+* [2070:每一个查询的最大美丽值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode2070.md)
+* (×)[2071:你可以安排的最多任务数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode2071.md)
