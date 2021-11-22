@@ -307,3 +307,4 @@
 * [397.整数替换](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode397.md)
 * [594.最长和谐子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode594.md)【枚举|哈希表】
 * [559. N 叉树的最大深度](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode559.md)
+* [384.打乱数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode384.md)
