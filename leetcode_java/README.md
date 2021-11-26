@@ -267,6 +267,7 @@
 * [841.钥匙和房间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode841.md)【有向图】 dfs,bfs都可以
 * [127.单词接龙](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode127.md)【广搜,有难度】
 * [542.01矩阵](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode542.md)【广搜｜动态规划】
+* [994.腐烂的橘子](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode994.md)【广搜】【01矩阵的升级版】
 
 # 并查集
 * (!)[684.冗余连接](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode684.md)【并查集基础题目】
