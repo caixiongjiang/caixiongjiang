@@ -266,6 +266,7 @@
 * [463.岛屿的周长](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode463.md)【模拟】
 * [841.钥匙和房间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode841.md)【有向图】 dfs,bfs都可以
 * [127.单词接龙](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode127.md)【广搜,有难度】
+* [542.01矩阵](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode542.md)【广搜｜动态规划】
 
 # 并查集
 * (!)[684.冗余连接](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode684.md)【并查集基础题目】
