@@ -63,3 +63,9 @@
 * [2069:模拟行走机器人 II](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode2069.md)
 * [2070:每一个查询的最大美丽值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode2070.md)
 * (×)[2071:你可以安排的最多任务数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode2071.md)
+
+## matchⅡ66
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode.md)
