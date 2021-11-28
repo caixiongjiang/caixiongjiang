@@ -37,10 +37,16 @@
 * (×)[2076:处理含限制条件的好友请求](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match267/leetcode2076.md)
 
 ## match268
-* [两栋颜色不同且距离最远的房子](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode.md)
-* [给植物浇水](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode.md)
-* [区间内查询数字的频率](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode.md)
-* (×)[k镜像数字的和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode.md)
+* [2078.两栋颜色不同且距离最远的房子](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode2078.md)
+* [2079.给植物浇水](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode2079.md)
+* [2080.区间内查询数字的频率](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode2080.md)
+* (×)[2081.k镜像数字的和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode2081.md)
+
+## match269
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode.md)
+* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode.md)
 
 
 
