@@ -314,4 +314,5 @@
 * [423.从英文中重建数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode423.md)【字典树的应用】
 * (!)[458.可怜的小猪](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode458.md)【数论||动态规划】【困难】
 * [700.二叉搜索树中的搜索](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode700.md)
-* (!)[519.随机翻转矩阵](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_train/leetcode519.md)【分块||数组映射】
+* (!)[519.随机翻转矩阵](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode519.md)【分块||数组映射】
+* [438.找到字符串中所有字母异位词](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode438.md)【】
