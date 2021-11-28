@@ -150,3 +150,35 @@ public:
 };
 ```
 
+找到一个更精简的版本：
+```c++
+class Solution {
+public:
+    vector<int> findAllPeople(int n, vector<vector<int>>& meetings, int firstPerson) {
+        vector<int> d(n, INT_MAX), done(n);
+        vector<vector<pair<int, int>>> G(n);
+        for (auto& v: meetings) {
+            G[v[0]].emplace_back(v[1], v[2]);
+            G[v[1]].emplace_back(v[0], v[2]);
+        }
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+        pq.emplace(d[0] = 0, 0);
+        pq.emplace(d[firstPerson] = 0, firstPerson);
+        vector<int> res;
+        while (not pq.empty()) {
+            int u = pq.top().second;
+            pq.pop();
+            if (done[u]) continue;
+            done[u] = 1;
+            res.push_back(u);
+            for (auto [v, t] : G[u]) {
+                if (t >= d[u] and d[v] > t) {
+                    pq.emplace(d[v] = t, v);
+                }
+            }
+        }
+        return res;
+    }
+};
+```
+
