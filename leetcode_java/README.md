@@ -317,3 +317,4 @@
 * (!)[519.随机翻转矩阵](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode519.md)【分块||数组映射】
 * [438.找到字符串中所有字母异位词](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode438.md)【哈希表的维护】
 * [786.第 K 个最小的素数分数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode786.md)【二分查找||自定义排序】
+* [400.第 N 位数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/leetcode400.md)【】
