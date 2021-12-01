@@ -1,34 +1,74 @@
-#include<iostream>
-#include<fstream>
+#include <iostream>
 using namespace std;
 
-//二进制文件  写文件
-class Person
+//实现通用 对数组进行排序的函数
+//规则 从大到小
+//算法 选择排序
+//测试 char数组 ，int数组
+
+//交换函数模板
+template<typename T>
+void mySwap(T &a, T &b)
 {
-public:
-	
-	char m_Name[64];//姓名
-	int m_Age;			 //年龄
-};
+        T temp = a;
+        a = b;
+        b = temp;
+}
+
+//排序算法(简单选择排序)
+template<typename  T>
+void mySort(T arr[], int length)
+{
+    for(int i = 0; i < length; i++)
+    {
+        int max = i; //认定最大值的下标
+        for(int j = i + 1; j < length; j++)
+        {
+            if(arr[max]  < arr[j])
+            {
+                max = j;
+            }
+        }
+        if(max != i)
+        {
+            //交换max和i元素
+            mySwap(arr[max], arr[i]);
+        }
+    }
+}
+
+//提供打印数组模板
+template<typename T>
+void printArray(T arr[], int length)
+{
+    for(int i = 0; i < length; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
 
 void test01()
 {
-	//1.包含头文件
+    //测试char数组
+    char charArr[] = "badcfe";
+    int len = sizeof (charArr) / sizeof (char);
+    mySort(charArr, len);
+    printArray(charArr, len);
+}
 
-	//2.创建流对象
-	ofstream ofs;
-	//3.打开文件
-	ofs.open("person.txt", ios::out | ios::binary);
-	//4.写文件
-	Person p = { "张三", 18 };
-	ofs.write((const char*)&p, sizeof(Person));
-	//5.关闭文件
-	ofs.close();
+void test02()
+{
+    //测试int数组
+    int intArr[] = {7,5,1,9,3,2,4,8};
+    int len = sizeof (intArr) / sizeof (int);
+    mySort(intArr, len);
+    printArray(intArr, len);
 }
 
 int main()
 {
-	test01();
-	system("pause");
-	return 0;
+    test01();
+    test02();
+    return 0;
 }
