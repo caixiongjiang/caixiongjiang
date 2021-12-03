@@ -1,162 +1,47 @@
-#include<iostream>
-
+#include <iostream>
 using namespace std;
 
-//抽象不同零件类
-//抽象CPU类
-class CPU
+//普通函数与函数模板的调用规则
+//1.如果函数模版和普通函数都可以调用，优先调用普通函数
+//2.可以通过空模板的参数列表 强制调用函数模版
+//3.函数模板可以发生函数重载
+//4.如果函数模版可以产生更好的匹配，优先调用函数模版
+
+void myPrint(int a, int b)
 {
-public:
-	//抽象的计算函数
-	virtual void calculator() = 0;
-};
+    cout << "调用的普通函数" << endl;
+}
 
-//抽象显卡类
-class GPU
+template <typename T>
+void myPrint(T a, T b)
 {
-public:
-	//抽象的显示函数
-	virtual void display() = 0;
-};
+    cout << "调用函数模版" << endl;
+}
 
-//抽象内存条类
-class Memory
+template <typename T>
+void myPrint(T a, T b, T c)
 {
-public:
-	//抽象的存储函数
-	virtual void storage() = 0;
-};
-
-//电脑类
-class Computer
-{
-public:
-	Computer(CPU* cpu, GPU* gpu, Memory* mem)
-	{
-		m_cpu = cpu;
-		m_gpu = gpu;
-		m_mem = mem;
-	}
-
-	//提供工作的函数
-	void work()
-	{
-		//让零件工作起来，调用接口
-		m_cpu->calculator();
-
-		m_gpu->display();
-
-		m_mem->storage();
-	}
-	//提供析构函数 释放3个电脑零件
-	~Computer()
-	{
-		//释放cpu零件
-		if (m_cpu != NULL) 
-		{
-			delete m_cpu;
-			m_cpu = NULL;
-		}
-		//释放显卡零件
-		if (m_gpu != NULL)
-		{
-			delete m_gpu;
-			m_gpu = NULL;
-		}
-		//释放内存条零件
-		if (m_mem != NULL)
-		{
-			delete m_mem;
-			m_mem = NULL;
-		}
-	}
-private:
-	CPU * m_cpu;//cpu的零件指针
-	GPU * m_gpu;//显卡零件指针
-	Memory * m_mem;//内存条的零件指针
-};
-
-//具体厂商
-//Intel厂商
-class IntelCPU : public CPU
-{
-public:
-	virtual void calculator()
-	{
-		cout << "Intel的CPU开始计算了!" << endl;
-	}
-};
-
-class IntelGPU : public GPU
-{
-public:
-	virtual void display()
-	{
-		cout << "Intel的显卡开始显示了!" << endl;
-	}
-};
-
-class IntelMemory : public Memory
-{
-public:
-	virtual void storage()
-	{
-		cout << "Intel的内存条开始存储了!" << endl;
-	}
-};
-
-//Lenovo厂商
-class LenovoCPU : public CPU
-{
-public:
-	virtual void calculator()
-	{
-		cout << "Lenovo的CPU开始计算了!" << endl;
-	}
-};
-
-class LenovoGPU : public GPU
-{
-public:
-	virtual void display()
-	{
-		cout << "Lenovo的显卡开始显示了!" << endl;
-	}
-};
-
-class LenovoMemory : public Memory
-{
-public:
-	virtual void storage()
-	{
-		cout << "Lenovo的内存条开始存储了!" << endl;
-	}
-};
+    cout << "重载的函数模版" << endl;
+}
 
 void test01()
 {
-	//第一台电脑零件
-	CPU* IntelCpu = new IntelCPU;
-	GPU* IntelGpu = new IntelGPU;
-	Memory* IntelMem = new IntelMemory;
+    int a = 10;
+    int b = 20;
 
-	cout << "第一台电脑开始工作：" << endl;
-	//创建第一台电脑
-	Computer* computer1 = new Computer(IntelCpu, IntelGpu, IntelMem);
-	computer1->work();
-	delete computer1;
-	
-	cout << "-----------------------" << endl;
-	cout << "第二台电脑开始工作：" << endl;
-	//第二台电脑组装
-	Computer* computer2 = new Computer(new LenovoCPU, new LenovoGPU, new LenovoMemory);
-	computer2->work();
-	delete computer2;
+    myPrint(a, b);               //调用的普通函数
+    //通过空模版的参数列表，强制调用函数模版
+    myPrint<>(a, b);            //调用函数模版
+    myPrint(a, b, 100);  //重载的函数模版
+
+    //如果函数模版产生更好的匹配，优先调用函数模版
+    char c1 = 'a';
+    char c2 = 'b';
+    myPrint(c1, c2);  //调用函数模版
 }
 
 int main()
 {
-	test01();
-	system("pause");
-	return 0;
+    test01();
+    return 0;
 }
