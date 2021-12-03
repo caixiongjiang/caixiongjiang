@@ -322,3 +322,4 @@
 ## 2021 12月
 * [1446.连续字符](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1446.md)
 * [506.相对名次](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode506.md)
+* [1005.K 次取反后最大化的数组和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1005.md)【贪心】
