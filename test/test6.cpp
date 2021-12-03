@@ -1,53 +1,87 @@
-#include<iostream>
-
+#include <iostream>
 using namespace std;
+#include <string>
 
-//多继承语法
-class Base1
+//模版的局限性
+//模版并不是万能的，有些特定数据类型，需要用具体化方式做特殊实现
+
+class Person
 {
 public:
-	Base1()
-	{
-		m_A = 100;
-	}
-	int m_A;
+    Person(string name, int age)
+    {
+        this->m_Name = name;
+        this->m_Age = age;
+    }
+
+    //姓名
+    string m_Name;
+    //年龄
+    int m_Age;
 };
 
-class Base2
+//对比两个数据是否相等的函数
+template<typename T>
+bool myCompare(T &a, T &b)
 {
-public:
-	Base2()
-	{
-		m_A = 200;
-	}
-	int m_A;
-};
+    if(a == b)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
-//子类 需要继承Base1和Base2
-//语法 ：class 子类： 继承方式   父类1，继承方式   父类2... 
-class Son :public Base1, public Base2
+//利用具体化的Person版本实现代码，具体化优先调用
+template<> bool  myCompare(Person &p1, Person &p2)
 {
-public:
-	Son() 
-	{
-		m_C = 300;
-		m_D = 400;
-	}
-	int m_C;
-	int m_D;
-};
+    if(p1.m_Name == p2.m_Name && p1.m_Age == p2.m_Age)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
 void test01()
 {
-	Son s;
-	cout << "size of Son = " << sizeof(s) << endl;// 结果为16
-	//当父类中出现同名成员，需要加作用域区分
-	cout << "Base1下的m_A = " << s.Base1::m_A << endl;
-	cout << "Base2下的m_A = " << s.Base2::m_A << endl;
+    int a = 10;
+    int b = 20;
+
+    bool ret = myCompare(a, b);
+    if(ret)
+    {
+        cout << "a == b" << endl;
+    }
+    else
+    {
+        cout << "a != b" << endl;
+    }
 }
 
-int main() {
-	test01();
-	system("pause");
-	return 0;
+void test02()
+{
+    Person p1("Tom", 10);
+    Person p2("Tom", 10);
+
+    bool ret = myCompare(p1, p2);
+    if(ret)
+    {
+        cout << "p1 == p2" << endl;
+    }
+    else
+    {
+        cout << "p1 != p2" << endl;
+    }
+}
+
+int main()
+{
+    test01();
+    test02();
+    return 0;
 }
