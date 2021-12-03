@@ -1,42 +1,41 @@
-#include<iostream>
-#include<fstream>
+#include <iostream>
 using namespace std;
-
-class Person
+//函数模版注意事项
+template<typename T>    //typename可以替换成class
+void mySwap(T &a, T &b)
 {
-public:
-
-	char m_Name[64];//姓名
-	int m_Age;			 //年龄
-};
-
-//二进制文件  读文件
+    T temp = a;
+    a = b;
+    b = temp;
+}
+//这里为了区分函数模版和类模版，函数模版用typename，类模版用class。
+//1.自动类型推倒，必须要推倒出一致的数据类型T才可以使用
 void test01()
 {
-	//1.包含头文件
-
-	//2.创建流对象
-	ifstream ifs;
-	//3.打开文件   判断文件是否打开成功
-	ifs.open("person.txt", ios::in | ios::binary);
-	if (!ifs.is_open())
-	{
-		cout << "文件打开失败" << endl;
-		return;
-	}
-	//4.读文件
-	Person p;
-
-	ifs.read((char*)&p, sizeof(Person));
-
-	cout << "姓名：" << p.m_Name << "    年龄：" << p.m_Age << endl;
-	//5.关闭文件
-	ifs.close();
+    int a = 10;
+    int b = 20;
+    char c = 'c';
+    mySwap(a, b);//正确！
+    //mySwap(a, c);  //推导不出一致的T数据类型，错误！
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
 }
+
+//2.模版必须要确定出T的数据类型，才可以使用
+template<typename T>
+void func()
+{
+    cout << "func 调用" << endl;
+}
+void test02()
+{
+    func<int>();
+}
+
 
 int main()
 {
-	test01();
-	system("pause");
-	return 0;
+    test01();
+    test02();
+    return 0;
 }
