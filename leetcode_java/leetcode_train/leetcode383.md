@@ -67,3 +67,24 @@ public:
     }
 };
 ```
+
+版本二：
+```c++
+class Solution {
+public:
+    bool canConstruct(string ransomNote, string magazine) {
+        vector<int> cnt1(26), cnt2(26);
+        for(int i = 0; i < ransomNote.size(); i++){
+            cnt1[ransomNote[i] - 'a']++;
+        }
+        for(int i = 0; i < magazine.size(); i++){
+            cnt2[magazine[i] - 'a']++;
+        }
+        if(cnt1.size() > cnt2.size()) return false;
+        for(int i = 0; i < cnt1.size(); i++){
+            if(cnt1[i] > cnt2[i]) return false;
+        }
+        return true;
+    }
+};
+```
