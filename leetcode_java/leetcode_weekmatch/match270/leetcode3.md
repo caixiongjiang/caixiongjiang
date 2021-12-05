@@ -88,15 +88,15 @@ public:
         check(root, destValue, str2);
         reverse(str1.begin(), str1.end()); 
 	reverse(str2.begin(), str2.end());
-        while(str1.size() && str2.size() && str1.back() == str2.back()){
+        while(str1.size() && str2.size() && str1.back() == str2.back()){//将相同的前缀去除，寻找最近的公共父节点
             str1.pop_back();
             str2.pop_back();
         }
+	//题目要求的顺序为从叶子节点到公共节点再到叶子节点
         reverse(str1.begin(), str1.end()); 
 	reverse(str2.begin(), str2.end());
         string ans = string(str1.size(), 'U') + str2;
-        return ans;
-        
+        return ans;      
     }
 };
 ```
