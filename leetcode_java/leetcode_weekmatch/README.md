@@ -43,10 +43,10 @@
 * (×)[2081.k镜像数字的和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match268/leetcode2081.md)
 
 ## match269
-* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode.md)
-* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode.md)
-* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode.md)
-* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode.md)
+* [2089.找出数组排序后的目标下标](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode2089.md)
+* [2090.半径为 k 的子数组平均值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode2090.md)
+* [2091.从数组中移除最大值和最小值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode2091.md)
+* [2092.找出知晓秘密的所有专家](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode2092.md)
 
 
 
@@ -71,7 +71,7 @@
 * (×)[2071:你可以安排的最多任务数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A165/leetcode2071.md)
 
 ## matchⅡ66
-* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode.md)
-* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode.md)
-* [](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode.md)
-* (!)[](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode.md)
+* [2085.统计出现过一次的公共字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode2085.md)
+* [2086.从房屋收集雨水需要的最少水桶数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode2086.md)
+* [2087.网格图中机器人回家的最小代价](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode2087.md)
+* (!)[2088.统计农场中肥沃金字塔的数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode2088.md)
