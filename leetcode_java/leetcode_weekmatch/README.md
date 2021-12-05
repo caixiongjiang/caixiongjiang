@@ -48,6 +48,12 @@
 * [2091.从数组中移除最大值和最小值](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode2091.md)
 * [2092.找出知晓秘密的所有专家](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode2092.md)
 
+## match270
+* [.找出 3 位偶数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
+* [.删除链表的中间节点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
+* [.从二叉树一个节点到另一个节点每一步的方向](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
+* [.合法重新排列数对](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
+
 
 
 # 双周赛
