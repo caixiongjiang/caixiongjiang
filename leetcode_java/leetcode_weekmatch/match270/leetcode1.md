@@ -62,6 +62,7 @@
 ---
 ## 思路
 
+### 暴力枚举
 初步想法就是暴力枚举，具体做法：
 * 1.根据每位数字的特性，将所有能组成数字都列举出来
 * 2.将数字的大小作为下标，将它标记为已经访问过的数字，vis数组的值变为1
@@ -91,6 +92,38 @@ public:
             if (vis[i]) res.push_back(i);
         }
         return res;
+    }
+};
+```
+
+
+### 哈希表
+
+先将所有的digits中的数字遍历并存入哈希表中。
+
+求的是三位数，并不多，那就将所有**三位数的偶数**遍历一遍，将他们的每位数都求出来，存入哈希表中，再将哈希表中的对应数字的哈希值减1。
+
+如果对应三个数字上的哈希值都还大于0，说明digits数组可以组成这个三位数。
+
+注意：判断完就将三个数字的哈希值复原，进行下一轮的判断（digits数组可以重复使用）
+
+
+代码如下：
+```c++
+class Solution {
+    int cnt[10];
+
+public:
+    vector<int> findEvenNumbers(vector<int>& digits) {
+        for (int x : digits) cnt[x]++;
+        vector<int> ans;
+        for (int i = 100; i < 999; i += 2) {
+            int a = i % 10, b = i / 10 % 10, c = i / 100;
+            cnt[a]--; cnt[b]--; cnt[c]--;
+            if (cnt[a] >= 0 && cnt[b] >= 0 && cnt[c] >= 0) ans.push_back(i);
+            cnt[a]++; cnt[b]++; cnt[c]++;
+        }
+        return ans;
     }
 };
 ```
