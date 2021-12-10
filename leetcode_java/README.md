@@ -329,3 +329,4 @@
 * [1034.边界着色](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1034.md)【深搜||广搜】
 * [689.边界着色](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode689.md)【困难】【滑动窗口】
 * [794.有效的井字游戏](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode794.md)【模拟判断】
+* [748.最短补全词](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode748.md)
