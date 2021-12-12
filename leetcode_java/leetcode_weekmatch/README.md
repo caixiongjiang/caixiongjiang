@@ -54,6 +54,12 @@
 * [.从二叉树一个节点到另一个节点每一步的方向](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
 * [.合法重新排列数对](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
 
+## match271
+* [1](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match271/leetcode.md)
+* [2](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match271/leetcode.md)
+* [3](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match271/leetcode.md)
+* [4](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match271/leetcode.md)
+
 
 
 # 双周赛
@@ -81,3 +87,9 @@
 * [2086.从房屋收集雨水需要的最少水桶数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode2086.md)
 * [2087.网格图中机器人回家的最小代价](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode2087.md)
 * (!)[2088.统计农场中肥沃金字塔的数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode2088.md)
+
+## matchⅡ67
+* [1](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode.md)
+* [2](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode.md)
+* [3](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode.md)
+* (!)[4](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode.md)
