@@ -49,10 +49,10 @@
 * [2092.找出知晓秘密的所有专家](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match269/leetcode2092.md)
 
 ## match270
-* [.找出 3 位偶数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
-* [.删除链表的中间节点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
-* [.从二叉树一个节点到另一个节点每一步的方向](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
-* [.合法重新排列数对](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode.md)
+* [2094.找出 3 位偶数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode2094.md)
+* [2095.删除链表的中间节点](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode2095.md)
+* [2096.从二叉树一个节点到另一个节点每一步的方向](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode2096.md)
+* [2097.合法重新排列数对](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match270/leetcode2097.md)
 
 ## match271
 * [1](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match271/leetcode.md)
