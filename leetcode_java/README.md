@@ -335,3 +335,4 @@
 * [807.保持城市天际线](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode807.md)
 * [630.课程表Ⅲ](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode630.md)【优先队列】【贪心】
 * [851.喧闹和富有](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode851.md)【深度优先搜索】【拓扑排序】
+* [1610.可见点的最大数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1610.md)【滑动窗口】
