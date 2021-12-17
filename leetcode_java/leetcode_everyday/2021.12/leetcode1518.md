@@ -50,3 +50,27 @@
 
 ---
 ## 思路
+
+这道题比较简单，按照题目的意思来，但是非常容易搞晕，我吐了，最好画一下轮次图，具体就看代码的注释吧！
+
+代码如下：
+```c++
+class Solution {
+public:
+    int numWaterBottles(int numBottles, int numExchange) {
+        int res = numBottles;//能喝到的酒的数量
+        int exchange = numBottles;//空瓶子的数量
+        while(numBottles / numExchange){
+            int tmp = numBottles / numExchange;
+            int temp = numBottles % numExchange;
+            //换酒
+            exchange -= (numBottles - temp);//换酒之后空瓶子减少
+            //喝酒
+            exchange += tmp;//喝完之后空瓶子增加
+            numBottles = exchange;//下一轮判断的条件
+            res += tmp;//能喝到的酒的数量增加tmp
+        }
+        return res;
+    }
+};
+```
