@@ -337,3 +337,4 @@
 * [851.喧闹和富有](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode851.md)【深度优先搜索】【拓扑排序】
 * [1610.可见点的最大数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1610.md)【滑动窗口】
 * [1518.换酒问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1518.md)
+* [419.甲板上的战舰](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode419.md)
