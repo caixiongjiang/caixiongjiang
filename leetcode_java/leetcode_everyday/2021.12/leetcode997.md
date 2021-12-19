@@ -98,17 +98,16 @@ public:
 class Solution {
 public:
     int findJudge(int n, vector<vector<int>>& trust) {
-        vector<int> inDegrees(n + 1);//入度数组
-        vector<int> outDegrees(n + 1);//出度数组
-        for (auto& edge : trust) {
-            int x = edge[0], y = edge[1];
-            ++inDegrees[y];
-            ++outDegrees[x];
+        vector<int> in(n);//入度数组
+        vector<int> out(n);//出度数组
+        for(auto & t : trust){
+            int x = t[0];
+            int y = t[1];
+            out[x - 1]++;
+            in[y - 1]++;    
         }
-        for (int i = 1; i <= n; ++i) {
-            if (inDegrees[i] == n - 1 && outDegrees[i] == 0) {
-                return i;
-            }
+        for(int i = 0; i < n; i++){
+            if(out[i] == 0 && in[i] == n - 1) return i + 1;
         }
         return -1;
     }
