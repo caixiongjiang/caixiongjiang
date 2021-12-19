@@ -53,3 +53,65 @@ trust[i][0] != trust[i][1]
 
 ---
 ## 思路
+
+### 使用辅助数组进行标记
+我的思路：
+
+1.通过一个标记数组，先通过条件1（法官不相信任何人）将不是法官的人标记，将剩下的人作为疑似法官的人
+
+2.遍历trust数组对相信疑似法官的人数进行统计，如果等于n-1（其他所有人都相信法官），就为真正的法官！
+
+代码如下：
+```c++
+class Solution {
+public:
+    int findJudge(int n, vector<vector<int>>& trust) {
+        int m = trust.size();
+        int ans = 0;
+        vector<int> vec(n);
+        for(int i = 0; i < m; i++){
+            vec[trust[i][0] - 1] = 1;
+        }
+        for(int i = 0; i < n; i++){
+            if(vec[i] == 0) ans = i + 1;
+        }
+        int num = 0;//相信疑似为法官的人数
+        for(int i = 0; i < m; i++){
+            if(trust[i][1] == ans) num++;
+        }
+        if(num != n - 1) ans = -1; 
+        return ans;
+    }
+};
+```
+
+### 计算各节点的入度和出度
+
+干描述了一个有向图。每个人是图的节点，trust 的元素 trust[i] 是图的有向边，从 trust[i][0] 指向 trust[i][1]。我们可以遍历 trust，统计每个节点的入度和出度，存储在 inDegrees 和 outDegrees 中。
+
+根据题意，在法官存在的情况下，法官不相信任何人，每个人（除了法官外）都信任法官，且只有一名法官。因此法官这个节点的入度是 n−1, 出度是 0。
+
+我们可以遍历每个节点的入度和出度，如果找到一个符合条件的节点，由于题目保证只有一个法官，我们可以直接返回结果；如果不存在符合条件的点，则返回 −1。
+
+代码如下：
+```c++
+class Solution {
+public:
+    int findJudge(int n, vector<vector<int>>& trust) {
+        vector<int> inDegrees(n + 1);//入度数组
+        vector<int> outDegrees(n + 1);//出度数组
+        for (auto& edge : trust) {
+            int x = edge[0], y = edge[1];
+            ++inDegrees[y];
+            ++outDegrees[x];
+        }
+        for (int i = 1; i <= n; ++i) {
+            if (inDegrees[i] == n - 1 && outDegrees[i] == 0) {
+                return i;
+            }
+        }
+        return -1;
+    }
+};
+```
+
