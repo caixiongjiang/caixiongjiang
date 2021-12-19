@@ -338,3 +338,4 @@
 * [1610.可见点的最大数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1610.md)【滑动窗口】
 * [1518.换酒问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1518.md)
 * [419.甲板上的战舰](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode419.md)
+* [997.找到小镇的法官](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode997.md)
