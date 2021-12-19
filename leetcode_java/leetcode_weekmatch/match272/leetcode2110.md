@@ -81,25 +81,58 @@ public:
     int kIncreasing(vector<int>& arr, int k) {
         int n = arr.size();
         int ans = 0;
-        for (int i = 0; i < k; ++i) {
-            vector<int> f;
+        for(int i = 0; i < k; i++){
+            vector<int> vec;
             int length = 0;
-            for (int j = i; j < n; j += k) {
-                ++length;
-                auto it = upper_bound(f.begin(), f.end(), arr[j]);
-                if (it == f.end()) {
-                    f.push_back(arr[j]);
-                }
-                else {
-                    *it = arr[j];
+            for(int j = i; j < n; j += k){
+                length++;
+                //upper_bound( begin,end,num)：从数组的begin位置到end-1位置二分查找第一个大于num的数字，找到返回该数字的地址，不存在则返回end。通过返回的地址减去起始地址begin,得到找到数字在数组中的下标。
+                //lower_bound( begin,end,num)：从数组的begin位置到end-1位置二分查找第一个大于或等于num的数字，找到返回该数字的地址，不存在则返回end。通过返回的地址减去起始地址begin,得到找到数字在数组中的下标。
+                //找到第一个大于arr[j]值的下标
+                auto it = upper_bound(vec.begin(), vec.end(), arr[j]);
+                if(it == vec.end()){
+                    //将符合递增条件的元素组成子串
+                    vec.emplace_back(arr[j]);
+                }else{
+                    *it = arr[j];//将大于arr[j]下标的位置的值改成等于arr[j]
                 }
             }
-            ans += length - f.size();
+            ans += length - vec.size();
         }
         return ans;
     }
 };
 ```
 
+继续copy第一名的代码！
 
+思路和官方题解一样，只是将求子元素递增数量的算法抽象成一个算法模版的形式，更加的清晰。
 
+代码如下：
+```c++
+class Solution {
+public:
+    template<typename T>
+    int lis(vector<T> a) {
+        vector<T> dp;
+        for(auto x : a) {
+            auto it = upper_bound(dp.begin(), dp.end(), x); // > : lower, >= : upper
+            if(it == dp.end()) dp.push_back(x);
+            else *it = x;
+        }
+        return dp.size();
+    }
+    int kIncreasing(vector<int>& a, int k) {
+        int n = a.size();
+        int ans = 0;
+        for(int i = 0; i < k; ++i) {
+            vector<int> b;
+            for(int j = i; j < n; j += k) {
+                b.push_back(a[j]);
+            }
+            ans += lis(b);
+        }
+        return n - ans;
+    }
+};
+```
