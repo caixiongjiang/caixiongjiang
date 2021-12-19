@@ -89,7 +89,7 @@
 * (!)[2088.统计农场中肥沃金字塔的数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A166/leetcode2088.md)
 
 ## matchⅡ67
-* [1](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode.md)
-* [2](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode.md)
-* [3](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode.md)
-* [4](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode.md)
+* [2099.找到和最大的长度为 K 的子序列](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2099.md)
+* [2100.适合打劫银行的日子](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2100.md)
+* [2101.引爆最多的炸弹](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2101.md)
+* [2102.序列顺序查询](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2102.md)
