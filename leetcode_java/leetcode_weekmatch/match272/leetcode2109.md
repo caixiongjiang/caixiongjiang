@@ -104,3 +104,22 @@ public:
 ```
 
 大体思路一致，这里的j的初值设置不一样，最后一步不需要单独处理，处理时间更加短。
+
+### 直接计数的思想
+
+代码如下：
+```c++
+class Solution {
+public:
+    long long getDescentPeriods(vector<int>& prices) {
+        long long n = prices.size(), ans=1, len=1;
+        for(int i = 1;i < n;i++){
+            len = (prices[i] == prices[i-1] - 1) ? len + 1 : 1;
+            ans += len;
+        }
+        return ans;
+    }
+};
+```
+
+**判断每一位和前一位是否符合”平滑下跌“，如是，记录长度+1，<span style="color:green">否则重新置1</span>，这样每一位的len记录的是“以当前位置结束的平滑下跌阶段的数目”，每次累加即可!**
