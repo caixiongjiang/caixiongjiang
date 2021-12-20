@@ -49,7 +49,7 @@
 
 1.对heaters数组排序
 
-2.对每个house进行统计需要的半径：具体做法为找到house右边的供暖器和左边的供暖器离house的距离的最大值，就求出了每个house需要的最小半径。
+2.对每个house进行统计需要的半径：具体做法为找到house右边的供暖器和左边的供暖器离house的距离的最小值，就求出了每个house需要的最小半径。
 
 3.ans就为每个house需要最小半径的最大值。
 
@@ -73,6 +73,41 @@ public:
             ans = max(ans, curDistant);
         }
         return ans;
+    }
+};
+```
+
+### 排序+双指针
+
+总体思路和第一种方法一样，只是使用的方法不同，上述为二分查找，这里使用双指针的方法。
+
+
+代码如下：
+```c++
+class Solution {
+public:
+    int findRadius(vector<int>& houses, vector<int>& heaters) {
+        sort(houses.begin(), houses.end());
+        sort(heaters.begin(), heaters.end());
+        
+        //插入两个数是为了防止cur指针溢出，并且不影响每个house最近供暖器距离的判断！
+        heaters.insert(heaters.begin(), INT_MIN);
+        heaters.emplace_back(INT_MAX);  
+
+        long long r = 0;
+        int n = heaters.size();
+        int cur = 0;
+        //i为houses上的指针，cur是heaters上的指针
+        for(int i = 0; i < houses.size(); i++){
+            while(cur < n + 2){
+                //寻找第一个在houses[i]右边的供暖器的位置（下标）
+                if(heaters[cur] >= houses[i]) break;
+                cur++;
+            }
+            //使用cur代表房子右边的供暖器的指针，cur - 1代表房子左边的供暖器的指针
+            r = max(r, min((long long)heaters[cur] - houses[i], (long long)houses[i] - heaters[cur - 1]));
+        }
+        return r;
     }
 };
 ```
