@@ -88,6 +88,8 @@ public:
 class Solution {
 public:
     int dayOfYear(string date) {
+        //stoi():把数字字符串转换成int输出(会做int范围检查)
+        //atoi():把数字字符串转换成int输出(不会做范围检查)
         int year = stoi(date.substr(0, 4));
         int month = stoi(date.substr(5, 2));
         int day = stoi(date.substr(8, 2));
