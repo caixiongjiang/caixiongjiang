@@ -341,4 +341,4 @@
 * [997.找到小镇的法官](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode997.md)
 * [475.供暖器](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode475.md)
 * [1154.一年中的第几天](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1154.md)
-* [686. 重复叠加字符串匹配](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode686.md)
+* [686. 重复叠加字符串匹配](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode686.md)【字符串匹配】【KMP算法】
