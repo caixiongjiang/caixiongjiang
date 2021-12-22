@@ -44,7 +44,7 @@
 
 写了一个半小时，终于过了！！
 
-### 字符串匹配
+### 字符串匹配(自己的思路)
 
 整体步骤：
 
@@ -217,4 +217,84 @@ public:
 };
 ```
 
-终于通过了！！
+终于通过了！！时间为0ms
+
+### 暴力匹配（网上看的题解）
+
+代码思路很简单，用了c++的STL标准库
+
+就是不断叠加a字符串，每叠加一次就寻找它包不包含b字符串。
+那么问题来了，何以为界？
+我姑且无脑的的从叠加0次开始匹配🤣，然后到a字符串叠加到长度刚好大于等于b字符串的长度时，再多匹配一次为止。
+
+代码如下：
+```c++
+class Solution {
+public:
+    int repeatedStringMatch(string a, string b) {
+        string t = "";
+        int n1 = a.size(), n2 = b.size();
+        int x = n2 / n1;
+        for(int i = 0; i <= x + 2; i++){
+            if(t.find(b) != -1){
+                return i;
+            }else{
+                t += a;
+            }
+        }
+        return -1;
+    }
+};
+```
+当然效率很低， 通过时间为4ms
+
+### KMP算法
+
+1.字符串a长度为m, 字符串b长度为n
+
+2.n = k * m + c, (0 <= c < m), 则字符串a最多需要k + 2次重复叠加就能满足所有匹配情况
+
+3.k = n / m
+
+4.求出新的主串sstr， b为模式串
+
+5.KMP求出第一次完全匹配的位置i， 则(i - 1) / m + 1就是重复次数
+
+6.如果不能匹配成功则返回-1
+
+```c++
+class Solution {
+public:
+    int repeatedStringMatch(string a, string b) 
+    {
+        int m = a.size(), n = b.size();
+        int mul = n / m + 1;//最多需要额外的重复叠加次数
+        string sstr = a;
+        while (mul -- ) sstr += a; //主串
+
+        b = '*' + b;
+        sstr = '*' + sstr;//下标从1开始
+        vector<int> ne(n + 1, 0);
+        for (int i = 2, j = 0; i <= n; i ++ )//模式串
+        {
+            while (j && b[i] != b[j + 1]) j = ne[j];
+            if (b[i] == b[j + 1]) j ++ ;
+            ne[i] = j;
+        }
+
+        for (int i = 1, j = 0; i <= sstr.size(); i ++ )//KMP
+        {
+            while (j && sstr[i] != b[j + 1]) j = ne[j];
+            if (sstr[i] == b[j + 1]) j ++ ;
+            if (j == n)
+            {
+                return (i - 1) / m + 1; //第一次匹配成功
+            }
+        }
+
+        return -1;
+    }
+};
+```
+
+
