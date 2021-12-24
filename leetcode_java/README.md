@@ -343,3 +343,4 @@
 * [1154.一年中的第几天](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1154.md)
 * [686. 重复叠加字符串匹配](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode686.md)【字符串匹配】【KMP算法】
 * (!)[1044. 最长重复子串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1044.md)【字符串哈希+二分】【后缀数组+哈希算法】
+* [1705. 吃苹果的最大数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1705.md)【贪心】【优先队列】
