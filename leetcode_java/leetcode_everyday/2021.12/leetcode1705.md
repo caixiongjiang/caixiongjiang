@@ -68,44 +68,54 @@ typedef pair<int,int> pii;
 class Solution {
 public:
     int eatenApples(vector<int>& apples, vector<int>& days) {
-        int ans = 0;
-        priority_queue<pii, vector<pii>, greater<pii>> pq;
-        int n = apples.size();
-        int i = 0;
-        while (i < n) {
-            while (!pq.empty() && pq.top().first <= i) {
-                pq.pop();
-            }
-            int rottenDay = i + days[i];
-            int count = apples[i];
-            if (count > 0) {
-                pq.emplace(rottenDay, count);
-            }
-            if (!pq.empty()) {
-                pii curr = pq.top();
-                pq.pop();
-                curr.second--;
-                if (curr.second != 0) {                  
-                    pq.emplace(curr.first, curr.second);
-                }
-                ans++;
-            }
-            i++;
-        }
-        while (!pq.empty()) {
-            while (!pq.empty() && pq.top().first <= i) {
-                pq.pop();
-            }
-            if (pq.empty()) {
-                break;
-            }
-            pii curr = pq.top();
-            pq.pop();
-            int num = min(curr.first - i, curr.second);
-            ans += num;
-            i += num;
-        }
-        return ans;
+       int ret = 0;
+       priority_queue<pii, vector<pii>, greater<pii>> pq;//优先队列
+       int n = apples.size();
+       int i = 0;//当前日期
+       //第一天到第n天吃苹果
+       while(i < n){
+           //将已经过期的苹果pop掉
+           while(!pq.empty() && pq.top().first <= i){
+               pq.pop();
+           }
+           int rottenDay = i + days[i];//第i天摘的苹果过期的时间
+           int count = apples[i];//第i天摘的数量
+           //入队
+           if(count > 0){
+               pq.emplace(rottenDay, count);
+           }
+           //吃苹果
+           if(!pq.empty()){
+               pii curr = pq.top();
+               pq.pop();
+               curr.second--;
+               //如果当天吃了一个还没吃完且没过期可以继续给下一天吃
+               //所以要将其重新入队，苹果数量减一
+               if(curr.second != 0){
+                   pq.emplace(curr.first, curr.second);
+               }
+               ret++;
+           }
+           i++;
+       }
+       //n天后吃苹果
+       while(!pq.empty()){
+           //过期苹果pop掉
+           while(!pq.empty() && pq.top().first <= i){
+               pq.pop();
+           }
+           //如果不剩苹果就结束
+           if(pq.empty()) break;
+           /*吃苹果*/
+           pii curr = pq.top();
+           pq.pop();
+           //因为每天只能吃一个，可能没过期之前吃完，也可能过期了还没吃完
+           //所以要取数量和在保质期内的天数的最小值
+           int num = min(curr.second, curr.first - i);
+           ret += num;
+           i += num;
+       }
+       return ret;
     }
 };
 ```
