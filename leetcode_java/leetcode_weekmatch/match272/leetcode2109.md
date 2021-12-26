@@ -1,125 +1,146 @@
-## 编号2109:股票平滑下跌阶段的数目
+## 编号2109:向字符串添加空格（AC）
 
-给你一个整数数组 prices ，表示一支股票的历史每日股价，其中 prices[i] 是这支股票第 i 天的价格。
+给你一个下标从 0 开始的字符串 s ，以及一个下标从 0 开始的整数数组 spaces 。
 
-一个 平滑下降的阶段 定义为：对于 连续一天或者多天 ，每日股价都比 前一日股价恰好少 1 ，这个阶段第一天的股价没有限制。
+数组 spaces 描述原字符串中需要添加空格的下标。每个空格都应该插入到给定索引处的字符值 之前 。
 
-请你返回 平滑下降阶段 的数目。
+例如，s = "EnjoyYourCoffee" 且 spaces = [5, 9] ，那么我们需要在 'Y' 和 'C' 之前添加空格，这两个字符分别位于下标 5 和下标 9 。因此，最终得到 "Enjoy Your Coffee" 。
+请你添加空格，并返回修改后的字符串。
 
  
 
 示例 1：
 ```
-输入：prices = [3,2,1,4]
-输出：7
-解释：总共有 7 个平滑下降阶段：
-[3], [2], [1], [4], [3,2], [2,1] 和 [3,2,1]
-注意，仅一天按照定义也是平滑下降阶段。
+输入：s = "LeetcodeHelpsMeLearn", spaces = [8,13,15]
+输出："Leetcode Helps Me Learn"
+解释：
+下标 8、13 和 15 对应 "LeetcodeHelpsMeLearn" 中加粗斜体字符。
+接着在这些字符前添加空格。
 ```
 示例 2：
 ```
-输入：prices = [8,6,7,7]
-输出：4
-解释：总共有 4 个连续平滑下降阶段：[8], [6], [7] 和 [7]
-由于 8 - 6 ≠ 1 ，所以 [8,6] 不是平滑下降阶段。
+输入：s = "icodeinpython", spaces = [1,5,7,9]
+输出："i code in py thon"
+解释：
+下标 1、5、7 和 9 对应 "icodeinpython" 中加粗斜体字符。
+接着在这些字符前添加空格。
 ```
 示例 3：
 ```
-输入：prices = [1]
-输出：1
-解释：总共有 1 个平滑下降阶段：[1] 
+输入：s = "spacing", spaces = [0,1,2,3,4,5,6]
+输出：" s p a c i n g"
+解释：
+字符串的第一个字符前可以添加空格。 
 ```
 提示：
 
-* 1 <= prices.length <= 105
-* 1 <= prices[i] <= 105
+* 1 <= s.length <= 3 * 10^5
+* s 仅由大小写英文字母组成
+* 1 <= spaces.length <= 3 * 10^5
+* 0 <= spaces[i] <= s.length - 1
+* spaces 中的所有值 严格递增
 
 来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/number-of-smooth-descent-periods-of-a-stock
+链接：https://leetcode-cn.com/problems/adding-spaces-to-a-string
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ---
 ## 思路
 
-### 分区间统计
-
-我的步骤：
-
-1.双指针遍历数组，碰到题目说的**股票平滑下跌的日子**快指针就往后移动，直到找到不是**股票平滑下跌的日子**的那天的下标。
-
-2.对这个区间进行一次统计，利用数学上的结论给出：int m = j - i ，个数为m * （m - 1）/ 2 。并将i指针移到j指针相邻的左边的位置，并将i，j指针都往后移动，继续按照步骤1进行判断
-
-3.次数为数组自身的长度加上每个区间的次数之和。
-
-注意点：
-
-1.因为遍历是通过后一个下标进行计数，由于数组不能遍历到超出数组长度的位置，最后一次需要对数组的i的位置到结尾做一次单独的统计！
-
-2.需要注意统计次数的时候可能超出int表示范围，需要强制转换为long long类型。
+我第一次想到的是使用c++中string容器的insert方法，每次找到要插入的位置，就插一个空格，但要注意的是下一次插空格的时候需要往后多加一个位置。
 
 代码如下：
 ```c++
 class Solution {
 public:
-    long long getDescentPeriods(vector<int>& prices) {
-        int n = prices.size();
-        long long ans = 0;
-        int i = 0, j = 1;
-        while(i < j && j < n){
-            if(prices[j - 1] - prices[j] == 1){
-                j++;
-            }else{
-                int m = j - i;
-                //cout << m << endl;
-                ans += (long long)((m - 1) * m / 2);
-                i = j - 1;
-                i++;//千万别忘记推进i和j的位置，不然就是死循环
-                j++;
+    string addSpaces(string s, vector<int>& spaces) {
+        int n = spaces.size();
+        for(int i = 0; i < n; i++){
+            s.insert(spaces[i] + i, " ");
+        }
+        return s;
+    }
+};
+```
+
+代码很简单，每次插入都多加i个位置。但是结果是有2个示例通不过，超时了！（62/64）
+
+**原因很简单，如果字符串过长的话，insert方法的底层需要对后面每个字符进行更改，时间复杂度过高！**
+
+### 队列暂存
+
+所以想到了队列来暂存的机制，这样不需要修改后面所有位置上的字符。
+
+代码如下：
+```c++
+class Solution {
+public:
+    string addSpaces(string s, vector<int>& spaces) {
+        int n = spaces.size();
+        int m = s.size();
+        queue<char> que;
+        string ret;
+        int tmp = 0;
+        for(int i = 0; i < n; i++){
+            int temp = spaces[i];
+            for(int j = tmp; j < temp; j++){
+                que.emplace(s[j]);
             }
+            while(!que.empty()){
+                char x = que.front();
+                que.pop();
+                ret += x;
+            }
+            ret += " ";
+            tmp = temp;//更新下次要入队的位置
         }
-        ans += (long long)(j - i) * (j - i - 1) / 2;//这里注意乘法可能会超出int能表示的范围
-        return ans + n;
+        //这里要注意的是，spaces[i]的位置没有到字符串的末尾，所以最后一次tmp到字符串末尾的位置需要重新加入到结果字符串中。
+        for(int i = tmp; i < m; i++){
+            ret += s[i];
+        }
+        return ret;
     }
 };
 ```
 
+<span style="color:red">执行用时：160 ms, 在所有 C++ 提交中击败了
+100.00%的用户</span>
 
-又copy了第一名的代码!
+<span style="color:red">内存消耗：81.4 MB, 在所有 C++ 提交中击败了100.00%的用户</span>
+
+<span style="color:red">通过测试用例：
+66 / 66</span>
+
+### 利用数组标记位置
+
+copy了一份第一名的代码！
 
 代码如下：
 ```c++
 class Solution {
 public:
-    long long getDescentPeriods(vector<int>& a) {
-        long long ans = 0;
-        for(int i = 0; i < a.size(); ) {
-            int j = i;
-            while(j < a.size() && a[j] - a[i] == i - j) ++j;
-            ans += (long long)(j - i) * (j - i + 1) / 2;
-            i = j;
+    string addSpaces(string s, vector<int>& a) {
+        string ret;
+        int n = s.size();
+        vector<int> c(n);
+        for(int i : a) c[i] = 1;
+        for(int i = 0; i < s.size(); ++i) {
+            if(c[i]) ret += " ";
+            ret += s[i];
         }
-        return ans;
+        return ret;
     }
 };
 ```
 
-大体思路一致，这里的j的初值设置不一样，最后一步不需要单独处理，处理时间更加短。
+**大体思路就是设定一个与字符串长度相同的数组用来标记需要加入空格的位置，再定义一个string字符串复制s字符串，遇到需要加空格的位置，就加空格！**
 
-### 直接计数的思想
+**利用空间换时间就能通过本题的设定时间限制，结果字符串使用尾插防止修改需要的高时间！**
 
-代码如下：
-```c++
-class Solution {
-public:
-    long long getDescentPeriods(vector<int>& prices) {
-        long long n = prices.size(), ans=1, len=1;
-        for(int i = 1;i < n;i++){
-            len = (prices[i] == prices[i-1] - 1) ? len + 1 : 1;
-            ans += len;
-        }
-        return ans;
-    }
-};
-```
+<span style ="color:red">执行用时：108 ms, 在所有 C++ 提交中击败了100.00%的用户</span>
 
-**判断每一位和前一位是否符合”平滑下跌“，如是，记录长度+1，<span style="color:green">否则重新置1</span>，这样每一位的len记录的是“以当前位置结束的平滑下跌阶段的数目”，每次累加即可!**
+<span style ="color:red">内存消耗：86.4 MB, 在所有 C++ 提交中击败了100.00%的用户</span>
+
+<span style ="color:red">通过测试用例：
+66 / 66
+</span>

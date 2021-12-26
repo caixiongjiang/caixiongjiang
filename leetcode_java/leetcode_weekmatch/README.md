@@ -61,10 +61,16 @@
 * [2106.摘水果](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match271/leetcode2106.md)
 
 ## match272
-* [2107.找出数组中的第一个回文字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2107.md)
-* [2108.向字符串添加空格](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2108.md)
-* [2109.股票平滑下跌阶段的数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2109.md)
-* [2110.使数组 K 递增的最少操作次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2110.md)
+* [2108.找出数组中的第一个回文字符串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2108.md)
+* [2109.向字符串添加空格](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2109.md)
+* [2110.股票平滑下跌阶段的数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2110.md)
+* [2111.使数组 K 递增的最少操作次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2111.md)
+
+## match273
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode.md)
 
 # 双周赛
 
@@ -99,7 +105,7 @@
 * [2102.序列顺序查询](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2102.md)
 
 ## matchⅡ68
-* [2111.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2111.md)
-* [2112.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2112.md)
-* [2113.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2113.md)
-* [2114.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2114.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode.md)
