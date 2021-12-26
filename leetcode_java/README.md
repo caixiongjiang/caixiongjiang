@@ -345,3 +345,4 @@
 * (!)[1044. 最长重复子串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1044.md)【字符串哈希+二分】【后缀数组+哈希算法】
 * [1705. 吃苹果的最大数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1705.md)【贪心】【优先队列】
 * [1609. 奇偶树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1609.md)【层序遍历】
+* [1078. Bigram 分词](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1078.md)
