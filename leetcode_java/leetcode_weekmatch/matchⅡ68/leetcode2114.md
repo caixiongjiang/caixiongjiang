@@ -62,7 +62,7 @@
 ```
 提示：
 
-* 1 <= left <= right <= 106
+* 1 <= left <= right <= 10^6
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/abbreviating-the-product-of-a-range
@@ -70,3 +70,5 @@
 
 ---
 ## 思路
+
+
