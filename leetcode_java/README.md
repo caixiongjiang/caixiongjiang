@@ -346,3 +346,4 @@
 * [1705. 吃苹果的最大数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1705.md)【贪心】【优先队列】
 * [1609. 奇偶树](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1609.md)【层序遍历】
 * [1078. Bigram 分词](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode1078.md)
+* [825. 适龄的朋友](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode825.md)【排序+二分】【排序+双指针】【桶排序】
