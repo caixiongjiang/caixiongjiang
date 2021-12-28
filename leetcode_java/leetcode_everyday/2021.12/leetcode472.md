@@ -181,5 +181,60 @@ public:
         node->isEnd = true;
     }
 };
+```
 
+后续又找到一份比较好理解的代码：
+
+代码如下：
+```c++
+class Solution {
+public:
+    const static int N = 100010;
+    int son[N][26];
+    int cnt[N];
+    int idx = 0;
+    void insert(string &s)
+    {
+        int p=0;
+        for(int i=0;i < s.length();i++)
+        {
+            auto c = s[i];
+            int u = c - 'a';
+            if(!son[p][u]) son[p][u] = ++idx;
+            p = son[p][u];
+        }
+        cnt[p]++;  
+    }
+
+    bool dfs(string &s,int st)
+    {
+        if(st == s.length()) return true;
+        int pp = 0;
+        for(int i=st;i<s.length();i++)
+        { 
+            auto c = s[i];
+            int u = c -'a'; 
+            if(!son[pp][u]){
+                return false;
+            }
+            pp = son[pp][u];
+            if(cnt[pp]){
+                if(dfs(s,i+1)) return true;
+            }
+        }
+        return false;
+    }
+    
+    vector<string> findAllConcatenatedWordsInADict(vector<string>& words) {
+        sort(words.begin(),words.end(),[&](const string &a,const string &b){return a.size() < b.size();});
+        vector<string>res;
+        for(auto w:words)
+        {
+            if(w.length() == 0)continue;
+            if(dfs(w,0))res.emplace_back(w);
+            else insert(w);
+        }
+        return res;
+    }
+};
 ```
