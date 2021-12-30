@@ -349,3 +349,4 @@
 * [825. 适龄的朋友](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode825.md)【排序+二分】【排序+双指针】【桶排序】
 * [472. 连接词](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode472.md)【字典书】【dfs】
 * [1995.统计特殊四元组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode472.md)【暴力】【哈希】
+* [846.一手顺子](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode472.md)【排序+哈希】
