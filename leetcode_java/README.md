@@ -350,3 +350,4 @@
 * [472. 连接词](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode472.md)【字典书】【dfs】
 * [1995.统计特殊四元组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode472.md)【暴力】【哈希】
 * [846.一手顺子](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode846.md)【排序+哈希】【纯哈希】
+* [507. 完美数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_everyday/2021.12/leetcode507.md)【纯数学】
