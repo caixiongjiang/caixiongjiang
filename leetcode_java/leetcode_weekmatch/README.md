@@ -67,10 +67,16 @@
 * [2111.使数组 K 递增的最少操作次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match272/leetcode2111.md)
 
 ## match273
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode.md)
+* [2119.反转两次的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode2119.md)
+* [2120.执行所有后缀指令](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode2120.md)
+* [2121.相同元素的间隔之和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode2121.md)
+* [2122.还原原数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode2122.md)
+
+## match274
+* [.反转两次的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
+* [.执行所有后缀指令](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
+* [.相同元素的间隔之和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
+* [.还原原数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
 
 # 双周赛
 
@@ -105,7 +111,7 @@
 * [2102.序列顺序查询](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A167/leetcode2102.md)
 
 ## matchⅡ68
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode.md)
-* (!)[.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode.md)
+* [2114.句子中的最多单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode2114.md)
+* [2115.从给定原材料中找到所有可以做出的菜](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode2115.md)
+* [2116.判断一个括号字符串是否有效](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode2116.md)
+* (!)[2117.一个区间内所有数乘积的缩写](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode2117.md)

@@ -1,74 +1,79 @@
-## 编号：一个区间内所有数乘积的缩写(🍵)
+## 编号2114：句子中的最多单词数(AC)
 
-给你两个正整数 left 和 right ，满足 left <= right 。请你计算 闭区间 [left, right] 中所有整数的 乘积 。
+一个 句子 由一些 单词 以及它们之间的单个空格组成，句子的开头和结尾不会有多余空格。
 
-由于乘积可能非常大，你需要将它按照以下步骤 缩写 ：
+给你一个字符串数组 sentences ，其中 sentences[i] 表示单个 句子 。
 
-1.统计乘积中 后缀 0 的数目，将这个数目记为 C 。
-比方说，1000 中有 3 个后缀 0 ，546 中没有后缀 0 。
-
-2.将乘积中剩余数字记为 d 。如果 d > 10 ，那么将乘积表示为 <pre>...<suf> 的形式，其中 <pre> 表示乘积最 开始 的 5 个数位，<suf> 表示删除后缀 0 之后 结尾的 5 个数位。如果 d <= 10 ，我们不对它做修改。
-比方说，我们将 1234567654321 表示为 12345...54321 ，但是 1234567 仍然表示为 1234567 。
-
-3.最后，将乘积表示为 字符串 "<pre>...<suf>eC" 。
-比方说，12345678987600000 被表示为 "12345...89876e5" 。
-请你返回一个字符串，表示 闭区间 [left, right] 中所有整数 乘积 的 缩写 。
+请你返回单个句子里 单词的最多数目 。
 
  
 
 示例 1：
 ```
-输入：left = 1, right = 4
-输出："24e0"
+输入：sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+输出：6
 解释：
-乘积为 1 × 2 × 3 × 4 = 24 。
-由于没有后缀 0 ，所以 24 保持不变，缩写的结尾为 "e0" 。
-因为乘积的结果是 2 位数，小于 10 ，所欲我们不进一步将它缩写。
-所以，最终将乘积表示为 "24e0" 。
+- 第一个句子 "alice and bob love leetcode" 总共有 5 个单词。
+- 第二个句子 "i think so too" 总共有 4 个单词。
+- 第三个句子 "this is great thanks very much" 总共有 6 个单词。
+所以，单个句子中有最多单词数的是第三个句子，总共有 6 个单词。
 ```
 示例 2：
 ```
-输入：left = 2, right = 11
-输出："399168e2"
-解释：
-乘积为 39916800 。
-有 2 个后缀 0 ，删除后得到 399168 。缩写的结尾为 "e2" 。
-删除后缀 0 后是 6 位数，不需要进一步缩写。
-所以，最终将乘积表示为 "399168e2" 。
-```
-示例 3：
-
-![avater](https://assets.leetcode.com/uploads/2021/11/17/productdrawio.png)
-
-```
-输入：left = 999998, right = 1000000
-输出："99999...00002e6"
-解释：
-上图展示了如何得到乘积的缩写 "99999...00002e6" 。
-- 总共有 6 个后缀 0 。缩写的结尾为 "e6" 。
-- 开头 5 个数位是 99999 。
-- 删除后缀 0 后结尾 5 个数字为 00002 。
-```
-示例 4：
-```
-输入：left = 256, right = 65535
-输出："23510...78528e16317"
-解释：
-乘积是一个非常大的数字：
-- 总共有 16317 个后缀 0 。缩写结尾为 "e16317" 。
-- 开头 5 个数字为 23510 。
-- 删除后缀 0 后，结尾 5 个数字为 78528 。
-所以，乘积的缩写为 "23510...78528e16317" 。
+输入：sentences = ["please wait", "continue to fight", "continue to win"]
+输出：3
+解释：可能有多个句子有相同单词数。
+这个例子中，第二个句子和第三个句子（加粗斜体）有相同数目的单词数。 
 ```
 提示：
 
-* 1 <= left <= right <= 10^6
+* 1 <= sentences.length <= 100
+* 1 <= sentences[i].length <= 100
+* sentences[i] 只包含小写英文字母和 ' ' 。
+* sentences[i] 的开头和结尾都没有空格。
+* sentences[i] 中所有单词由单个空格隔开。
+
 
 来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/abbreviating-the-product-of-a-range
+链接：https://leetcode-cn.com/problems/maximum-number-of-words-found-in-sentences
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 ---
 ## 思路
 
+按照题意直接敲！
 
+代码如下：
+```c++
+class Solution {
+public:
+    int mostWordsFound(vector<string>& sentences) {
+        int n = sentences.size();
+        int ret = 0;
+        for(int i = 0; i < n; i++){
+            string s = sentences[i];
+            int ans = 1;
+            for(int j = 0; j < s.size(); j++){
+                if(s[j] == ' ') ans++;
+            }
+            ret = max(ans, ret);
+        }
+        return ret;
+    }
+};
+```
+
+
+附上代码量巨少的写法：
+```c++
+class Solution {
+public:
+  int mostWordsFound(vector<string>& sentences) {
+    int ans = 0;
+    for (auto &s: sentences) {
+      ans = max(ans, (int)count(s.begin(), s.end(), ' ')+1);
+    }
+    return ans; 
+  }
+};
+```
