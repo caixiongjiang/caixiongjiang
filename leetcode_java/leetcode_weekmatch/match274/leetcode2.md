@@ -131,3 +131,25 @@ public:
     }
 };
 ```
+
+
+### 大佬写的代码(使用的stl库)
+
+思路一致，用了stl库
+
+代码如下：
+```c++
+class Solution {
+public:
+    int numberOfBeams(vector<string>& bank) {
+        int r = 0, p = 0;
+        for (auto& s : bank) {
+            int o = count(s.begin(), s.end(), '1');
+            if (not o) continue;
+            r += p * o;
+            p = o;
+        }
+        return r;
+    }
+};
+```
