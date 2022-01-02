@@ -73,10 +73,10 @@
 * [2122.还原原数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode2122.md)
 
 ## match274
-* [.反转两次的数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
-* [.执行所有后缀指令](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
-* [.相同元素的间隔之和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
-* [.还原原数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
+* [.检查是否所有 A 都在 B 之前](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
+* [.银行中的激光束数量](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
+* [.摧毁小行星](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
+* [.参加会议的最多员工数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
 
 # 双周赛
 
