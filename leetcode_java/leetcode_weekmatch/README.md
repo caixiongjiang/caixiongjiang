@@ -73,10 +73,10 @@
 * [2122.还原原数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match273/leetcode2122.md)
 
 ## match274
-* [.检查是否所有 A 都在 B 之前](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
-* [.银行中的激光束数量](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
-* [.摧毁小行星](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
-* [.参加会议的最多员工数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode.md)
+* [2124.检查是否所有 A 都在 B 之前](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode2124.md)
+* [2125.银行中的激光束数量](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode2125.md)
+* [2126.摧毁小行星](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode2126.md)
+* [2127.参加会议的最多员工数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode2127.md)
 
 # 双周赛
 
