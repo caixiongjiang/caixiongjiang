@@ -131,4 +131,58 @@ public:
 
 整体做法一样！
 
+### 链表做法（相同时间复杂度情况下更低的空间复杂度）
 
+两个孪生元素分别为首尾第i个和第n-i-1个元素。我们需要从头到中间遍历前n/2个，同时从尾到中间遍历后n/2个。但是后n/2个在原有链表基础上是没有办法完成从后往前的遍历的，只能选择将其反转。
+
+因此，解题思路分为三步：
+
+（1）利用快慢指针求出链表的中点
+
+（2）反转后一半的元素
+
+（3）双指针，一个指针遍历从前到后遍历前n/2个元素，另一个指针遍历从后到前遍历后n/2个元素。
+
+代码如下：
+```c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    int pairSum(ListNode* head) {
+        //快慢指针求中间的节点，求完slow为后一半元素的第一个
+        ListNode *fast = head, *slow = head;
+        while(fast && fast->next){
+            fast = fast->next->next;
+            slow = slow->next;
+        }
+
+        //双指针方法：反转后一半的元素(不清楚的可以画图)
+        ListNode *pre = nullptr;//反转完变成了最后一个节点
+        ListNode *cur = slow;
+        while(cur != nullptr){
+            ListNode *temp = cur->next;
+            cur->next = pre;
+            pre = cur;
+            cur = temp;
+        }
+
+        int ans = 0;
+        ListNode *p;    
+        ListNode *q;
+        //前一半从头开始后一半从尾开始，分别像中间遍历
+        for(p = head, q = pre; q; p = p->next, q = q->next){
+            ans = max(ans, p->val + q->val);
+        }
+        return ans;
+    }
+};
+```
