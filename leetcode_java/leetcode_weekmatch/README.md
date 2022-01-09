@@ -78,6 +78,12 @@
 * [2126.摧毁小行星](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode2126.md)
 * [2127.参加会议的最多员工数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode2127.md)
 
+## match275
+* [.检查是否每一行每一列都包含全部整数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode.md)
+* [.最少交换次数来组合所有的 1 II](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode.md)
+* [.统计追加字母可以获得的单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode.md)
+* [.全部开花的最早一天](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode.md)
+
 # 双周赛
 
 ## matchⅡ63
@@ -115,3 +121,9 @@
 * [2115.从给定原材料中找到所有可以做出的菜](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode2115.md)
 * [2116.判断一个括号字符串是否有效](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode2116.md)
 * (!)[2117.一个区间内所有数乘积的缩写](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode2117.md)
+
+## matchⅡ69
+* [.将标题首字母大写](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode.md)
+* [.链表最大孪生和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode.md)
+* [.连接两字母单词得到的最长回文串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode.md)
+* [.用邮票贴满网格图](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode.md)
