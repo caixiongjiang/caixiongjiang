@@ -1,4 +1,4 @@
-## 编号2136：全部开花的最早一天（×）
+## 编号2136：全部开花的最早一天（AC）
 
 你有 n 枚花的种子。每枚种子必须先种下，才能开始生长、开花。播种需要时间，种子的生长也是如此。给你两个下标从 0 开始的整数数组 plantTime 和 growTime ，每个数组的长度都是 n ：
 
@@ -58,5 +58,46 @@
 ---
 ## 思路
 
+### 贪心
 
+我们拿示例1中的0号和1号种子举例。
+
+设【播种时间，生长时间】  0：【1, 2】 1：【4，3】
+
+第一种为0->1 : 时间为max(1 + 4 + 3， 1 + 2) = 8；
+
+第二种为1->0 : 时间为max(4 + 1 + 2, 4 + 3) = 7；
+
+可见，播种时间都是种植时要经历的公共时间，所以时间的长短取决于生长时间的长短。
+
+这里的贪心就是生长时间越长的越要放在前面（因为生长可以和播种同时进行）。
+
+所以具体的步骤就是将id号按照growTime的时间进行一次降序排序，再进行计算时间
+
+代码如下：
+```c++
+class Solution {
+public:
+    int earliestFullBloom(vector<int>& plantTime, vector<int>& growTime) {
+        int day = 0;
+        int n = plantTime.size();
+        vector<int> ids;
+        for(int i = 0; i < n; i++){
+            ids.push_back(i);
+        }
+        sort(ids.begin(), ids.end(), [&](int i, int j){
+            return growTime[i] > growTime[j];
+        });
+
+        int pre = 0;
+        for(int id : ids){
+            //cout << id << endl;
+            day = max(day, pre + plantTime[id] + growTime[id]);
+            pre += plantTime[id];
+            //cout << pre << day << endl;
+        }
+        return day;
+    }
+};
+```
 
