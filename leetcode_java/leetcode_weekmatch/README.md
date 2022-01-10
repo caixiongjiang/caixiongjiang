@@ -79,10 +79,10 @@
 * [2127.参加会议的最多员工数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match274/leetcode2127.md)
 
 ## match275
-* [.检查是否每一行每一列都包含全部整数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode.md)
-* [.最少交换次数来组合所有的 1 II](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode.md)
-* [.统计追加字母可以获得的单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode.md)
-* [.全部开花的最早一天](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode.md)
+* [2133.检查是否每一行每一列都包含全部整数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode2133.md)
+* [2134.最少交换次数来组合所有的 1 II](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode2134.md)
+* [2135.统计追加字母可以获得的单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode2135.md)
+* [2136.全部开花的最早一天](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode2136.md)
 
 # 双周赛
 
@@ -123,7 +123,7 @@
 * (!)[2117.一个区间内所有数乘积的缩写](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A168/leetcode2117.md)
 
 ## matchⅡ69
-* [.将标题首字母大写](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode.md)
-* [.链表最大孪生和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode.md)
-* [.连接两字母单词得到的最长回文串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode.md)
-* [.用邮票贴满网格图](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode.md)
+* [2129.将标题首字母大写](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode2129.md)
+* [2130.链表最大孪生和](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode2130.md)
+* [2131.连接两字母单词得到的最长回文串](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode2131.md)
+* [2132.用邮票贴满网格图](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode2132.md)
