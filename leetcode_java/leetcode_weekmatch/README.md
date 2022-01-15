@@ -84,6 +84,12 @@
 * [2135.统计追加字母可以获得的单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode2135.md)
 * [2136.全部开花的最早一天](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode2136.md)
 
+## match275
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
+* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
+
 # 双周赛
 
 ## matchⅡ63
