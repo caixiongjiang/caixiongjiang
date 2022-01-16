@@ -84,11 +84,11 @@
 * [2135.统计追加字母可以获得的单词数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode2135.md)
 * [2136.全部开花的最早一天](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match275/leetcode2136.md)
 
-## match275
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
+## match276
+* [.将字符串拆分为若干长度为 k 的组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
+* [.得到目标值的最少行动次数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
+* [.解决智力问题](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
+* [.同时运行 N 台电脑的最长时间](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match276/leetcode.md)
 
 # 双周赛
 
