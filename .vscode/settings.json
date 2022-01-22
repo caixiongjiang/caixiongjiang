@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "vector": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "iostream": "cpp"
     },
     "java.project.sourcePaths": [
         "java__shangguigu",
