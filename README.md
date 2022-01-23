@@ -8,7 +8,7 @@
 * 目前在～～～(某双非大学读研究生——电子信息专业（计算机技术）🤪)
   
 
-* 如果你想要找到我，欢迎光临我的CSDN博客 [Jarson's Blog](https://blog.csdn.net/m0_46533933?spm=1000.2115.3001.5343) 🎊🎊🎊🎊🎊🎊
+* 如果你想要找到我，欢迎光临我的个人博客 [Jarson's Blog](https://caixiongjiang.github.io/) 🎊🎊🎊🎊🎊🎊
 
 
 ## Tech Stack :computer:
