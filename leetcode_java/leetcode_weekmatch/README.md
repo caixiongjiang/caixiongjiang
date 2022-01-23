@@ -94,7 +94,7 @@
 * [2148.元素计数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match277/leetcode2148.md)
 * [2149.按符号重排数组](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match277/leetcode2149.md)
 * [2150.找出数组中的所有孤独数字](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match277/leetcode2150.md)
-* [2151.基于陈述统计最多好人数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match277/leetcode2151.md)
+* (!)[2151.基于陈述统计最多好人数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match277/leetcode2151.md)【位运算|暴力枚举】
 
 # 双周赛
 
