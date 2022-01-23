@@ -141,7 +141,7 @@
 * [2132.用邮票贴满网格图](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A169/leetcode2132.md)
 
 ## matchⅡ70
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A170/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A170/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A170/leetcode.md)
-* [.](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A170/leetcode.md)
+* [2144.打折购买糖果的最小开销](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A170/leetcode2144.md)
+* [2145.统计隐藏数组数目](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A170/leetcode2145.md)
+* [2146.价格范围内最高排名的 K 样物品](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A170/leetcode2146.md)
+* [2147.分隔长廊的方案数](https://github.com/caixiongjiang/caixiongjiang/blob/main/leetcode_java/leetcode_weekmatch/match%E2%85%A170/leetcode2147.md)
