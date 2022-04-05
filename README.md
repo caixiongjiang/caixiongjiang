@@ -56,7 +56,10 @@
 * [Qt-BaseLearning](https://github.com/caixiongjiang/Qt-BaseLearn)🔥 ：Qt基础知识和常用控件
 * [pat(c++)](https://github.com/caixiongjiang/pat-test)🔥 ：胡凡版算法笔记上机实训题解，浙大pta网站刷题
 * [C++ STL标准库](https://github.com/caixiongjiang/c-STL-)🔥 
+* [TCP/IP网络编程](https://github.com/caixiongjiang/TCPIP)🔥 :socket编程学习
+* [STL源码剖析](https://github.com/caixiongjiang/STL_sourcecode)🔥 ：了解STL容器和算法底层结构和运行机制，以及源码学习
 ### &emsp;&nbsp;**C++开源项目**🐔
+* [Qt_system](https://github.com/caixiongjiang/qt_system)🔥 :家具库存管理系统，Qt界面设计入门小项目，学习 界面设计 + qss样式 + 数据库交互 
 ### &emsp;&nbsp;**小游戏** 😄
 * [Chinese-Chess](https://github.com/caixiongjiang/Chinese-Chess)🔥 :纯手工Qt绘制的棋盘，实现人机，人人大战，入门小项目
 ### &emsp;&nbsp;**兴趣模块** ⚡
