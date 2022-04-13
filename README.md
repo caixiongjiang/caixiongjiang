@@ -11,43 +11,7 @@
 * 如果你想要找到我，欢迎光临我的个人博客 [Jarson's Blog](https://caixiongjiang.github.io/) 和我的个人知识库[蜜蜂](http://jarson-cai.gitee.io/jarson-cai-blog)🎊🎊🎊🎊🎊🎊
 
 
-## Tech Stack :computer:
-
-<br>
-<table  width = "600px">
-<tbody>
- <tr>
-<td align="center" width="70px">
-<div>
-<img height=60px src="https://developer.android.com/studio/images/studio-icon.svg?hl=zh-cn"> 
-</div>
-<span><b><center>Android</center></b></span> 
-</td>
-
-
-<td align="center" width="70px">
-<div>
-<img height=60px src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png"> 
-</div>
-<span><b><center>Linux </center></b></span> 
-</td>
-
-
-
-<td align="center" width="70px">
-<div>
-<img height=60px src="https://avatars.githubusercontent.com/u/41768318?s=200&v=4"> 
-</div>
-<span><b><center>OpenJDK</center></b></span> 
-</td>
-</tr>
-
-
-</tbody>
-</table>
-
-
-![Jarson Github Stats](https://github-readme-stats.vercel.app/api?username=caixiongjiang&show_icons=true_color=fff&icon_color=0000FF&text_color=000000&bg_color=ffffff)
+    ![Jarson Github Stats](https://github-readme-stats.vercel.app/api?username=caixiongjiang&show_icons=true_color=fff&icon_color=0000FF&text_color=000000&bg_color=ffffff)
 
 
 ## My open source project :computer:
