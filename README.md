@@ -23,7 +23,10 @@
 * [TCP/IP网络编程](https://github.com/caixiongjiang/TCPIP)🔥 :socket编程学习
 * [STL源码剖析](https://github.com/caixiongjiang/STL_sourcecode)🔥 ：了解STL容器和算法底层结构和运行机制，以及源码学习
 ### &emsp;&nbsp;**C++开源项目**🐔
-* [Qt_system](https://github.com/caixiongjiang/qt_system)🔥 :家具库存管理系统，Qt界面设计入门小项目，学习 界面设计 + qss样式 + 数据库交互 
+* [Qt_system](https://github.com/caixiongjiang/qt_system)🔥 :家具库存管理系统，Qt界面设计入门小项目，学习 界面设计 + qss样式 + 数据库交互
+### &emsp;&nbsp;**Python demo**🐒
+* [py_reptile](https://github.com/caixiongjiang/py_reptile)🔥 :使用selenium自动化测试工具，进行爬虫买票
+* [table_ocr](https://github.com/caixiongjiang/table_ocr)🔥 :使用OpenCV以及ocr库识别表格中的文字信息并进行对excel表格进行处理 
 ### &emsp;&nbsp;**小游戏** 😄
 * [Chinese-Chess](https://github.com/caixiongjiang/Chinese-Chess)🔥 :纯手工Qt绘制的棋盘，实现人机，人人大战，入门小项目
 ### &emsp;&nbsp;**兴趣模块** ⚡
