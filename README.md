@@ -11,9 +11,6 @@
 * 如果你想要找到我，欢迎光临我的个人博客 [Jarson's Blog](https://caixiongjiang.github.io/) 和我的个人知识库[蜜蜂](http://jarson-cai.gitee.io/jarson-cai-blog)🎊🎊🎊🎊🎊🎊
 
 
-    ![Jarson Github Stats](https://github-readme-stats.vercel.app/api?username=caixiongjiang&show_icons=true_color=fff&icon_color=0000FF&text_color=000000&bg_color=ffffff)
-
-
 ## My open source project :computer:
 ### &emsp;&nbsp;**学习规划**🌱
 * [algorithms and data structures](https://github.com/caixiongjiang/caixiongjiang/tree/main/leetcode_java)🔥 ：leetcode复习攻略
