@@ -24,6 +24,7 @@
 ### &emsp;&nbsp;**Python demo**🐒
 * [py_reptile](https://github.com/caixiongjiang/py_reptile)🔥 :使用selenium自动化测试工具，进行爬虫买票
 * [table_ocr](https://github.com/caixiongjiang/table_ocr)🔥 :使用OpenCV以及ocr库识别表格中的文字信息并进行对excel表格进行处理 
+* [FastSegFormer-PyQT](https://github.com/caixiongjiang/FastSegFormer-pyqt)🔥 :使用PyQT实现脐橙缺陷实时分割的UI
 ### &emsp;&nbsp;**小游戏** 😄
 * [Chinese-Chess](https://github.com/caixiongjiang/Chinese-Chess)🔥 :纯手工Qt绘制的棋盘，实现人机，人人大战，入门小项目
 ### &emsp;&nbsp;**兴趣模块** ⚡
