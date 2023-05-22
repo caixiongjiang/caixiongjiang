@@ -8,7 +8,7 @@
 * 目前在～～～(某双非大学读研究生——电子信息专业（计算机技术）🤪)
   
 
-* 如果你想要找到我，欢迎光临我的个人博客 [Jarson's Blog](https://caixiongjiang.github.io/) 和我的个人知识库[蜜蜂](http://jarson-cai.gitee.io/jarson-cai-blog)🎊🎊🎊🎊🎊🎊
+* 如果你想要找到我，欢迎光临我的个人博客 [Jarson's Blog](https://caixiongjiang.github.io/)🎊🎊🎊🎊🎊🎊
 
 
 ## My open source project :computer:
