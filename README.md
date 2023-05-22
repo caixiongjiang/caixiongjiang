@@ -21,12 +21,12 @@
 * [STL源码剖析](https://github.com/caixiongjiang/STL_sourcecode)🔥 ：了解STL容器和算法底层结构和运行机制，以及源码学习
 ### &emsp;&nbsp;**C++开源项目**🐔
 * [Qt_system](https://github.com/caixiongjiang/qt_system)🔥 :家具库存管理系统，Qt界面设计入门小项目，学习 界面设计 + qss样式 + 数据库交互
-### &emsp;&nbsp;**Python demo**🐒
-* [py_reptile](https://github.com/caixiongjiang/py_reptile)🔥 :使用selenium自动化测试工具，进行爬虫买票
-* [table_ocr](https://github.com/caixiongjiang/table_ocr)🔥 :使用OpenCV以及ocr库识别表格中的文字信息并进行对excel表格进行处理 
+### &emsp;&nbsp;**Python开源项目**🐒
 * [FastSegFormer-PyQT](https://github.com/caixiongjiang/FastSegFormer-pyqt)🔥 :使用PyQT实现脐橙缺陷实时分割的UI
-### &emsp;&nbsp;**小游戏** 😄
+### &emsp;&nbsp;**Demo** 😄
 * [Chinese-Chess](https://github.com/caixiongjiang/Chinese-Chess)🔥 :纯手工Qt绘制的棋盘，实现人机，人人大战，入门小项目
+* [table_ocr](https://github.com/caixiongjiang/table_ocr)🔥 :使用OpenCV以及ocr库识别表格中的文字信息并进行对excel表格进行处理 
+* [py_reptile](https://github.com/caixiongjiang/py_reptile)🔥 :使用selenium自动化测试工具，进行爬虫买票
 ### &emsp;&nbsp;**兴趣模块** ⚡
 * [awesome](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)🔥 ：程序员应该访问的网站（star）
 * [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry#chinese-poetry-%E6%9C%80%E5%85%A8%E4%B8%AD%E6%96%87%E8%AF%97%E6%AD%8C%E5%8F%A4%E5%85%B8%E6%96%87%E9%9B%86%E6%95%B0%E6%8D%AE%E5%BA%93)🔥 : 最全中文诗歌古典文集数据库
