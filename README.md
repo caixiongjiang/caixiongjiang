@@ -22,7 +22,7 @@
 ### &emsp;&nbsp;**C++开源项目**🐔
 * [Qt_system](https://github.com/caixiongjiang/qt_system)🔥 :家具库存管理系统，Qt界面设计入门小项目，学习 界面设计 + qss样式 + 数据库交互
 ### &emsp;&nbsp;**Python开源项目**🐒
-* [FastSegFormer-pyqt](https://github.com/caixiongjiang/FastSegFormer-pyqt)🔥 :使用PyQT实现脐橙缺陷实时分割的UI
+* [FastSegFormer-pyqt](https://github.com/caixiongjiang/FastSegFormer-pyqt)🔥 :使用PyQT实现脐橙缺陷实时分割的UI，使用TensorRT和ONNXRuntime在Jetson Nano上部署。
 ### &emsp;&nbsp;**Demo** 😄
 * [Chinese-Chess](https://github.com/caixiongjiang/Chinese-Chess)🔥 :纯手工Qt绘制的棋盘，实现人机，人人大战，入门小项目
 * [table_ocr](https://github.com/caixiongjiang/table_ocr)🔥 :使用OpenCV以及ocr库识别表格中的文字信息并进行对excel表格进行处理 
