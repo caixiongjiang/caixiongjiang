@@ -18,7 +18,8 @@
 * [pat(c++)](https://github.com/caixiongjiang/pat-test)🔥 ：胡凡版算法笔记上机实训题解，浙大pta网站刷题
 * [C++ STL标准库](https://github.com/caixiongjiang/c-STL-)🔥 
 * [TCP/IP网络编程](https://github.com/caixiongjiang/TCPIP)🔥 :socket编程学习
-* [STL源码剖析](https://github.com/caixiongjiang/STL_sourcecode)🔥 ：了解STL容器和算法底层结构和运行机制，以及源码学习
+* [STL源码剖析](https://github.com/caixiongjiang/STL_sourcecode)🔥 :了解STL容器和算法底层结构和运行机制，以及源码学习
+* [并行编程](https://github.com/caixiongjiang/HPC)🔥:学习并行编程的理论知识，CUDA并行编程，Ascend并行编程，深度学习推理框架
 ### &emsp;&nbsp;**C++开源项目**🐔
 * [Qt_system](https://github.com/caixiongjiang/qt_system)🔥 :家具库存管理系统，Qt界面设计入门小项目，学习 界面设计 + qss样式 + 数据库交互
 ### &emsp;&nbsp;**Python开源项目**🐒
